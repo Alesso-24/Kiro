@@ -1,0 +1,16 @@
+#line 1 "C:\\Users\\jordi\\OneDrive\\Escritorio\\Alloy\\studio\\work\\aud_tech\\sketch\\Alloy_Eyes\\src\\datos\\u1_simples.h"
+// generado por tools/studio_compile.py (pu) desde u1_simples.pu.txt
+{3.200f,26.000f,12.000f,8.000f,0.000f,0.000f,0.000f,0,0,"Rendija fina"},
+{6.500f,24.000f,12.000f,8.000f,0.000f,0.000f,0.000f,0,0,"Rendija gruesa"},
+{4.500f,14.000f,13.000f,15.000f,0.000f,0.000f,0.000f,0,0,"Rendija bajita"},
+{4.000f,22.000f,10.000f,6.000f,0.300f,0.000f,0.000f,0,1,"Rendija ladeada"},
+{10.000f,20.000f,12.000f,8.000f,0.400f,0.000f,0.000f,0,0,"Ovalo ladeado"},
+{9.500f,9.500f,10.000f,11.000f,0.000f,0.000f,0.000f,0,0,"Canica"},
+{14.500f,15.500f,10.000f,10.000f,0.000f,0.000f,0.000f,0,0,"Pelota media"},
+{19.000f,20.000f,6.000f,10.000f,0.000f,0.000f,0.000f,0,1,"Pelota grande"},
+{3.000f,3.400f,9.000f,9.000f,0.000f,0.000f,0.000f,0,0,"Semilla"},
+{11.000f,17.000f,10.000f,10.000f,0.000f,0.000f,0.350f,0,1,"Gota tierna"},
+{21.000f,12.000f,8.000f,11.000f,0.000f,0.000f,0.000f,0,0,"Ancha chata"},
+{11.000f,15.000f,19.000f,8.000f,0.000f,0.000f,0.000f,0,1,"Bizca tierna"},
+{13.000f,19.000f,0.000f,2.000f,0.000f,0.000f,0.000f,0,2,"Mirada centrada"},
+{12.000f,14.000f,7.000f,-11.000f,0.100f,0.000f,0.000f,0,2,"Mirada al cielo"},

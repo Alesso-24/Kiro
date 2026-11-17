@@ -1,0 +1,2 @@
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_pulse.cpp:25:26:long unsigned int pulseIn(uint8_t, uint8_t, long unsigned int)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_pulse.cpp:57:26:long unsigned int pulseInLong(uint8_t, uint8_t, long unsigned int)	0	static

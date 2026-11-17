@@ -1,0 +1,73 @@
+// P2 frias / neon / oscuras / alto contraste
+// nombre | rareza | #ojo | #pupila | #acento
+Cielo de invierno | common | #7EC8FF | #0B2A6B | #C4E6FF
+Hielo y zafiro | common | #D6F1FF | #1F4FD8 | #8CC8FF
+Arandano | common | #4C7DFF | #FFF2A8 | #A9C2FF
+Mar abierto | common | #2E8BFF | #06204A | #8AC0FF
+Azul pizarra | common | #8FA8D8 | #14224A | #C3D2F0
+Laguna | common | #3FD6D0 | #0A3B5C | #A0F0EC
+Turquesa coral | common | #26C6B8 | #7A1A2E | #9CF0E6
+Piscina | common | #5BE3F2 | #0D4F8B | #B6F6FB
+Menta glacial | common | #A6F5DC | #1C6B7A | #DCFBF0
+Jade nocturno | common | #2FBF8A | #06301F | #8CE8C4
+Pino y niebla | common | #B8E6C8 | #1E5A3A | #E0F5E8
+Helecho | common | #7BD66A | #1F4A1A | #C0F0B0
+Kiwi | common | #A8E04A | #3A2A8C | #D8F59C
+Pantano | common | #6FA05A | #101A08 | #A8C890
+Lila bruma | common | #C9B8FF | #4A2A9C | #E6DCFF
+Orquidea | common | #B58CF0 | #0A3A3A | #DCC4FF
+Violeta tormenta | common | #7A5CE0 | #E8FFB0 | #B8A6F5
+Uva dulce | common | #8A4FC8 | #C8FF70 | #BC90E8
+Amatista | common | #A66CFF | #1B0A4A | #D4B6FF
+Malva | common | #C8B0E0 | #3A1060 | #E6D8F2
+Piruleta azul | common | #5AB0FF | #5A0A4A | #A8D4FF
+Frambuesa fria | common | #E04FA8 | #FFF0FA | #FF9AD6
+Magenta sereno | common | #C02AA0 | #FFF8D8 | #FF8AE6
+Peonia | common | #F59AD6 | #7A1050 | #FFD0EE
+Algodon de azucar | common | #FFB0E8 | #1F3FA0 | #FFD8F4
+Cereza noche | common | #8C2F5A | #FFD6E8 | #D86A9A
+Vino tinto | common | #A02A4E | #FFE8B0 | #D86A8A
+Ladrillo antiguo | common | #B2472E | #FFF0D0 | #E8906A
+Marino profundo | common | #2A56C0 | #D0EEFF | #6A96E8
+Bosque hondo | common | #2C8A5A | #F0FFD8 | #6ACC98
+Noche y luna | common | #4646B0 | #FFF4B0 | #8A8AE8
+Cielo y noche | common | #CFE8FF | #070B2E | #7AA8E0
+Perla negra | common | #F0E4FF | #5A1A8A | #C0A8E8
+Obsidiana lila | common | #5A44A0 | #D8FF5A | #9A80E0
+Tinta y hielo | common | #1E5A9A | #8EF0FF | #5A9AD0
+Verde acido | uncommon | #B6FF1A | #2A0A5C | #E0FF8A
+Radiactivo | uncommon | #7CFF3A | #0A2A1A | #C4FF9A
+Cian electrico | uncommon | #00F0FF | #00203A | #9AFBFF
+Rosa fosforito | uncommon | #FF3DD0 | #1A0A2E | #FF9AEA
+Neon doble | uncommon | #19F5C8 | #A020FF | #A6FBE8
+Laser violeta | uncommon | #9B30FF | #C6FF3D | #D0A0FF
+Azul voltio | uncommon | #2F6BFF | #00F5D4 | #96B8FF
+Cian y frambuesa | uncommon | #20D8F0 | #A0106A | #9AF0FA
+Lima y vino | uncommon | #D4FF3A | #6A0F3A | #EEFF9A
+Hielo flash | uncommon | #D8FFE8 | #C8104E | #90F0C0
+Bosque y menta | uncommon | #0F5A3A | #7CFFC8 | #3AA878
+Vino y cian | uncommon | #8A1F48 | #5CF0FF | #C85A80
+Marino y limon | uncommon | #1E50A8 | #FFF04A | #6A94E0
+Ladrillo y hielo | uncommon | #C85A32 | #D8F6FF | #F0A07A
+Ciruela y menta | uncommon | #7A2A90 | #8AFFD0 | #B870D0
+Noche y fucsia | uncommon | #2C46A0 | #FF5AD0 | #7A92E0
+Aqua y violeta | uncommon | #6AF0E0 | #5A1FD0 | #C0FAF2
+Caramelo azul | uncommon | #FF9A9A | #1F4AA0 | #FFC8C8
+Lila y bosque | uncommon | #E0A0FF | #14401A | #F0CCFF
+Glaciar rosa | uncommon | #A8E8FF | #D8206A | #DCF6FF
+Esmeralda oscura | uncommon | #0A8A9A | #FFF2C0 | #4CC0D0
+Eclipse | uncommon | #5A3AA8 | #FFC83A | #9A7AE0
+Aurora boreal | rare | #3AF0A0 | #5A20E0 | #8A6AFF
+Galaxia | rare | #5A2AC0 | #5CFFF0 | #FF5AD0
+Plasma | rare | #FF4A78 | #0A1A3A | #FFE04A
+Abismo | rare | #0E4E96 | #3AFFE8 | #8A5AFF
+Cristal de neon | rare | #7AF0FF | #5A0A3A | #C0A0FF
+Veneno | rare | #A0FF2A | #7A10E0 | #FF4AC8
+Sangre y plata | uncommon | #A01A2E | #F0F4FF | #FF5A6A
+Petroleo dorado | uncommon | #167A86 | #FFE680 | #5ACCD8
+Lima de medianoche | rare | #D0FFB0 | #04041A | #8AD060
+Bruja del bosque | rare | #1E7A4E | #E8B0FF | #7AFFB0
+Cometa | rare | #1A6AE0 | #FFFFFF | #00F0FF
+Ultravioleta | rare | #6A1AE0 | #FFE8FF | #FF6AF0
+Gelatina de arandano | uncommon | #5A6AE8 | #FFE6F2 | #A6B0FF
+

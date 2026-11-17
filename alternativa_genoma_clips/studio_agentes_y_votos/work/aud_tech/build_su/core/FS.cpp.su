@@ -1,0 +1,81 @@
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/tools/pqt-gcc/5.0.0-9576866/arm-none-eabi/include/c++/16.1.0/bits/shared_ptr_base.h:506:5:void std::_Sp_counted_ptr<_Ptr, _Lp>::_M_dispose() [with _Ptr = std::nullptr_t; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FSImpl.h:38:17:virtual int fs::FileImpl::availableForWrite()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FSImpl.h:51:18:virtual void fs::FileImpl::setTimeCallback(time_t (*)())	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FSImpl.h:58:20:virtual time_t fs::FileImpl::getLastWrite()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FSImpl.h:62:20:virtual time_t fs::FileImpl::getCreationTime()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FSImpl.h:92:20:virtual time_t fs::DirImpl::fileTime()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FSImpl.h:95:20:virtual time_t fs::DirImpl::fileCreationTime()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FSImpl.h:106:18:virtual void fs::DirImpl::setTimeCallback(time_t (*)())	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FSImpl.h:130:18:virtual bool fs::FSImpl::gc()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FSImpl.h:133:18:virtual bool fs::FSImpl::check()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FSImpl.h:136:20:virtual time_t fs::FSImpl::getCreationTime()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FSImpl.h:143:18:virtual void fs::FSImpl::setTimeCallback(time_t (*)())	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:28:8:virtual size_t fs::File::write(uint8_t)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:36:8:virtual size_t fs::File::write(const uint8_t*, size_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:44:5:virtual int fs::File::available()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:61:5:virtual int fs::File::read()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:93:6:virtual void fs::File::flush()	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/tools/pqt-gcc/5.0.0-9576866/arm-none-eabi/include/c++/16.1.0/bits/shared_ptr_base.h:676:7:std::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::~_Sp_counted_ptr_inplace() [with _Tp = fs::Dir; _Alloc = std::allocator<void>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/tools/pqt-gcc/5.0.0-9576866/arm-none-eabi/include/c++/16.1.0/bits/shared_ptr_base.h:700:7:void* std::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_M_get_deleter(const std::type_info&) [with _Tp = fs::Dir; _Alloc = std::allocator<void>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/tools/pqt-gcc/5.0.0-9576866/arm-none-eabi/include/c++/16.1.0/bits/shared_ptr_base.h:676:7:std::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::~_Sp_counted_ptr_inplace() [with _Tp = fs::Dir; _Alloc = std::allocator<void>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/tools/pqt-gcc/5.0.0-9576866/arm-none-eabi/include/c++/16.1.0/bits/shared_ptr_base.h:687:7:void std::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_M_destroy() [with _Tp = fs::Dir; _Alloc = std::allocator<void>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:52:5:virtual int fs::File::availableForWrite()	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/tools/pqt-gcc/5.0.0-9576866/arm-none-eabi/include/c++/16.1.0/bits/shared_ptr_base.h:142:7:void std::_Sp_counted_base<_Lp>::_M_destroy() [with __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.h:85:21:virtual ssize_t fs::File::streamRemaining()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:82:5:virtual int fs::File::peek()	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/tools/pqt-gcc/5.0.0-9576866/arm-none-eabi/include/c++/16.1.0/bits/shared_ptr_base.h:369:5:void std::_Sp_counted_base<_Lp>::_M_release() [with __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/tools/pqt-gcc/5.0.0-9576866/arm-none-eabi/include/c++/16.1.0/bits/shared_ptr_base.h:369:5:void std::_Sp_counted_base<_Lp>::_M_release() [with __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/tools/pqt-gcc/5.0.0-9576866/arm-none-eabi/include/c++/16.1.0/bits/shared_ptr_base.h:680:7:void std::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_M_dispose() [with _Tp = fs::Dir; _Alloc = std::allocator<void>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:74:5:int fs::File::read(uint8_t*, size_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:101:6:bool fs::File::seek(uint32_t, fs::SeekMode)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:109:8:size_t fs::File::position() const	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:117:8:size_t fs::File::size() const	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:125:6:void fs::File::close()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:132:1:fs::File::operator bool() const	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:136:6:bool fs::File::truncate(uint32_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:144:13:const char* fs::File::name() const	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:152:13:const char* fs::File::fullName() const	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:160:6:bool fs::File::isFile() const	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:168:6:bool fs::File::isDirectory() const	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:192:8:arduino::String fs::File::readString()	272	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:204:8:time_t fs::File::getLastWrite()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:212:8:time_t fs::File::getCreationTime()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:220:6:void fs::File::setTimeCallback(time_t (*)())	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:228:6:bool fs::File::stat(fs::FSStat*)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:243:6:fs::File fs::Dir::openFile(const char*)	40	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:260:8:arduino::String fs::Dir::fileName()	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:268:8:time_t fs::Dir::fileTime()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:275:8:time_t fs::Dir::fileCreationTime()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:282:8:size_t fs::Dir::fileSize()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:290:6:bool fs::Dir::isFile() const	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:298:6:bool fs::Dir::isDirectory() const	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:306:6:bool fs::Dir::next()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:314:6:bool fs::Dir::rewind()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:322:6:void fs::Dir::setTimeCallback(time_t (*)())	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:331:6:bool fs::FS::setConfig(const fs::FSConfig&)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:339:6:bool fs::FS::begin()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:350:6:void fs::FS::end()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:356:6:bool fs::FS::gc()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:363:6:bool fs::FS::check()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:370:6:bool fs::FS::format()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:377:6:bool fs::FS::info(fs::FSInfo&)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:388:6:fs::File fs::FS::open(const char*, const char*)	48	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:384:6:fs::File fs::FS::open(const arduino::String&, const char*)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:404:6:bool fs::FS::exists(const char*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:411:6:bool fs::FS::exists(const arduino::String&)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:415:5:fs::Dir fs::FS::openDir(const char*)	40	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:176:6:void fs::File::rewindDirectory()	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:184:6:fs::File fs::File::openNextFile()	40	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:425:5:fs::Dir fs::FS::openDir(const arduino::String&)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:429:6:bool fs::FS::remove(const char*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:436:6:bool fs::FS::remove(const arduino::String&)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:440:6:bool fs::FS::rmdir(const char*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:447:6:bool fs::FS::rmdir(const arduino::String&)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:451:6:bool fs::FS::mkdir(const char*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:458:6:bool fs::FS::mkdir(const arduino::String&)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:462:6:bool fs::FS::rename(const char*, const char*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:469:6:bool fs::FS::rename(const arduino::String&, const arduino::String&)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:473:6:bool fs::FS::stat(const char*, fs::FSStat*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:480:6:bool fs::FS::stat(const arduino::String&, fs::FSStat*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:484:8:time_t fs::FS::getCreationTime()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\FS.cpp:491:6:void fs::FS::setTimeCallback(time_t (*)())	16	static

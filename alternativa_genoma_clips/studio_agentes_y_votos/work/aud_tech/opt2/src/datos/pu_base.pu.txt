@@ -1,0 +1,9 @@
+// nombre | rareza | prx pry pdx pdy ptilt pc1 pc2 | tipo
+Rendija        | common   | 4.0 24 14 6 0 0 0      | none
+Ovalo alto     | common   | 12 27 12 10 0 0 0      | none
+Redonda        | common   | 17 17 10 10 0 0 0      | none
+Puntito        | common   | 3.6 3.6 8 8 0 0 0      | none
+Rendija girada | uncommon | 4.5 22 12 6 0.45 0 0   | none
+Ovalo medio    | common   | 10 17 12 10 0.15 0 0   | none
+Ancha grande   | uncommon | 20 23 8 12 0 0 0       | none
+Con brillo     | uncommon | 13 19 11 9 0 0 0.1     | glint

@@ -1,0 +1,40 @@
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.h:98:17:static void USBClass::simpleInterface(int, uint8_t*, int, void*)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:441:9:static int64_t USBClass::timerTask(alarm_id_t, void*)	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:431:6:static void USBClass::usbIRQ()	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:67:9:uint8_t USBClass::registerEndpointIn()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:76:6:void USBClass::unregisterEndpointIn(int)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:80:9:uint8_t USBClass::registerEndpointOut()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:89:6:void USBClass::unregisterEndpointOut(int)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:93:9:uint8_t USBClass::addEntry(Entry**, int, void (*)(int, uint8_t*, int, void*), const void*, size_t, int, uint32_t)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:125:6:void USBClass::removeEntry(Entry**, unsigned int)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:147:14:unsigned int USBClass::findID(Entry*, unsigned int)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:156:9:uint8_t USBClass::findHIDReportID(unsigned int)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:160:9:uint8_t USBClass::findInterfaceID(unsigned int)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:165:9:uint8_t USBClass::registerHIDDevice(const uint8_t*, size_t, int, uint32_t)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:169:6:void USBClass::unregisterHIDDevice(unsigned int)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:174:9:uint8_t USBClass::registerInterface(int, void (*)(int, uint8_t*, int, void*), void*, size_t, int, uint32_t)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:178:6:void USBClass::unregisterInterface(unsigned int)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:182:9:uint8_t USBClass::registerString(const char*)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:331:6:0()	72	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:202:6:void USBClass::setVIDPID(uint16_t, uint16_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:207:6:void USBClass::setManufacturer(const char*)	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:211:6:void USBClass::setProduct(const char*)	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:215:6:void USBClass::setSerialNumber(const char*)	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:219:16:const uint8_t* USBClass::tud_descriptor_device_cb()	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:263:16:const uint8_t* tud_descriptor_device_cb()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:267:10:uint8_t* USBClass::getDescHIDReport(int*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:274:6:void USBClass::setupDescHIDReport()	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:309:16:const uint8_t* tud_hid_descriptor_report_cb(uint8_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:313:16:const uint8_t* USBClass::tud_hid_descriptor_report_cb(uint8_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:318:16:const uint8_t* tud_descriptor_configuration_cb(uint8_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:322:16:const uint8_t* USBClass::tud_descriptor_configuration_cb(uint8_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:331:6:void USBClass::setupUSBDescriptor()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:386:17:const uint16_t* USBClass::tud_descriptor_string_cb(uint8_t, uint16_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:382:17:const uint16_t* tud_descriptor_string_cb(uint8_t, uint16_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:447:6:void USBClass::disconnect()	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:481:6:void USBClass::connect()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:497:6:void USBClass::begin()	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:524:6:bool USBClass::HIDReady()	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:540:21:uint16_t tud_hid_get_report_cb(uint8_t, uint8_t, hid_report_type_t, uint8_t*, uint16_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:554:17:void tud_hid_set_report_cb(uint8_t, uint8_t, hid_report_type_t, const uint8_t*, uint16_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\USB.cpp:561:1:cpp)	0	static

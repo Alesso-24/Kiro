@@ -1,0 +1,34 @@
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\build_fw\core\lwip\src\apps\sntp\sntp.c.o: \
+ C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip\src\apps\sntp\sntp.c \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/apps/sntp/sntp.c \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/apps/sntp.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/apps/sntp_opts.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/opt.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/debug.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/arch.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/src/rp2_common/pico_lwip/include/arch/cc.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/prot/iana.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/def.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/def.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/timeouts.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/err.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/udp.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/netif.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/stats.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/mem.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/memp.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/ip.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/ip4.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/ip6.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/prot/udp.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/dns.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/dhcp.h

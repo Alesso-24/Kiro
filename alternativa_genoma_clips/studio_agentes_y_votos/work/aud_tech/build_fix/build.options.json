@@ -1,0 +1,10 @@
+{
+  "additionalFiles": "..\\..,..\\..,..\\..,..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..,..\\..\\..\\..",
+  "builtInLibrariesFolders": "C:\\Users\\jordi\\AppData\\Local\\Arduino15\\libraries",
+  "compiler.optimization_flags": "",
+  "customBuildProperties": "compiler.cpp.extra_flags=-fstack-usage",
+  "fqbn": "rp2040:rp2040:seeed_xiao_rp2350:freq=250,opt=Optimize2",
+  "hardwareFolders": "C:\\Users\\jordi\\AppData\\Local\\Arduino15\\packages\\rp2040\\hardware\\rp2040\\6.3.0,C:\\Users\\jordi\\AppData\\Local\\Arduino15\\packages\\rp2040\\hardware\\rp2040\\6.3.0",
+  "otherLibrariesFolders": "c:\\Users\\jordi\\OneDrive\\Documentos\\Arduino\\libraries",
+  "sketchLocation": "C:\\Users\\jordi\\OneDrive\\Escritorio\\Alloy\\studio\\work\\aud_tech\\sketch_fix\\Alloy_Eyes"
+}

@@ -1,0 +1,17 @@
+// nombre | rareza | #ojo | #pupila | #acento
+Durazno verde      | common   | #F5D0C0 | #2EBE46 | #A8F0B0
+Rosa chicle        | common   | #FFB9F0 | #0A961E | #7FE08A
+Menta lila         | common   | #78FFB9 | #7882FF | #C0C8FF
+Turquesa violeta   | uncommon | #00AFBE | #7D28FA | #C79BFF
+Crema salmon       | common   | #FFFFC8 | #FA6E5F | #FFC0B8
+Vino crema         | uncommon | #963746 | #FFFFBE | #FFFFE0
+Naranja petroleo   | uncommon | #FF5523 | #0A465A | #5AA9C0
+Lima oliva         | common   | #CDFAAA | #5A640A | #A0B850
+Lavanda limon      | common   | #968CF5 | #AAFF64 | #D8FFA8
+Agua rojo oscuro   | uncommon | #9BFAD7 | #78140F | #D86A60
+Marfil cian        | common   | #EBFAC8 | #0AB9CD | #7FE0EE
+Arena azul         | common   | #FAE1AA | #146EFA | #8FB8FF
+Lila ocre          | common   | #A5AAFA | #967314 | #CDB060
+Magenta limon      | uncommon | #F064C8 | #EBFF96 | #FFFFC8
+Ladrillo fucsia    | rare     | #A52300 | #FA50FA | #FFA0FF
+Amarillo naranja   | common   | #FCC832 | #E17832 | #FFB070

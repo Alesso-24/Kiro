@@ -1,0 +1,16 @@
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\build_su\core\lwip\src\core\mem.c.o: \
+ C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip\src\core\mem.c \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/core/mem.c \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/opt.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/debug.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/arch.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/src/rp2_common/pico_lwip/include/arch/cc.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/mem.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/def.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/sys.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/stats.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/memp.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
+ C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/lib/lwip/src/include/lwip/err.h

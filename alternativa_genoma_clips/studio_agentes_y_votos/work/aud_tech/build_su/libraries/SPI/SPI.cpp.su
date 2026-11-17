@@ -1,0 +1,37 @@
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.h:261:18:virtual void SPIClassRP2040::attachInterrupt()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.h:266:18:virtual void SPIClassRP2040::detachInterrupt()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:471:6:virtual void SPIClassRP2040::end()	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h:296:20:void channel_config_set_chain_to(dma_channel_config_t*, uint)	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:176:6:virtual void SPIClassRP2040::endTransaction()	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/tools/pqt-gcc/5.0.0-9576866/arm-none-eabi/include/c++/16.1.0/bits/stl_tree.h:2801:5:std::pair<typename std::__rb_tree::_Node_traits<_Val, typename __gnu_cxx::__alloc_traits<typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<_Val>::other>::pointer>::_Base_ptr, typename std::__rb_tree::_Node_traits<_Val, typename __gnu_cxx::__alloc_traits<typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<_Val>::other>::pointer>::_Base_ptr> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_get_insert_unique_pos(const key_type&) [with _Key = int; _Val = std::pair<const int, int>; _KeyOfValue = std::_Select1st<std::pair<const int, int> >; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >]	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.h:254:18:virtual void SPIClassRP2040::notUsingInterrupt(int)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.h:245:18:virtual void SPIClassRP2040::usingInterrupt(int)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:108:6:virtual void SPIClassRP2040::transfer(void*, size_t)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:80:9:virtual uint8_t SPIClassRP2040::transfer(uint8_t)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:118:6:virtual void SPIClassRP2040::transfer(const void*, void*, size_t)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:94:10:virtual uint16_t SPIClassRP2040::transfer16(uint16_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/tools/pqt-gcc/5.0.0-9576866/arm-none-eabi/include/c++/16.1.0/bits/stl_tree.h:2623:5:void std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_erase(_Node_ptr) [with _Key = int; _Val = std::pair<const int, int>; _KeyOfValue = std::_Select1st<std::pair<const int, int> >; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >]	48	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.h:31:7:SPIClassRP2040::~SPIClassRP2040()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.h:31:7:virtual SPIClassRP2040::~SPIClassRP2040()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPIHelper.h:110:10:void SPIHelper::maskInterrupts()	64	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:154:6:virtual void SPIClassRP2040::beginTransaction(arduino::SPISettings)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:50:1:SPIClassRP2040::SPIClassRP2040(spi_inst_t*, pin_size_t, pin_size_t, pin_size_t, pin_size_t)	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:62:6:void SPIClassRP2040::adjustBuffer(const void*, void*, size_t, bool)	12	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:181:6:bool SPIClassRP2040::transferAsync(const void*, void*, size_t)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:255:6:bool SPIClassRP2040::finishedAsync()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:259:6:void SPIClassRP2040::abortAsync()	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:278:6:void SPIClassRP2040::onTransferComplete(void (*)())	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:284:6:void SPIClassRP2040::onTransferComplete(void (*)(void*), void*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:290:6:void SPIClassRP2040::_handleDMAComplete()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:33:6:void _spiDMAIRQ()	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:330:6:bool SPIClassRP2040::setRX(pin_size_t)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:362:6:bool SPIClassRP2040::setCS(pin_size_t)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:389:6:bool SPIClassRP2040::setSCK(pin_size_t)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:416:6:bool SPIClassRP2040::setTX(pin_size_t)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:448:6:void SPIClassRP2040::begin(bool)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.h:203:18:virtual void SPIClassRP2040::begin()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:491:6:void SPIClassRP2040::setBitOrder(BitOrder)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:497:6:void SPIClassRP2040::setDataMode(uint8_t)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:503:6:void SPIClassRP2040::setClockDivider(uint8_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:523:92:cpp)	4	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src\SPI.cpp:523:92:cpp)	8	static

@@ -1,0 +1,35 @@
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.h:62:17:virtual int arduino::Print::availableForWrite()	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.h:97:18:virtual void arduino::Print::flush()	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:33:8:virtual size_t arduino::Print::write(const uint8_t*, size_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:43:8:size_t arduino::Print::print(const arduino::__FlashStringHelper*)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:60:8:size_t arduino::Print::print(const arduino::String&)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:65:8:size_t arduino::Print::print(const char*)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:70:8:size_t arduino::Print::print(char)	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:75:8:size_t arduino::Print::print(unsigned char, int)	72	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:85:8:size_t arduino::Print::print(unsigned int, int)	72	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:106:8:size_t arduino::Print::print(long unsigned int, int)	72	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:139:8:size_t arduino::Print::println(const arduino::__FlashStringHelper*)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:146:8:size_t arduino::Print::print(const arduino::Printable&)	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:151:8:size_t arduino::Print::println()	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:156:8:size_t arduino::Print::println(const arduino::String&)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:163:8:size_t arduino::Print::println(const char*)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:170:8:size_t arduino::Print::println(char)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:177:8:size_t arduino::Print::println(unsigned char, int)	72	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:191:8:size_t arduino::Print::println(unsigned int, int)	72	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:205:8:size_t arduino::Print::println(long unsigned int, int)	72	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:233:8:size_t arduino::Print::println(const arduino::Printable&)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:240:8:)	100	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:264:8:)	100	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:289:8:size_t arduino::Print::printNumber(long unsigned int, uint8_t)	64	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:90:8:size_t arduino::Print::print(long int, int)	72	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:80:8:size_t arduino::Print::print(int, int)	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:184:8:size_t arduino::Print::println(int, int)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:198:8:size_t arduino::Print::println(long int, int)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:332:8:size_t arduino::Print::printULLNumber(long long unsigned int, uint8_t)	104	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:112:8:size_t arduino::Print::print(long long int, int)	40	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:212:8:size_t arduino::Print::println(long long int, int)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:128:8:size_t arduino::Print::print(long long unsigned int, int)	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:219:8:size_t arduino::Print::println(long long unsigned int, int)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:390:8:size_t arduino::Print::printFloat(double, int)	96	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:134:8:size_t arduino::Print::print(double, int)	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.cpp:226:8:size_t arduino::Print::println(double, int)	32	static

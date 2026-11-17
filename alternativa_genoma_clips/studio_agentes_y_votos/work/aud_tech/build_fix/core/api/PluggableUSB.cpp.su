@@ -1,0 +1,7 @@
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/PluggableUSB.h:39:19:virtual uint8_t arduino::PluggableUSBModule::getShortName(char*)	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/PluggableUSB.cpp:25:5:int arduino::PluggableUSB_::getInterface(uint8_t*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/PluggableUSB.cpp:38:5:int arduino::PluggableUSB_::getDescriptor(arduino::USBSetup&)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/PluggableUSB.cpp:50:6:void arduino::PluggableUSB_::getShortName(char*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/PluggableUSB.cpp:59:6:bool arduino::PluggableUSB_::setup(arduino::USBSetup&)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/PluggableUSB.cpp:70:6:bool arduino::PluggableUSB_::plug(arduino::PluggableUSBModule*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/PluggableUSB.cpp:97:16:arduino::PluggableUSB_& PluggableUSB()	8	static

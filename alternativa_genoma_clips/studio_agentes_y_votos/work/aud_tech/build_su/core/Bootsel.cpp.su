@@ -1,0 +1,2 @@
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\Bootsel.cpp:24:13:bool get_bootsel_button()	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\Bootsel.cpp:65:1:__Bootsel::operator bool()	0	static

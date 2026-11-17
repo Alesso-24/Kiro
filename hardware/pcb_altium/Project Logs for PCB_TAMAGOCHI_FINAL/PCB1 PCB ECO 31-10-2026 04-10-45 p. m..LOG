@@ -1,0 +1,30 @@
+Change Component Footprint: Designator=J2 Old Footprint=JST-S2B-XH-A(LF)(SN)_V New Footprint=JST_S2B-PH-K-S(LF)(SN)
+Change Component Footprint: Designator=J3 Old Footprint=JST-S2B-XH-A(LF)(SN)_V New Footprint=JST_S2B-PH-K-S(LF)(SN)
+Change Component Footprint: Designator=J4 Old Footprint=JST-S2B-XH-A(LF)(SN)_V New Footprint=JST_S2B-PH-K-S(LF)(SN)
+Change Managed Component Library Link : Designator=J2 Old VaultGUID=0A72421B-724B-442A-B69F-AE9C5AA4FA1F New VaultGUID= Old ItemGUID=0C1CE992-BAE6-4522-90CD-2D602FF850C4 New ItemGUID= Old RevisionGUID=6B2247CD-4737-4BEB-B0F4-2068D7AA9631 New RevisionGUID=
+Change Managed Component Library Link : Designator=J3 Old VaultGUID=0A72421B-724B-442A-B69F-AE9C5AA4FA1F New VaultGUID= Old ItemGUID=0C1CE992-BAE6-4522-90CD-2D602FF850C4 New ItemGUID= Old RevisionGUID=6B2247CD-4737-4BEB-B0F4-2068D7AA9631 New RevisionGUID=
+Change Managed Component Library Link : Designator=J4 Old VaultGUID=0A72421B-724B-442A-B69F-AE9C5AA4FA1F New VaultGUID= Old ItemGUID=0C1CE992-BAE6-4522-90CD-2D602FF850C4 New ItemGUID= Old RevisionGUID=6B2247CD-4737-4BEB-B0F4-2068D7AA9631 New RevisionGUID=
+Change component parameters: Designator = "J2" ("J2"); Footprint = "JST-S2B-XH-A(LF)(SN)_V"; UniqueID = "\NRIHNRSV" ("\NRIHNRSV")
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/S2B-PH-K-S(LF)(SN)/JST/view-part/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "JST Sales America Inc."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "S2B-PH-K-S(LF)(SN)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "NON STANDARD-2 J.S.T."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/S2B-PH-K-S(LF)(SN)/JST/view-part/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "J3" ("J3"); Footprint = "JST-S2B-XH-A(LF)(SN)_V"; UniqueID = "\PLWANQAA" ("\PLWANQAA")
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/S2B-PH-K-S(LF)(SN)/JST/view-part/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "JST Sales America Inc."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "S2B-PH-K-S(LF)(SN)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "NON STANDARD-2 J.S.T."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/S2B-PH-K-S(LF)(SN)/JST/view-part/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "J4" ("J4"); Footprint = "JST-S2B-XH-A(LF)(SN)_V"; UniqueID = "\CSCMSIZB" ("\CSCMSIZB")
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/S2B-PH-K-S(LF)(SN)/JST/view-part/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "JST Sales America Inc."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "S2B-PH-K-S(LF)(SN)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "NON STANDARD-2 J.S.T."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/S2B-PH-K-S(LF)(SN)/JST/view-part/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Member To Class: ClassName=Sheet1 Member=Component J2 S2B-XH-A(LF)(SN)
+Added Member To Class: ClassName=Sheet1 Member=Component J3 S2B-XH-A(LF)(SN)
+Added Member To Class: ClassName=Sheet1 Member=Component J4 S2B-XH-A(LF)(SN)

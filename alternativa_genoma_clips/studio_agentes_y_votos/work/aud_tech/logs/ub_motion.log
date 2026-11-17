@@ -1,0 +1,3 @@
+motion: 33750 combinaciones extremas (ax,ay,az,dt) x3 cuadros: estados invalidos=0
+motion: 40 corridas x3000 cuadros de ruido (sigma 1.2 y 6 g) con saltos de reloj atras: invalidas=0
+exit=0

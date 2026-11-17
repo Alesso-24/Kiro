@@ -1,0 +1,8 @@
+CLIPLIST_base
+CLIPLIST_a1_alegria
+CLIPLIST_a2_enojo
+CLIPLIST_a3_tristeza
+CLIPLIST_a4_sueno
+CLIPLIST_a5_curiosidad
+CLIPLIST_a6_energia
+CLIPLIST_m1_reacciones

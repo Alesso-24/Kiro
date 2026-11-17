@@ -1,0 +1,11 @@
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.h:62:17:virtual int arduino::Print::availableForWrite()	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.h:97:18:virtual void arduino::Print::flush()	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GC9A01A\Adafruit_GC9A01A.cpp:258:6:virtual void Adafruit_GC9A01A::invertDisplay(bool)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GC9A01A\Adafruit_GC9A01A.cpp:196:6:virtual void Adafruit_GC9A01A::begin(uint32_t)	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GC9A01A\Adafruit_GC9A01A.cpp:226:6:virtual void Adafruit_GC9A01A::setRotation(uint8_t)	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GC9A01A\Adafruit_GC9A01A.cpp:271:6:virtual void Adafruit_GC9A01A::setAddrWindow(uint16_t, uint16_t, uint16_t, uint16_t)	32	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GC9A01A\Adafruit_GC9A01A.cpp:78:1:Adafruit_GC9A01A::Adafruit_GC9A01A(int16_t, int16_t, int16_t, int16_t, int16_t, int16_t)	32	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GC9A01A\Adafruit_GC9A01A.cpp:90:1:Adafruit_GC9A01A::Adafruit_GC9A01A(int16_t, int16_t, int16_t)	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GC9A01A\Adafruit_GC9A01A.cpp:103:1:Adafruit_GC9A01A::Adafruit_GC9A01A(arduino::SPIClass*, int16_t, int16_t, int16_t)	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GC9A01A\Adafruit_GC9A01A.cpp:122:1:Adafruit_GC9A01A::Adafruit_GC9A01A(tftBusWidth, int16_t, int16_t, int16_t, int16_t, int16_t, int16_t)	32	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GC9A01A\Adafruit_GC9A01A.cpp:281:1:cpp)	0	static

@@ -1,0 +1,21 @@
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.h:36:10:virtual void SerialPIO::begin(long unsigned int)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.cpp:387:1:virtual SerialPIO::operator bool()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.cpp:34:23:pio_program_t* pio_make_uart_prog(int, const pio_program_t*)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.cpp:344:5:virtual int SerialPIO::availableForWrite()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.cpp:364:8:virtual size_t SerialPIO::write(uint8_t)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.cpp:299:5:virtual int SerialPIO::peek()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.cpp:312:5:virtual int SerialPIO::read()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.cpp:336:5:virtual int SerialPIO::available()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.cpp:352:6:virtual void SerialPIO::flush()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.cpp:271:6:0()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.cpp:271:6:virtual void SerialPIO::end()	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/tools/pqt-gcc/5.0.0-9576866/arm-none-eabi/include/c++/16.1.0/bits/stl_tree.h:2904:5:std::pair<typename std::__rb_tree::_Node_traits<_Val, typename __gnu_cxx::__alloc_traits<typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<_Val>::other>::pointer>::_Iterator, bool> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_insert_unique(_Arg&&) [with _Arg = std::pair<const int, PIOProgram*>; _Key = int; _Val = std::pair<const int, PIOProgram*>; _KeyOfValue = std::_Select1st<std::pair<const int, PIOProgram*> >; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, PIOProgram*> >]	40	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/tools/pqt-gcc/5.0.0-9576866/arm-none-eabi/include/c++/16.1.0/bits/stl_tree.h:2623:5:void std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_erase(_Node_ptr) [with _Key = int; _Val = std::pair<const int, PIOProgram*>; _KeyOfValue = std::_Select1st<std::pair<const int, PIOProgram*> >; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, PIOProgram*> >]	48	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.cpp:161:6:virtual void SerialPIO::begin(long unsigned int, uint16_t)	72	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.cpp:91:6:void SerialPIO::_handleIRQ()	20	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.cpp:80:6:static void SerialPIO::_fifoIRQ()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.cpp:131:1:SerialPIO::SerialPIO(pin_size_t, pin_size_t, size_t)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.cpp:141:1:SerialPIO::~SerialPIO()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.cpp:325:6:bool SerialPIO::overflow()	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.cpp:389:1:cpp)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialPIO.cpp:389:1:cpp)	8	static

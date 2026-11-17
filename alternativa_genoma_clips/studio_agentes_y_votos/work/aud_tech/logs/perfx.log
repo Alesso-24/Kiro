@@ -1,0 +1,21 @@
+por expresion (criatura nominal sem. 2024, auto off): eyePx evaluados, filas sucias, host us
+   1 despierto      eyePx=  26351 tri/ell/line=    0/    0/    0 filas avg 179.3 [ 44..219] cols avg 165.3 host avg   350 max   723 us
+   2 curioso        eyePx=  26190 tri/ell/line=    0/    0/    0 filas avg 168.7 [ 38..181] cols avg 180.0 host avg   367 max   601 us
+   3 dormido        eyePx=      0 tri/ell/line=    0/    0/ 3499 filas avg  26.1 [ 22.. 28] cols avg 160.0 host avg    38 max    92 us
+   4 feliz          eyePx=      0 tri/ell/line= 3387/    0/ 3863 filas avg  74.0 [ 50.. 85] cols avg 164.4 host avg    92 max   242 us
+   5 enojado        eyePx=  21799 tri/ell/line=    0/    0/ 1652 filas avg 155.6 [ 38..181] cols avg 180.0 host avg   301 max   451 us
+   6 amor           eyePx=  23562 tri/ell/line= 1248/ 1139/    0 filas avg 158.6 [ 78..188] cols avg 176.4 host avg   262 max  1563 us
+   7 cargando       eyePx=  19823 tri/ell/line= 8844/    0/  363 filas avg 145.6 [ 52..165] cols avg 156.5 host avg   305 max   486 us
+   8 electrico      eyePx=  15329 tri/ell/line=12581/    0/  544 filas avg 126.2 [ 50..136] cols avg 155.6 host avg   308 max   539 us
+   9 dormido-tenue  eyePx=      0 tri/ell/line=    0/    0/47292 filas avg  38.6 [ 38.. 40] cols avg 173.0 host avg   504 max   734 us
+  10 triste         eyePx=  25398 tri/ell/line=  635/  447/    0 filas avg 169.2 [ 87..199] cols avg 186.1 host avg   227 max   294 us
+  11 cara-llena     eyePx=  20508 tri/ell/line=    0/    0/    0 filas avg 240.0 [240..240] cols avg 240.0 host avg   281 max   499 us
+  12 hype           eyePx=  25381 tri/ell/line=  897/    0/    0 filas avg 173.7 [115..211] cols avg 167.8 host avg   357 max  1625 us
+  13 bateria-baja   eyePx=  16981 tri/ell/line=    0/    0/    0 filas avg 117.6 [ 25..132] cols avg 168.5 host avg   241 max   418 us
+  14 mareado        eyePx=  26614 tri/ell/line= 3180/ 7442/    0 filas avg 196.0 [173..219] cols avg 173.7 host avg   394 max   632 us
+  15 sorprendido    eyePx=  28203 tri/ell/line=    0/    0/    0 filas avg 167.5 [ 31..180] cols avg 190.9 host avg   447 max   819 us
+  16 orgulloso      eyePx=  27327 tri/ell/line=    0/    0/    0 filas avg 185.5 [ 50..224] cols avg 173.2 host avg   336 max   582 us
+  17 bostezo        eyePx=  23708 tri/ell/line=    0/    0/    0 filas avg 173.2 [148..180] cols avg 162.4 host avg   366 max   700 us
+  18 ansioso        eyePx=  29196 tri/ell/line=  389/  450/    0 filas avg 188.8 [ 93..240] cols avg 180.2 host avg   436 max   811 us
+  19 frio           eyePx=  18479 tri/ell/line= 2065/    0/    0 filas avg 132.0 [ 63..161] cols avg 171.9 host avg   288 max   518 us
+  20 ver-bateria    eyePx=  18459 tri/ell/line=    0/    0/    0 filas avg 140.0 [117..149] cols avg 161.8 host avg   211 max   385 us

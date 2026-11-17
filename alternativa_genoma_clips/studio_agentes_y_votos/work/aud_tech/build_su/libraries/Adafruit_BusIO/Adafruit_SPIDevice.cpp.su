@@ -1,0 +1,18 @@
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src/SPI.h:203:18:virtual void SPIClassRP2040::begin()	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp:149:6:0(uint8_t*, size_t)	48	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp:32:1:Adafruit_SPIDevice::Adafruit_SPIDevice(int8_t, uint32_t, BusIOBitOrder, uint8_t, arduino::SPIClass*)	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp:67:1:Adafruit_SPIDevice::Adafruit_SPIDevice(int8_t, int8_t, int8_t, int8_t, uint32_t, BusIOBitOrder, uint8_t)	8	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp:100:1:Adafruit_SPIDevice::~Adafruit_SPIDevice()	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp:110:6:bool Adafruit_SPIDevice::begin()	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp:149:6:void Adafruit_SPIDevice::transfer(uint8_t*, size_t)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp:277:9:uint8_t Adafruit_SPIDevice::transfer(uint8_t)	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp:287:6:void Adafruit_SPIDevice::beginTransaction()	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp:298:6:void Adafruit_SPIDevice::endTransaction()	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp:310:6:void Adafruit_SPIDevice::setChipSelect(int)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp:322:6:void Adafruit_SPIDevice::beginTransactionWithAssertingCS()	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp:331:6:void Adafruit_SPIDevice::endTransactionWithDeassertingCS()	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp:347:6:bool Adafruit_SPIDevice::write(const uint8_t*, size_t, const uint8_t*, size_t)	40	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp:406:6:bool Adafruit_SPIDevice::read(uint8_t*, size_t, uint8_t)	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp:442:6:bool Adafruit_SPIDevice::write_then_read(const uint8_t*, size_t, uint8_t*, size_t, uint8_t)	40	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp:506:6:bool Adafruit_SPIDevice::write_and_read(uint8_t*, size_t)	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_SPIDevice.cpp:512:1:cpp)	0	static

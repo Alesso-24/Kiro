@@ -1,0 +1,10 @@
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_I2CDevice.cpp:10:1:Adafruit_I2CDevice::Adafruit_I2CDevice(uint8_t, TwoWire*)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_I2CDevice.cpp:43:6:void Adafruit_I2CDevice::end()	8	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_I2CDevice.cpp:62:6:bool Adafruit_I2CDevice::detected()	8	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_I2CDevice.cpp:30:6:bool Adafruit_I2CDevice::begin(bool)	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_I2CDevice.cpp:102:6:bool Adafruit_I2CDevice::write(const uint8_t*, size_t, bool, const uint8_t*, size_t)	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_I2CDevice.cpp:196:6:bool Adafruit_I2CDevice::_read(uint8_t*, size_t, bool)	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_I2CDevice.cpp:183:6:bool Adafruit_I2CDevice::read(uint8_t*, size_t, bool)	32	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_I2CDevice.cpp:247:6:bool Adafruit_I2CDevice::write_then_read(const uint8_t*, size_t, uint8_t*, size_t, bool)	32	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_I2CDevice.cpp:261:9:uint8_t Adafruit_I2CDevice::address()	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_I2CDevice.cpp:270:6:bool Adafruit_I2CDevice::setSpeed(uint32_t)	8	static

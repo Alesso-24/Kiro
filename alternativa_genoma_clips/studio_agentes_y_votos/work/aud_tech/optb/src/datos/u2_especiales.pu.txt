@@ -1,0 +1,16 @@
+// U2 - pupilas especiales
+// nombre | rareza | prx pry pdx pdy ptilt pc1 pc2 | tipo
+Lucero            | common   | 17 17 10 10 0 0 0        | glint
+Mitad y mitad     | common   | 13 20 11 9 0 0 0         | split
+Media luna        | common   | 15 18 10 12 0 0 0        | halfmoon
+Anillo            | uncommon | 17 17 10 10 0 0 0        | ring
+Gato con brillo   | uncommon | 5.5 23 13 6 0 0 0.05     | glint
+Ovalo bicolor     | uncommon | 12 22 11 9 0 0 0.05      | glintsplit
+Luna menguante    | uncommon | 12 24 11 8 0.2 0 0       | halfmoon
+Gota bicolor      | uncommon | 12 21 11 10 0 0 0.4      | split
+Aro grande        | rare     | 21 21 8 11 0 0 0         | ring
+Rendija bicolor   | rare     | 5 24 13 6 0.3 0 0        | split
+Inclinada brillo  | rare     | 17 24 8 10 0.6 0.05 0    | glint
+Domo luna         | rare     | 19 20 9 12 0 0 0         | halfmoon
+Cometa            | mythic   | 16 23 8 10 -0.5 0.15 0.25 | glintsplit
+Eclipse           | mythic   | 20 24 8 10 0.35 0.3 0    | ring

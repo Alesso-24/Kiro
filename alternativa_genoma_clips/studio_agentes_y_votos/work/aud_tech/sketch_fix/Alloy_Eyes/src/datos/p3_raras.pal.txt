@@ -1,0 +1,41 @@
+// P3 - raras y miticas (40). Acento = 2.o tono del ojo; pupila legible sobre ojo Y acento.
+Algodon de azucar | rare | #FFB3DE | #4A1F6E | #9FE3FF
+Chicle explotado | rare | #FF5CB8 | #2E0A45 | #FFE14D
+Helado de fresa | rare | #FFC0D0 | #7A1540 | #FFF4D6
+Helado de pistache | rare | #B8E986 | #4A2210 | #FF9EB8
+Sorbete de mango | rare | #FFB02E | #5A1040 | #FF7A9A
+Atardecer en la playa | rare | #FF7A45 | #2E0F4A | #FFD23C
+Aurora boreal | rare | #4DF0B0 | #0B2A5A | #A58BFF
+Galaxia tierna | rare | #8A6CFF | #12062E | #FF8AD0
+Amanecer rosado | rare | #FFC2A8 | #6A2050 | #FFE6A0
+Musgo y rocio | rare | #8FBF5A | #1E2A0A | #DDF5C8
+Coral vivo | rare | #FF6F61 | #2E0A28 | #3FE0D0
+Lago de montana | rare | #3FB8D8 | #08244E | #8CF0D0
+Hojas de otono | rare | #E8742A | #2A0E04 | #FFD08A
+Rubi del dragon | rare | #E0245E | #2A000F | #FF9AB0
+Esmeralda real | rare | #1FBF7A | #02271C | #B6F5C8
+Opalo lechoso | rare | #E8F0FF | #3E2E94 | #FFC8E8
+Ambar antiguo | rare | #FFB300 | #2A1000 | #D9702A
+Neon retro | rare | #FF4FA0 | #240850 | #35E0F0
+Arcade nocturno | rare | #FFE600 | #2A0A50 | #FF5CB8
+Vaporwave | rare | #B38CFF | #2E0850 | #5FF2E0
+Mar y fuego | rare | #FF5A1F | #12062E | #20C8E0
+Gato de jade | rare | #B6F23A | #18002A | #3FA050
+Cereza con menta | rare | #FF3B5C | #2A0612 | #8AF5C8
+Limonada rosa | rare | #FFF07A | #6A1A48 | #FFA0C4
+Te de lavanda | rare | #C8A8FF | #2E0C58 | #FFE9A8
+Uva y durazno | rare | #8A4FD0 | #12062A | #FFB88F
+Piruleta acida | rare | #A6F000 | #240038 | #FF5CB0
+Cielo de tormenta | rare | #5C7CFA | #080C30 | #FFD54A
+Nova dorada | mythic | #FFD700 | #16002A | #FF2D55
+Ojo de dragon | mythic | #FF3A00 | #0E0018 | #FFD400
+Plasma electrico | mythic | #00F0FF | #16003A | #FF2ED8
+Veneno de hada | mythic | #7CFF00 | #24004A | #FF2EAA
+Eclipse solar | mythic | #FFF5D0 | #16002E | #FF6A00
+Cometa nevado | mythic | #E0FBFF | #32005E | #29B0FF
+Medianoche rosa | mythic | #FF1493 | #1A0030 | #00FFC6
+Oro y turquesa | mythic | #FFC400 | #30084E | #00DDBE
+Luna carmesi | mythic | #F5F0FF | #10002A | #E8104A
+Supernova violeta | mythic | #9D00FF | #0E0024 | #FFEA00
+Lava y hielo | mythic | #00C8A8 | #0A0A28 | #FF5A00
+Jardin de neon | mythic | #39FF14 | #320058 | #FF70D0

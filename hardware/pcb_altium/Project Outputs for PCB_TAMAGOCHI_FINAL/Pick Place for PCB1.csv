@@ -1,0 +1,30 @@
+Altium Designer Pick and Place Locations,,,,,,,
+C:\Users\Public\Documents\Altium\PCB_TAMAGOCHI_FINAL\Project Outputs for PCB_TAMAGOCHI_FINAL\Pick Place for PCB1.csv,,,,,,,
+,,,,,,,
+========================================================================================================================,,,,,,,
+File Design Information:,,,,,,,
+,,,,,,,
+Date:       31/10/26,,,,,,,
+Time:       20:04,,,,,,,
+Revision:   5da748b1a4b978395914b328b11a9776a1ec60e1,,,,,,,
+Variant:    No variations,,,,,,,
+Units used: mm,,,,,,,
+,,,,,,,
+Designator,Comment,Layer,Footprint,Center-X(mm),Center-Y(mm),Rotation,Description
+C4,Capacitor 470pF +/-20% 50V 0402,BottomLayer,CAPC0402(1005)60_L,59.055,64.955,90,"Chip Capacitor, 470pF +/-20%, 50V, 0402, Thickness 0.6 mm"
+J2,S2B-XH-A(LF)(SN),TopLayer,JST_S2B-PH-K-S(LF)(SN),45.466,54.954,180,"Connector Header Through Hole, Right Angle 2 position"
+J4,S2B-XH-A(LF)(SN),TopLayer,JST_S2B-PH-K-S(LF)(SN),67.9234,65.6315,180,"Connector Header Through Hole, Right Angle 2 position"
+J3,S2B-XH-A(LF)(SN),TopLayer,JST_S2B-PH-K-S(LF)(SN),61.759,77.978,270,"Connector Header Through Hole, Right Angle 2 position"
+U2,LIS3DHTR,TopLayer,XDCR_LIS3DHTR,71.882,54.61,270,"Accelerometer X, Y, Z Axis ±2g, 4g, 8g, 16g 0.5Hz ~ 625Hz 16-LGA (3x3)"
+XIAO,XIAO_RP2350,TopLayer,MODULE_XIAO_RP2350,60,53.0635,180,RP2350 Seeeduino XIAO - ARM Cortex-M33 MCU 32-Bit Embedded Evaluation Board
+R5,Resistor 953K +/-1 % 0402 63 mW,BottomLayer,RESC0402(1005)_L,54.991,64.955,90,"Chip Resistor, 953 kOhms, +/-1 %, 63 mW, -55 to 155 degC, 0402"
+R4,Resistor 953K +/-1 % 0402 63 mW,TopLayer,RESC0402(1005)_L,49.276,46.921,270,"Chip Resistor, 953 kOhms, +/-1 %, 63 mW, -55 to 155 degC, 0402"
+R3,Resistor 953K +/-1 % 0402 63 mW,BottomLayer,RESC0402(1005)_L,47.244,50.869,270,"Chip Resistor, 953 kOhms, +/-1 %, 63 mW, -55 to 155 degC, 0402"
+R2,Resistor 953K +/-1 % 0402 63 mW,BottomLayer,RESC0402(1005)_L,75.184,64.643,270,"Chip Resistor, 953 kOhms, +/-1 %, 63 mW, -55 to 155 degC, 0402"
+R1,Resistor 953K +/-1 % 0402 63 mW,BottomLayer,RESC0402(1005)_L,75.184,61.526,90,"Chip Resistor, 953 kOhms, +/-1 %, 63 mW, -55 to 155 degC, 0402"
+Q1,BSS84LT1G,TopLayer,ONSC-SOT-23-3-318-08_V,57.912,70.231,90,"Power MOSFET Single P-Channel, -50 V, 10 Ohm, 3-Pin SOT-23, Pb-Free, Tape and Reel"
+J1,DS1021-1X7SF162-B,TopLayer,CONNFLY_DS1021-1X7SF162-B,60,86.57,0,Pin header; pin strips; male; PIN: 7; straight; 2.54mm; THT; 1x7
+C5,Capacitor 470pF +/-20% 50V 0402,TopLayer,CAPC0402(1005)60_L,75.946,53.017,90,"Chip Capacitor, 470pF +/-20%, 50V, 0402, Thickness 0.6 mm"
+C3,Capacitor 470pF +/-20% 50V 0402,TopLayer,CAPC0402(1005)60_L,75.946,56.573,90,"Chip Capacitor, 470pF +/-20%, 50V, 0402, Thickness 0.6 mm"
+C2,Capacitor 470pF +/-20% 50V 0402,BottomLayer,CAPC0402(1005)60_L,62.992,64.955,90,"Chip Capacitor, 470pF +/-20%, 50V, 0402, Thickness 0.6 mm"
+C1,Capacitor 470pF +/-20% 50V 0402,BottomLayer,CAPC0402(1005)60_L,62.992,69.538,90,"Chip Capacitor, 470pF +/-20%, 50V, 0402, Thickness 0.6 mm"

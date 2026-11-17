@@ -1,0 +1,22 @@
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:39:9:ssize_t _write(int, const void*, size_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:53:5:int _chown(const char*, uid_t, gid_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:63:5:int _close(int)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:69:16:int _execve(char*, char**, char**)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:77:16:int _fork()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:84:5:int _fstat(int, stat*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:91:16:int _getpid()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:98:16:int _gettimeofday(timeval*, void*)	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:108:16:int settimeofday(const timeval*, const timezone*)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:121:17:void __setSystemTime(long long unsigned int, long unsigned int)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:129:5:int _isatty(int)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:135:16:int _kill(int, int)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:144:5:int _link(char*, char*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:153:5:int _lseek(int, int, int)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:163:5:int _open(char*, int, int)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:173:5:int _read(int, char*, int)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:183:5:int _readlink(const char*, char*, size_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:193:5:int _stat(const char*, stat*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:202:5:int _symlink(const char*, const char*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:209:20:clock_t _times(tms*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:217:5:int _unlink(char*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\posix.cpp:223:16:int _wait(int*)	0	static

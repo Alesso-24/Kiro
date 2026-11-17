@@ -1,0 +1,183 @@
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip_wrap.cpp:54:10:void __lwip_assert_core_locked()	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip_wrap.cpp:68:19:long unsigned int __lwip_rand()	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip_wrap.cpp:73:10:void __wrap_lwip_init()	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:2:6:u8_t __wrap_pbuf_add_header(pbuf*, size_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:15:6:u8_t __wrap_pbuf_add_header_force(pbuf*, size_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:28:15:pbuf* __wrap_pbuf_alloc(pbuf_layer, u16_t, pbuf_type)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:41:15:pbuf* __wrap_pbuf_alloc_reference(void*, u16_t, pbuf_type)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:69:6:void __wrap_pbuf_cat(pbuf*, pbuf*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:81:6:void __wrap_pbuf_chain(pbuf*, pbuf*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:93:7:u16_t __wrap_pbuf_clen(const pbuf*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:106:15:pbuf* __wrap_pbuf_clone(pbuf_layer, pbuf_type, pbuf*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:119:15:pbuf* __wrap_pbuf_coalesce(pbuf*, pbuf_layer)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:132:7:err_t __wrap_pbuf_copy(pbuf*, const pbuf*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:145:7:u16_t __wrap_pbuf_copy_partial(const pbuf*, void*, u16_t, u16_t)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:158:7:err_t __wrap_pbuf_copy_partial_pbuf(pbuf*, const pbuf*, u16_t, u16_t)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:171:15:pbuf* __wrap_pbuf_dechain(pbuf*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:199:6:u8_t __wrap_pbuf_free(pbuf*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:212:15:pbuf* __wrap_pbuf_free_header(pbuf*, u16_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:225:6:void __wrap_pbuf_free_ooseq()	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:237:6:u8_t __wrap_pbuf_get_at(const pbuf*, u16_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:250:8:void* __wrap_pbuf_get_contiguous(const pbuf*, void*, size_t, u16_t, u16_t)	40	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:263:6:u8_t __wrap_pbuf_header(pbuf*, s16_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:276:6:u8_t __wrap_pbuf_header_force(pbuf*, s16_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:289:7:u16_t __wrap_pbuf_memcmp(const pbuf*, u16_t, const void*, u16_t)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:302:7:u16_t __wrap_pbuf_memfind(const pbuf*, const void*, u16_t, u16_t)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:315:6:void __wrap_pbuf_put_at(pbuf*, u16_t, u8_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:327:6:void __wrap_pbuf_realloc(pbuf*, u16_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:339:6:void __wrap_pbuf_ref(pbuf*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:351:6:u8_t __wrap_pbuf_remove_header(pbuf*, size_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:364:15:pbuf* __wrap_pbuf_skip(pbuf*, u16_t, u16_t*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:391:7:u16_t __wrap_pbuf_strstr(const pbuf*, const char*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:404:7:err_t __wrap_pbuf_take(pbuf*, const void*, u16_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:417:7:err_t __wrap_pbuf_take_at(pbuf*, const void*, u16_t, u16_t)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_pbuf_functions.inc:430:5:int __wrap_pbuf_try_get_at(const pbuf*, u16_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_raw_functions.inc:2:7:err_t __wrap_raw_bind(raw_pcb*, const ip_addr_t*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_raw_functions.inc:15:6:void __wrap_raw_bind_netif(raw_pcb*, const netif*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_raw_functions.inc:27:7:err_t __wrap_raw_connect(raw_pcb*, const ip_addr_t*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_raw_functions.inc:40:6:void __wrap_raw_disconnect(raw_pcb*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_raw_functions.inc:52:18:raw_pcb* __wrap_raw_new(u8_t)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_raw_functions.inc:65:18:raw_pcb* __wrap_raw_new_ip_type(u8_t, u8_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_raw_functions.inc:78:6:void __wrap_raw_recv(raw_pcb*, raw_recv_fn, void*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_raw_functions.inc:90:6:void __wrap_raw_remove(raw_pcb*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_raw_functions.inc:102:7:err_t __wrap_raw_send(raw_pcb*, pbuf*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_raw_functions.inc:115:7:err_t __wrap_raw_sendto(raw_pcb*, pbuf*, const ip_addr_t*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_raw_functions.inc:128:7:err_t __wrap_raw_sendto_if_src(raw_pcb*, pbuf*, const ip_addr_t*, netif*, const ip_addr_t*)	40	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:17:6:void __wrap_tcp_abort(tcp_pcb*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:29:6:void __wrap_tcp_accept(tcp_pcb*, tcp_accept_fn)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:41:6:void __wrap_tcp_arg(tcp_pcb*, void*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:53:6:void __wrap_tcp_backlog_accepted(tcp_pcb*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:65:6:void __wrap_tcp_backlog_delayed(tcp_pcb*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:77:7:err_t __wrap_tcp_bind(tcp_pcb*, const ip_addr_t*, u16_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:90:6:void __wrap_tcp_bind_netif(tcp_pcb*, const netif*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:102:7:err_t __wrap_tcp_close(tcp_pcb*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:115:7:err_t __wrap_tcp_connect(tcp_pcb*, const ip_addr_t*, u16_t, tcp_connected_fn)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:128:6:void __wrap_tcp_err(tcp_pcb*, tcp_err_fn)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:198:18:tcp_pcb* __wrap_tcp_listen_with_backlog(tcp_pcb*, u8_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:211:18:tcp_pcb* __wrap_tcp_listen_with_backlog_and_err(tcp_pcb*, u8_t, err_t*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:224:18:tcp_pcb* __wrap_tcp_new()	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:237:18:tcp_pcb* __wrap_tcp_new_ip_type(u8_t)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:250:7:err_t __wrap_tcp_output(tcp_pcb*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:263:6:void __wrap_tcp_poll(tcp_pcb*, tcp_poll_fn, u8_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:275:6:void __wrap_tcp_recv(tcp_pcb*, tcp_recv_fn)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:287:6:void __wrap_tcp_recved(tcp_pcb*, u16_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:299:6:void __wrap_tcp_sent(tcp_pcb*, tcp_sent_fn)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:311:6:void __wrap_tcp_setprio(tcp_pcb*, u8_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:323:7:err_t __wrap_tcp_shutdown(tcp_pcb*, int, int)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:336:7:err_t __wrap_tcp_tcp_get_tcp_addrinfo(tcp_pcb*, int, ip_addr_t*, u16_t*)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_tcp_functions.inc:349:7:err_t __wrap_tcp_write(tcp_pcb*, const void*, u16_t, u8_t)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_udp_functions.inc:2:7:err_t __wrap_udp_bind(udp_pcb*, const ip_addr_t*, u16_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_udp_functions.inc:15:6:void __wrap_udp_bind_netif(udp_pcb*, const netif*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_udp_functions.inc:27:7:err_t __wrap_udp_connect(udp_pcb*, const ip_addr_t*, u16_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_udp_functions.inc:54:6:void __wrap_udp_disconnect(udp_pcb*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_udp_functions.inc:66:6:void __wrap_udp_init()	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_udp_functions.inc:78:6:void __wrap_udp_input(pbuf*, netif*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_udp_functions.inc:90:6:void __wrap_udp_netif_ip_addr_changed(const ip_addr_t*, const ip_addr_t*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_udp_functions.inc:102:18:udp_pcb* __wrap_udp_new()	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_udp_functions.inc:115:18:udp_pcb* __wrap_udp_new_ip_type(u8_t)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_udp_functions.inc:128:6:void __wrap_udp_recv(udp_pcb*, udp_recv_fn, void*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_udp_functions.inc:140:6:void __wrap_udp_remove(udp_pcb*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_udp_functions.inc:152:7:err_t __wrap_udp_send(udp_pcb*, pbuf*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_udp_functions.inc:180:7:err_t __wrap_udp_sendto(udp_pcb*, pbuf*, const ip_addr_t*, u16_t)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_udp_functions.inc:208:7:err_t __wrap_udp_sendto_if(udp_pcb*, pbuf*, const ip_addr_t*, u16_t, netif*)	40	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_udp_functions.inc:236:7:err_t __wrap_udp_sendto_if_src(udp_pcb*, pbuf*, const ip_addr_t*, u16_t, netif*, const ip_addr_t*)	40	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:2:16:netif* __wrap_netif_add(netif*, const ip4_addr_t*, const ip4_addr_t*, const ip4_addr_t*, void*, netif_init_fn, netif_input_fn)	48	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:44:16:netif* __wrap_netif_add_noaddr(netif*, void*, netif_init_fn, netif_input_fn)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:57:6:u8_t __wrap_netif_alloc_client_data_id()	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:84:16:netif* __wrap_netif_find(const char*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:97:16:netif* __wrap_netif_get_by_index(u8_t)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:140:8:char* __wrap_netif_index_to_name(u8_t, char*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:153:6:void __wrap_netif_init()	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:165:7:err_t __wrap_netif_input(pbuf*, netif*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:249:6:u8_t __wrap_netif_name_to_index(const char*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:290:6:void __wrap_netif_remove(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:316:6:void __wrap_netif_set_addr(netif*, const ip4_addr_t*, const ip4_addr_t*, const ip4_addr_t*)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:328:6:void __wrap_netif_set_default(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:340:6:void __wrap_netif_set_down(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:352:6:void __wrap_netif_set_gw(netif*, const ip4_addr_t*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:364:6:void __wrap_netif_set_ipaddr(netif*, const ip4_addr_t*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:376:6:void __wrap_netif_set_link_callback(netif*, netif_status_callback_fn)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:388:6:void __wrap_netif_set_link_down(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:400:6:void __wrap_netif_set_link_up(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:412:6:void __wrap_netif_set_netmask(netif*, const ip4_addr_t*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:438:6:void __wrap_netif_set_status_callback(netif*, netif_status_callback_fn)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_netif_functions.inc:450:6:void __wrap_netif_set_up(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_dns_functions.inc:2:7:err_t __wrap_dns_gethostbyname(const char*, ip_addr_t*, dns_found_callback, void*)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_dns_functions.inc:15:7:err_t __wrap_dns_gethostbyname_addrtype(const char*, ip_addr_t*, dns_found_callback, void*, u8_t)	40	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_dns_functions.inc:28:19:const ip_addr_t* __wrap_dns_getserver(u8_t)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_dns_functions.inc:41:6:void __wrap_dns_init()	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_dns_functions.inc:113:6:void __wrap_dns_setserver(u8_t, const ip_addr_t*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_dns_functions.inc:125:6:void __wrap_dns_tmr()	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_dhcp_functions.inc:2:6:void __wrap_dhcp_cleanup(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_dhcp_functions.inc:14:6:void __wrap_dhcp_coarse_tmr()	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_dhcp_functions.inc:26:6:void __wrap_dhcp_fine_tmr()	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_dhcp_functions.inc:38:6:void __wrap_dhcp_inform(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_dhcp_functions.inc:50:6:void __wrap_dhcp_network_changed_link_up(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_dhcp_functions.inc:62:7:err_t __wrap_dhcp_release(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_dhcp_functions.inc:75:6:void __wrap_dhcp_release_and_stop(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_dhcp_functions.inc:87:7:err_t __wrap_dhcp_renew(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_dhcp_functions.inc:114:6:void __wrap_dhcp_set_struct(netif*, dhcp*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_dhcp_functions.inc:126:7:err_t __wrap_dhcp_start(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_dhcp_functions.inc:139:6:void __wrap_dhcp_stop(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_dhcp_functions.inc:151:6:u8_t __wrap_dhcp_supplied_address(const netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_igmp_functions.inc:2:6:void __wrap_igmp_init()	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_igmp_functions.inc:14:6:void __wrap_igmp_input(pbuf*, netif*, const ip4_addr_t*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_igmp_functions.inc:26:7:err_t __wrap_igmp_joingroup(const ip4_addr_t*, const ip4_addr_t*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_igmp_functions.inc:39:7:err_t __wrap_igmp_joingroup_netif(netif*, const ip4_addr_t*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_igmp_functions.inc:52:7:err_t __wrap_igmp_leavegroup(const ip4_addr_t*, const ip4_addr_t*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_igmp_functions.inc:65:7:err_t __wrap_igmp_leavegroup_netif(netif*, const ip4_addr_t*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_igmp_functions.inc:78:21:igmp_group* __wrap_igmp_lookfor_group(netif*, const ip4_addr_t*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_igmp_functions.inc:91:6:void __wrap_igmp_report_groups(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_igmp_functions.inc:103:7:err_t __wrap_igmp_start(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_igmp_functions.inc:116:7:err_t __wrap_igmp_stop(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_igmp_functions.inc:129:6:void __wrap_igmp_tmr()	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_mdns_functions.inc:2:8:void* __wrap_mdns_get_service_txt_userdata(netif*, s8_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_mdns_functions.inc:15:7:err_t __wrap_mdns_resp_add_netif(netif*, const char*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_mdns_functions.inc:28:6:s8_t __wrap_mdns_resp_add_service(netif*, const char*, const char*, mdns_sd_proto, u16_t, service_get_txt_fn_t, void*)	48	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_mdns_functions.inc:41:7:err_t __wrap_mdns_resp_add_service_txtitem(mdns_service*, const char*, u8_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_mdns_functions.inc:54:6:void __wrap_mdns_resp_announce(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_mdns_functions.inc:66:7:err_t __wrap_mdns_resp_del_service(netif*, u8_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_mdns_functions.inc:79:6:void __wrap_mdns_resp_init()	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_mdns_functions.inc:91:5:int __wrap_mdns_resp_netif_active(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_mdns_functions.inc:104:6:void __wrap_mdns_resp_register_name_result_cb(mdns_name_result_cb_t)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_mdns_functions.inc:116:7:err_t __wrap_mdns_resp_remove_netif(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_mdns_functions.inc:129:7:err_t __wrap_mdns_resp_rename_netif(netif*, const char*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_mdns_functions.inc:142:7:err_t __wrap_mdns_resp_rename_service(netif*, u8_t, const char*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_mdns_functions.inc:155:6:void __wrap_mdns_resp_restart(netif*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_mdns_functions.inc:167:6:void __wrap_mdns_resp_restart_delay(netif*, uint32_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_mdns_functions.inc:179:7:err_t __wrap_mdns_search_service(const char*, const char*, mdns_sd_proto, netif*, search_result_fn_t, void*, u8_t*)	48	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_mdns_functions.inc:192:6:void __wrap_mdns_search_stop(u8_t)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_sntp_functions.inc:2:6:u8_t __wrap_sntp_enabled()	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_sntp_functions.inc:15:6:u8_t __wrap_sntp_getkodreceived(u8_t)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_sntp_functions.inc:28:6:u8_t __wrap_sntp_getoperatingmode()	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_sntp_functions.inc:41:6:u8_t __wrap_sntp_getreachability(u8_t)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_sntp_functions.inc:54:19:const ip_addr_t* __wrap_sntp_getserver(u8_t)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_sntp_functions.inc:67:14:const char* __wrap_sntp_getservername(u8_t)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_sntp_functions.inc:80:6:void __wrap_sntp_init()	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_sntp_functions.inc:106:6:void __wrap_sntp_setoperatingmode(u8_t)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_sntp_functions.inc:118:6:void __wrap_sntp_setserver(u8_t, const ip_addr_t*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_sntp_functions.inc:130:6:void __wrap_sntp_setservername(u8_t, const char*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_sntp_functions.inc:142:6:void __wrap_sntp_stop()	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_ethernet_functions.inc:2:7:err_t __wrap_ethernet_input(pbuf*, netif*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_ethernet_functions.inc:15:7:err_t __wrap_ethernet_output(netif*, pbuf*, const eth_addr*, const eth_addr*, u16_t)	40	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_timeouts_functions.inc:16:6:void __wrap_sys_check_timeouts()	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_timeouts_functions.inc:28:6:void __wrap_sys_restart_timeouts()	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_timeouts_functions.inc:41:6:void __wrap_sys_timeout(u32_t, sys_timeout_handler, void*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_timeouts_functions.inc:83:6:void __wrap_sys_timeouts_init()	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_timeouts_functions.inc:95:7:u32_t __wrap_sys_timeouts_sleeptime()	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/cores/rp2040/lwip-wrappers/wrap_timeouts_functions.inc:108:6:void __wrap_sys_untimeout(sys_timeout_handler, void*)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip_wrap.cpp:157:10:void lwip_callback(void (*)(void*), void*, __callback_req*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip_wrap.cpp:176:10:bool __wrap_cyw43_driver_init(async_context_t*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip_wrap.cpp:179:10:void __wrap_cyw43_driver_deinit(async_context_t*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip_wrap.cpp:182:10:void __wrap_cyw43_thread_enter()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip_wrap.cpp:185:10:void __wrap_cyw43_thread_exit()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip_wrap.cpp:188:10:void __wrap_cyw43_thread_lock_check()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip_wrap.cpp:191:10:void _wrap_cyw43_await_background_or_timeout_us(uint32_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip_wrap.cpp:194:10:void __wrap_cyw43_delay_ms(uint32_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip_wrap.cpp:197:10:void __wrap_cyw43_delay_us(uint32_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip_wrap.cpp:200:10:void __wrap_cyw43_post_poll_hook()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip_wrap.cpp:203:10:void __wrap_cyw43_await_background_or_timeout_us(uint32_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip_wrap.cpp:206:10:void __wrap_cyw43_schedule_internal_poll_dispatch(void (*)())	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip_wrap.cpp:209:10:void __wrap_cyw43_arch_gpio_put(uint, bool)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip_wrap.cpp:214:31:const btstack_run_loop_t* __wrap_btstack_run_loop_async_context_get_instance(async_context_t*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\lwip_wrap.cpp:223:6:void lwip_callback(std::function<void()>)	8	static

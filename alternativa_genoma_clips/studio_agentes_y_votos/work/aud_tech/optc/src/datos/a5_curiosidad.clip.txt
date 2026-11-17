@@ -1,0 +1,323 @@
+// A5 animador: curiosidad / sorpresa / juego (TAG 5) y micro-acciones neutras (TAG 0)
+
+clip ladeo_curioso mirror expr=5
+  0:    tilt=0
+  120:  tilt=-0.06 sy=-0.04 sx=0.03
+  330:  tilt=0.30 ox=5 oy=-2 gx=0.35 gy=-0.1 sy=0.06 sx=-0.03 ps=0.15
+  520:  tilt=0.25 ox=4 gx=0.3
+  1050: tilt=0.27 ox=4 gx=0.3
+  1250: tilt=0.04 ox=0 oy=0 gx=0 gy=0 sy=0 sx=0 ps=0
+  1500: tilt=0
+end
+
+clip asomarse expr=5
+  0:    sx=0
+  150:  sx=0.04 sy=-0.05 oy=3
+  430:  sx=0.20 sy=0.22 oy=-3 ps=0.2 gy=0.1 lt=-0.12
+  620:  sx=0.17 sy=0.18 oy=-2 ps=0.2
+  1000: sx=0.18 sy=0.2 oy=-2 gy=0.05
+  1300: sx=0 sy=0 oy=0 ps=0 gy=0 lt=0
+end
+
+clip mira_que_pasa mirror expr=5
+  0:    gx=0
+  110:  gx=-0.2 ox=-2
+  270:  gx=-1 ox=-7 ps=0.1 sy=0.05 tilt=-0.05
+  480:  gx=-1 ox=-7 tilt=-0.05
+  740:  gx=1 ox=7 tilt=0.08
+  1030: gx=1 ox=8 tilt=0.09
+  1280: gx=0.3 ox=2 tilt=0.02 ps=0 sy=0
+  1550: gx=0 ox=0 tilt=0
+end
+
+clip sigue_mosca mirror expr=5
+  0:    gx=0
+  150:  gx=-0.5 gy=-0.6 tilt=-0.03
+  350:  gx=0.6 gy=-0.8 tilt=0.04 ox=1
+  550:  gx=0.9 gy=0 tilt=0.06 ox=2 lt=0.1
+  750:  gx=0.2 gy=0.5 ox=0
+  950:  gx=-0.7 gy=0.2 tilt=-0.04 ox=-2
+  1150: gx=-0.2 gy=-0.7 ox=-1
+  1350: gx=0.5 gy=-0.3 ox=2 lt=0.12 tilt=0.05
+  1580: gx=0.3 gy=-0.2 ev=blink
+  1850: gx=0 gy=0 ox=0 tilt=0 lt=0
+end
+
+clip eh_doble mirror expr=5
+  0:    lt=0
+  70:   lt=0.95 sy=-0.05 sx=0.04
+  150:  lt=0 sy=0 sx=0
+  240:  lt=0
+  310:  lt=0.95 tilt=0.05 sy=-0.05 sx=0.04
+  410:  lt=0 tilt=0.28 ox=4 oy=-2 ps=0.15 sy=0.06 sx=-0.03 gx=0.3
+  720:  tilt=0.26 ox=4 gx=0.3
+  1050: tilt=0 ox=0 oy=0 ps=0 sy=0 sx=0 gx=0
+end
+
+clip sorpresa_pop expr=5
+  0:    sy=0
+  70:   sy=-0.12 sx=0.08 oy=3 lt=0.15
+  170:  sy=0.30 sx=0.12 oy=-8 ps=-0.4 lt=-0.2 ev=lines
+  310:  sy=0.18 sx=0.08 oy=-5 ps=-0.35 lt=-0.15
+  580:  sy=0.20 sx=0.06 oy=-5 ps=-0.35
+  870:  sy=0.05 sx=0 oy=-1 ps=-0.1 lt=0
+  1150: sy=0 sx=0 oy=0 ps=0
+end
+
+clip susto_risa expr=5
+  0:    sy=0
+  70:   sy=-0.14 sx=0.10 oy=4
+  160:  sy=0.30 sx=0.10 oy=-10 ps=-0.5 lt=-0.2 ev=lines
+  330:  sy=0.22 sx=0.06 oy=-6 ps=-0.5 ox=2
+  420:  ox=-2
+  520:  ox=1 ps=-0.4
+  680:  sy=-0.20 sx=0.14 oy=3 lb=0.45 lt=0.1 ps=0 ox=0 ev=spark
+  800:  oy=-3 sy=0.02
+  920:  oy=2 sy=-0.12
+  1040: oy=-1 sy=-0.02
+  1320: sy=0 sx=0 oy=0 lb=0 lt=0
+end
+
+clip olfatear expr=5
+  0:    oy=0
+  100:  oy=-5 sy=0.12 sx=-0.05 gy=-0.6 gx=0.3 tilt=0.06
+  180:  oy=1 sy=0 sx=0
+  270:  oy=-5 sy=0.12 sx=-0.05 gx=-0.2
+  350:  oy=1 sy=0 sx=0
+  440:  oy=-7 sy=0.16 sx=-0.07 gx=0.4 tilt=0.1
+  540:  oy=1 sy=0 sx=0
+  780:  gy=0.25 gx=0.1 lb=0.2 oy=2 tilt=0.03
+  1050: gy=0 gx=0 lb=0 oy=0 tilt=0
+end
+
+clip estornudo expr=5
+  0:    oy=0
+  200:  oy=-4 sy=0.14 sx=-0.04 lt=-0.1 ps=0.2 tilt=-0.08
+  420:  oy=-7 sy=0.22 sx=-0.06 tilt=-0.12 lt=0
+  560:  oy=-8 sy=0.25 sx=-0.07 lt=0.2
+  650:  lt=0.95 sy=-0.28 sx=0.20 oy=9 tilt=0.10 ps=0 ev=dots
+  770:  lt=1 sy=-0.2 sx=0.15 oy=11 tilt=0.06 ox=2
+  880:  ox=-2 oy=8
+  1020: lt=0.6 sy=0.04 sx=0 oy=0 ox=0 tilt=0
+  1200: lt=0.25 sy=0
+  1450: lt=0 oy=0
+end
+
+clip hipo expr=0
+  0:    sy=0
+  50:   sy=-0.07 sx=0.05 oy=1
+  110:  sy=0.24 sx=-0.09 oy=-8 lt=-0.1 ps=-0.1
+  230:  sy=-0.06 sx=0.04 oy=2 lt=0 ps=0
+  330:  sy=0 sx=0 oy=0
+  800:  sy=0 oy=0
+  860:  sy=-0.06 sx=0.04 oy=1
+  920:  sy=0.2 sx=-0.07 oy=-6 ps=-0.08
+  1040: sy=-0.04 oy=1 ps=0
+  1270: sy=0 sx=0 oy=0
+end
+
+clip mira_estrella mirror expr=5
+  0:    gy=0
+  130:  oy=2 sy=-0.04
+  390:  gy=-0.9 gx=0.35 oy=-4 sy=0.14 sx=0.06 ps=0.3 lt=-0.15 tilt=-0.05 ev=star
+  600:  ps=0.4
+  820:  ps=0.25 ev=spark
+  1100: gx=0.4 ps=0.35
+  1500: gy=-0.4 gx=0.2 ps=0.1 sy=0.05 oy=-1 lt=0 tilt=0
+  1850: gy=0 gx=0 ps=0 sy=0 sx=0 oy=0
+end
+
+clip descubrir expr=5
+  0:    ps=0
+  130:  sy=-0.06 sx=0.04 gy=0.3 oy=2
+  360:  gy=0.5 gx=0.2 ps=0.5 sx=0.12 sy=0.16 oy=-2 lt=-0.15 ev=spark
+  560:  ps=0.6 sy=0.2 sx=0.1
+  760:  ps=0.55 gy=0.4
+  960:  ps=0.6 lb=0.12 ev=sparks
+  1230: ps=0.2 lb=0.05 oy=1 sx=0.03 sy=0.04
+  1550: ps=0 lb=0 oy=0 sx=0 sy=0 gx=0 gy=0 lt=0
+end
+
+clip asentir_dos expr=0
+  0:    oy=0
+  120:  oy=-3 gy=-0.1
+  260:  oy=12 lt=0.18 sy=-0.07 sx=0.04 gy=0.4
+  400:  oy=-3 lt=0 sy=0.02 sx=0 gy=0
+  520:  oy=10 lt=0.15 sy=-0.05 gy=0.35
+  680:  oy=-1 lt=0 sy=0 sx=0 gy=0
+  920:  oy=0
+end
+
+clip negar mirror expr=0
+  0:    ox=0
+  100:  ox=4
+  230:  ox=-12 tilt=-0.12 gx=-0.6 lt=0.12
+  380:  ox=12 tilt=0.12 gx=0.6
+  520:  ox=-9 tilt=-0.09 gx=-0.5
+  660:  ox=5 tilt=0.04 gx=0.2
+  860:  ox=0 tilt=0 gx=0 lt=0
+end
+
+clip encoger_hombros mirror expr=0
+  0:    oy=0
+  130:  oy=3 sy=0.04
+  330:  oy=-6 sy=-0.12 sx=0.10 lb=0.25 lt=0.15 tilt=0.10 gx=0.3 gy=-0.2
+  700:  oy=-6 sy=-0.12 sx=0.10 lb=0.25 lt=0.15 tilt=0.10 gx=0.3 gy=-0.2
+  1000: oy=2 sy=0 sx=0 lb=0 lt=0 tilt=-0.03 gx=0 gy=0
+  1300: oy=0 tilt=0
+end
+
+clip guino_amigo mirror expr=5
+  0:    ltr=0
+  100:  sy=0.04 ps=0.05
+  240:  ltr=0.62 lbr=0.28 tilt=0.08 ox=-1 sy=0.05 ev=wink
+  350:  ltr=0.62 lbr=0.28 ev=spark
+  700:  ltr=0.62 lbr=0.28 tilt=0.08
+  900:  ltr=0.3 lbr=0.08 tilt=0.03 ps=0
+  1050: ltr=0 lbr=0 tilt=0 ox=0 sy=0
+end
+
+clip parpadeo_doble expr=0
+  0:    lt=0
+  60:   lt=0.95 sy=-0.05 sx=0.04
+  130:  lt=0 sy=0 sx=0
+  200:  lt=0
+  270:  lt=0.95 sy=-0.05 sx=0.04
+  350:  lt=0 sy=0 sx=0
+  450:  lt=0
+end
+
+clip parpadeo_confianza expr=0
+  0:    lt=0
+  250:  lt=0.5 lb=0.15
+  520:  lt=0.78 lb=0.3 sy=-0.06 sx=0.04 oy=2
+  760:  lt=0.78 lb=0.3 oy=2
+  1050: lt=0.4 lb=0.1 oy=1
+  1350: lt=0 lb=0 sy=0 sx=0 oy=0
+  1500: lt=0
+end
+
+clip estirar_ojos expr=0
+  0:    sy=0
+  180:  sy=-0.06 sx=0.05
+  520:  sy=0.32 sx=-0.14 oy=-6 lt=0.2
+  800:  sy=0.34 sx=-0.15 lt=0.55
+  1000: lt=1 sy=-0.15 sx=0.14 oy=3
+  1250: lt=1
+  1500: lt=0.3 sy=0.05 sx=0 oy=0
+  1800: lt=0 sy=0
+end
+
+clip mirada_reojo mirror expr=0
+  0:    gx=0
+  120:  gx=-0.1
+  300:  gx=0.95 ltl=0.3 ltr=0.22 sy=-0.08 sx=0.05 ox=3 tilt=0.04
+  900:  gx=0.95 ltl=0.3 ltr=0.22 sy=-0.08 sx=0.05 ox=3 tilt=0.04
+  1150: gx=0.3 ltl=0.1 ltr=0.08 ox=1
+  1450: gx=0 ltl=0 ltr=0 sy=0 sx=0 ox=0 tilt=0
+end
+
+clip escondidas mirror expr=5
+  0:    lt=0
+  120:  lt=0.3 oy=2
+  260:  lt=1 lb=0.3 sy=-0.10 sx=0.08
+  700:  lt=1 lb=0.3
+  880:  ltl=0.5 ltr=1 gx=0.5
+  1080: ltl=0.4 ltr=1
+  1250: ltl=-0.1 ltr=-0.1 lb=0 sy=0.10 sx=0 oy=-5 ps=0.3 gx=0 ev=spark
+  1480: ltl=0 ltr=0 sy=0.03 oy=-1 ps=0.1
+  1750: sy=0 oy=0 ps=0
+end
+
+clip rebote_pelota mirror expr=5
+  0:    oy=0
+  70:   sy=-0.12 sx=0.10 oy=3 gy=0.3
+  230:  sy=0.18 sx=-0.08 oy=-14 gy=-0.5 ox=2 gx=0.2
+  390:  sy=-0.14 sx=0.12 oy=4 gy=0.5 ox=4 gx=0.4
+  500:  sy=0.10 sx=-0.05 oy=-8 gy=-0.3 ox=6 gx=0.5
+  600:  sy=-0.08 sx=0.07 oy=3 gy=0.4 ox=7
+  680:  sy=0.05 oy=-4 gy=-0.1 ox=7
+  760:  sy=-0.04 sx=0.03 oy=1 gy=0.2 ox=6 gx=0.3
+  1000: sy=0 sx=0 oy=0 gy=0 ox=0 gx=0
+end
+
+clip perseguir_cola mirror expr=5
+  0:    ox=0
+  150:  ox=-4 oy=3 gx=-0.6
+  330:  ox=8 oy=-4 gx=0.9 gy=-0.3 tilt=0.2
+  520:  ox=10 oy=5 gx=0.5 gy=0.7 tilt=0.35
+  700:  ox=0 oy=8 gx=-0.6 gy=0.8 tilt=0.2
+  880:  ox=-9 oy=0 gx=-0.9 gy=0 tilt=-0.2
+  1060: ox=-4 oy=-5 gx=-0.3 gy=-0.5 tilt=-0.3
+  1240: ox=6 oy=-3 gx=0.7 gy=-0.2 tilt=0.1 lt=0.1
+  1440: ox=4 oy=4 gx=0.4 gy=0.4 tilt=0.05
+  1700: ox=-2 oy=1 gx=-0.2 gy=0 tilt=-0.05 lt=0
+  1950: ox=0 oy=0 gx=0 tilt=0
+end
+
+clip timida_acerca mirror expr=5
+  0:    sx=0
+  300:  sx=0.10 sy=0.12 oy=-2 gx=0.3 ps=0.15
+  520:  sx=0.16 sy=0.20 oy=-4 gx=0.4
+  690:  sx=0.16 sy=0.20 oy=-4 gx=0.4
+  840:  sx=-0.08 sy=-0.08 oy=4 lt=0.3 gx=-0.6 ps=-0.1
+  1060: sx=-0.10 sy=-0.12 oy=5 lt=0.35 gx=-0.7 gy=0.4 tilt=0.12
+  1360: sx=-0.09 sy=-0.11 oy=5 lt=0.3 gx=-0.5 gy=0.4 tilt=0.1
+  1660: sx=-0.03 sy=-0.04 oy=2 lt=0.1 gx=-0.1 gy=0.1 tilt=0.03
+  1950: sx=0 sy=0 oy=0 lt=0 gx=0 gy=0 tilt=0 ps=0
+end
+
+clip mareo_jugueton mirror expr=5
+  0:    tilt=0
+  120:  tilt=0.2 ox=-4
+  300:  tilt=-0.3 ox=7 gx=0.8 gy=-0.6 lt=0.15
+  480:  tilt=0.35 ox=-8 gx=0 gy=0.9
+  660:  tilt=-0.35 ox=8 gx=-0.9 gy=-0.2
+  840:  tilt=0.3 ox=-6 gx=0.2 gy=-0.9
+  1020: tilt=-0.2 ox=5 gx=0.8 gy=0.2 ev=star
+  1220: tilt=0.12 ox=-3 gx=-0.3 ps=-0.2 lt=0.1
+  1450: tilt=-0.05 ox=1 gx=0 gy=0 ps=0 lt=0
+  1700: tilt=0 ox=0
+end
+
+clip ta_da mirror expr=5
+  0:    sy=0
+  130:  sy=-0.20 sx=0.14 oy=5 lt=0.1
+  300:  sy=0.30 sx=-0.10 oy=-13 lt=-0.1 ps=0.2 ev=sparks
+  440:  sy=-0.10 sx=0.08 oy=2 lb=0.3 lt=0 ev=star
+  570:  sy=0.05 sx=0 oy=-3 lb=0.4 tilt=0.1
+  1000: sy=0.04 oy=-2 lb=0.4 tilt=0.1
+  1250: lb=0.1 tilt=0.03 ps=0 oy=0 sy=0
+  1500: lb=0 tilt=0
+end
+
+clip mirada_vacio mirror expr=0
+  0:    gx=0
+  400:  gx=0.15 gy=-0.1 lt=0.2 ps=-0.2 oy=1
+  1100: gx=0.2 gy=-0.1 lt=0.3 ps=-0.3 oy=2 sx=0.03 sy=-0.04
+  1650: gx=0.2 gy=-0.1 lt=0.35 ps=-0.3
+  1780: lt=1
+  1900: lt=0
+  2150: gx=0 gy=0 ps=0 oy=0 sx=0 sy=0
+end
+
+clip bostezo_contagio expr=0
+  0:    sy=0
+  200:  sy=0.12 sx=-0.05 oy=-4 ps=-0.1
+  520:  sy=0.20 sx=-0.08 oy=-7 lt=0.5
+  760:  sy=-0.05 sx=0.10 oy=-3 lt=1 ev=drop
+  1000: lt=1
+  1250: lt=0.5 sy=0 sx=0 oy=0
+  1500: lt=0.25 ps=0
+  1700: lt=0
+end
+
+clip pensar mirror expr=5
+  0:    gx=0
+  150:  oy=2 sy=-0.03
+  450:  gx=0.7 gy=-0.75 tilt=0.14 ltr=0.25 ltl=0.1 ox=3 ps=-0.1 oy=0 sy=0
+  900:  gx=0.55 gy=-0.6
+  1200: gx=0.8 gy=-0.8
+  1450: gx=0 gy=0 ps=0.25 ltl=-0.12 ltr=-0.12 ox=0 tilt=-0.04 sy=0.1 oy=-3 ev=spark
+  1750: ps=0 ltl=0 ltr=0 tilt=0 sy=0 oy=0
+end

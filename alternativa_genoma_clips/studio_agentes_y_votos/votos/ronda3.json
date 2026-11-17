@@ -1,0 +1,362 @@
+[
+ {
+  "pal": "Medianoche rosa",
+  "especie": "Gato de tejado",
+  "pupila": "Ovalo grande",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Lima y vino",
+  "especie": "Ojitos de pan",
+  "pupila": "Ovalo alto",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Amatista",
+  "especie": "Frijolito",
+  "pupila": "Ovalo ladeado",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Chicle explotado",
+  "especie": "Veleta",
+  "pupila": "Redonda",
+  "voto": "me_encanta"
+ },
+ {
+  "pal": "Magenta limon",
+  "especie": "Ojitos de pan",
+  "pupila": "Ovalo ladeado fino",
+  "voto": "me_encanta"
+ },
+ {
+  "pal": "Crema salmon",
+  "especie": "Ojitos de pan",
+  "pupila": "Ovalo alto",
+  "voto": "me_encanta"
+ },
+ {
+  "pal": "Coral laguna",
+  "especie": "Zorrito de nieve",
+  "pupila": "Redonda",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Rosa pizarra",
+  "especie": "Ojo de Pez",
+  "pupila": "Ovalo grande",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Arena granada",
+  "especie": "Subibaja",
+  "pupila": "Bizca tierna",
+  "voto": "no"
+ },
+ {
+  "pal": "Abismo",
+  "especie": "Burbuja",
+  "pupila": "Rendija bajita",
+  "voto": "no"
+ },
+ {
+  "pal": "Lila bruma",
+  "especie": "Alienigena Dulce",
+  "pupila": "Mirada al cielo",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Oro rosa",
+  "especie": "Burbuja",
+  "pupila": "Ancha grande",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Albaricoque lila",
+  "especie": "Torbellino",
+  "pupila": "Bizca ovalo",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Helado de pistache",
+  "especie": "Zorrito de nieve",
+  "pupila": "Ovalo grande",
+  "voto": "me_encanta"
+ },
+ {
+  "pal": "Tulipan granate",
+  "especie": "Junco",
+  "pupila": "Redonda",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Crema orquidea",
+  "especie": "Burbuja",
+  "pupila": "Ovalo alto",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Hojas de otono",
+  "especie": "Frijolito",
+  "pupila": "Redonda grande",
+  "voto": "me_encanta"
+ },
+ {
+  "pal": "Cian electrico",
+  "especie": "Frijolito",
+  "pupila": "Gota tierna",
+  "voto": "me_encanta"
+ },
+ {
+  "pal": "Jardin de neon",
+  "especie": "Torbellino",
+  "pupila": "Bizca tierna",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Aqua y violeta",
+  "especie": "Bizco Tierno",
+  "pupila": "Rendija gruesa",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Menta glacial",
+  "especie": "Niebla",
+  "pupila": "Ovalo ladeado",
+  "voto": "me_encanta"
+ },
+ {
+  "pal": "Galaxia",
+  "especie": "Almendra suave",
+  "pupila": "Ovalo grande",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Arena azul",
+  "especie": "Gato de tejado",
+  "pupila": "Ovalo alto",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Algodon de azucar",
+  "especie": "Veleta",
+  "pupila": "Bizca tierna",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Helecho",
+  "especie": "Sombra de gato",
+  "pupila": "Rendija girada",
+  "voto": "no"
+ },
+ {
+  "pal": "Menta frambuesa",
+  "especie": "Ceja alzada",
+  "pupila": "Media luna",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Piruleta menta",
+  "especie": "Junco",
+  "pupila": "Rendija gruesa",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Jade nocturno",
+  "especie": "Ojito y Ojote",
+  "pupila": "Rendija gruesa",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Verde acido",
+  "especie": "Veleta",
+  "pupila": "Bizca tierna",
+  "voto": "me_encanta"
+ },
+ {
+  "pal": "Medianoche rosa",
+  "especie": "Ojo coqueto",
+  "pupila": "Bizca ovalo",
+  "voto": "me_encanta"
+ },
+ {
+  "pal": "Miel dorada",
+  "especie": "Torcidito",
+  "pupila": "Redonda grande",
+  "voto": "me_encanta"
+ },
+ {
+  "pal": "Vino crema",
+  "especie": "Sombra de gato",
+  "pupila": "Bizca ovalo",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Vaporwave",
+  "especie": "Huevo y Gota",
+  "pupila": "Rendija bajita",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Pomelo noche",
+  "especie": "Sombra de gato",
+  "pupila": "Ovalo alto",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Crema salmon",
+  "especie": "Veleta",
+  "pupila": "Mirada al cielo",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Arena turquesa",
+  "especie": "Almendra suave",
+  "pupila": "Rendija gruesa",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Cometa",
+  "especie": "Copito",
+  "pupila": "Ovalo grande",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Bosque y menta",
+  "especie": "Ojo coqueto",
+  "pupila": "Ancha grande",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Arandano",
+  "especie": "Luna llena",
+  "pupila": "Mirada al cielo",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Arcilla marfil",
+  "especie": "Gotas Gemelas",
+  "pupila": "Ovalo ladeado",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Vainilla ciruela",
+  "especie": "Subibaja",
+  "pupila": "Bizca ovalo",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Verde acido",
+  "especie": "Pluma",
+  "pupila": "Bizca ovalo",
+  "voto": "no"
+ },
+ {
+  "pal": "Arcade nocturno",
+  "especie": "Clasico",
+  "pupila": "Gota tierna",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Turquesa violeta",
+  "especie": "Ojo coqueto",
+  "pupila": "Ancha grande",
+  "voto": "no"
+ },
+ {
+  "pal": "Ambar violeta",
+  "especie": "Huevo y Gota",
+  "pupila": "Bizca ovalo",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Azafran bosque",
+  "especie": "Clasico",
+  "pupila": "Redonda media",
+  "voto": "no"
+ },
+ {
+  "pal": "Lila y bosque",
+  "especie": "Pluma",
+  "pupila": "Ovalo alto",
+  "voto": "no"
+ },
+ {
+  "pal": "Lavanda limon",
+  "especie": "Buho Distraido",
+  "pupila": "Bizca tierna",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Lima de medianoche",
+  "especie": "Subibaja",
+  "pupila": "Ovalo grande",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Eclipse",
+  "especie": "Burbuja",
+  "pupila": "Ancha grande",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Rubor zafiro",
+  "especie": "Subibaja",
+  "pupila": "Redonda grande",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Marino y limon",
+  "especie": "Niebla",
+  "pupila": "Gota tierna",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Terracota cielo",
+  "especie": "Ojito y Ojote",
+  "pupila": "Media luna",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Hielo y zafiro",
+  "especie": "Ojo de Pez",
+  "pupila": "Redonda media",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Vaporwave",
+  "especie": "Frijolito",
+  "pupila": "Ancha grande",
+  "voto": "me_encanta"
+ },
+ {
+  "pal": "Malva",
+  "especie": "Huevo y Gota",
+  "pupila": "Ancha grande",
+  "voto": "me_encanta"
+ },
+ {
+  "pal": "Opalo lechoso",
+  "especie": "Gato de tejado",
+  "pupila": "Redonda grande",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Lavanda limon",
+  "especie": "Copito",
+  "pupila": "Rendija",
+  "voto": "mas_o_menos"
+ },
+ {
+  "pal": "Glaciar rosa",
+  "especie": "Zorrito de nieve",
+  "pupila": "Gota alta",
+  "voto": "me_encanta"
+ },
+ {
+  "pal": "Malva",
+  "especie": "Ojo coqueto",
+  "pupila": "Rendija bajita",
+  "voto": "mas_o_menos"
+ }
+]

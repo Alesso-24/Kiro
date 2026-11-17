@@ -1,0 +1,6 @@
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_private.cpp:103:13:void _gpioInterruptDispatcher(uint, uint32_t)	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_private.cpp:44:17:void interrupts()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_private.cpp:70:17:void noInterrupts()	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_private.cpp:126:17:void attachInterrupt(pin_size_t, voidFuncPtr, PinStatus)	40	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_private.cpp:150:6:void attachInterruptParam(pin_size_t, voidFuncPtrParam, PinStatus, void*)	48	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_private.cpp:175:17:void detachInterrupt(pin_size_t)	32	static

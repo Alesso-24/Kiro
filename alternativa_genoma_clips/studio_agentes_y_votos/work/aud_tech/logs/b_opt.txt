@@ -1,0 +1,12 @@
+opt|A nominal despierto|286.8|428.4
+opt|C especie max+pupila brillo2t|443.8|684.8
+opt|D C+ojos clamp 74x92|629.1|812.6
+opt|E D+3 clips|497.4|593.6
+opt|F E+56 part mixtas|653.7|811.1
+opt|G E+56 chispas|980.3|1080.5
+opt|H E+56 corazones|569.8|651.7
+opt|I 25 part mixtas|267.7|339.7
+opt|J mareado|283.0|297.9
+opt|L enojado|207.0|324.2
+opt|K dormido|37.2|39.9
+opt|S sorprendido pupila anillo 2t|278.2|294.9

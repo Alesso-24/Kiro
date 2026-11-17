@@ -1,0 +1,26 @@
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:85:5:virtual int SerialUSB::peek()	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:109:5:virtual int SerialUSB::available()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:96:5:virtual int SerialUSB::read()	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:119:5:virtual int SerialUSB::availableForWrite()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:129:6:virtual void SerialUSB::flush()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:143:8:virtual size_t SerialUSB::write(const uint8_t*, size_t)	40	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:139:8:virtual size_t SerialUSB::write(uint8_t)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:187:1:virtual SerialUSB::operator bool()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:46:6:virtual void SerialUSB::begin(long unsigned int)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:46:6:virtual void SerialUSB::begin(long unsigned int)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:74:6:virtual void SerialUSB::end()	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:201:6:void SerialUSB::checkSerialReset()	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040/SerialUSB.h:31:10:virtual void SerialUSB::begin(long unsigned int, uint16_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:43:1:SerialUSB::SerialUSB()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:67:6:void SerialUSB::interfaceCB(int, uint8_t*, int)	80	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040/SerialUSB.h:82:17:static void SerialUSB::_cb(int, uint8_t*, int, void*)	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:197:6:void SerialUSB::ignoreFlowControl(bool)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:201:6:void SerialUSB::checkSerialReset()	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:219:6:bool SerialUSB::dtr()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:223:6:bool SerialUSB::rts()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:227:17:void tud_cdc_line_state_cb(uint8_t, bool, bool)	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:231:6:void SerialUSB::tud_cdc_line_state_cb(uint8_t, bool, bool)	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:238:17:void tud_cdc_line_coding_cb(uint8_t, const cdc_line_coding_t*)	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:242:6:void SerialUSB::tud_cdc_line_coding_cb(uint8_t, const void*)	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:251:6:void arduino::serialEventRun()	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUSB.cpp:255:1:cpp)	0	static

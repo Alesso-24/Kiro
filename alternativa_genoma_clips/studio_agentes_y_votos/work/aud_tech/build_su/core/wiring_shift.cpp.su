@@ -1,0 +1,2 @@
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_shift.cpp:24:20:uint8_t shiftIn(pin_size_t, pin_size_t, BitOrder)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_shift.cpp:47:17:void shiftOut(pin_size_t, pin_size_t, BitOrder, uint8_t)	24	static

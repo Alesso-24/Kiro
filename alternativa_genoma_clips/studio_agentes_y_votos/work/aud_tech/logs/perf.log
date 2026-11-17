@@ -1,0 +1,14 @@
+species mas grande: #26 Luna llena (sx=1.34 sy=1.20) | pupila anillo #35, brillo+2tonos #34, mayor #35
+A nominal despierto, sin extras              render host: med    218 us p95    305 max    429 | por cuadro: eyePx=  20961 eyeDrawn=  14108 ellPx=     0 linePx=     0 triPx=     0 | filas=155
+B cara llena (disco 240 filas)               render host: med    179 us p95    202 max    409 | por cuadro: eyePx=  17964 eyeDrawn=   8526 ellPx=     0 linePx=     0 triPx=     0 | filas=240
+C despierto, especie max, pupila brillo+2t   render host: med    370 us p95    426 max    691 | por cuadro: eyePx=  33930 eyeDrawn=  22659 ellPx=     0 linePx=     0 triPx=     0 | filas=187
+D C + ojos al clamp (74x92)                  render host: med    486 us p95    559 max   1682 | por cuadro: eyePx=  46820 eyeDrawn=  34096 ellPx=     0 linePx=     0 triPx=     0 | filas=227
+E D + 3 clips                                render host: med    549 us p95    662 max   1012 | por cuadro: eyePx=  46651 eyeDrawn=  26223 ellPx=    44 linePx=     0 triPx=  1090 | filas=231
+F E + 56 particulas MIXTAS                   render host: med    795 us p95   1026 max   3960 | por cuadro: eyePx=  45192 eyeDrawn=  26191 ellPx=  2622 linePx=  4392 triPx=  9120 | filas=232
+G E + 56 chispas (PT_SPARK size10)           render host: med   1205 us p95   1408 max   2031 | por cuadro: eyePx=  45238 eyeDrawn=  26180 ellPx=     0 linePx=     0 triPx= 36440 | filas=228
+H E + 56 corazones                           render host: med    774 us p95    846 max   1172 | por cuadro: eyePx=  44763 eyeDrawn=  26179 ellPx=  9072 linePx=     0 triPx= 11424 | filas=227
+I 25 particulas mixtas (uso realista alto)   render host: med    375 us p95    454 max    671 | por cuadro: eyePx=  21222 eyeDrawn=  11393 ellPx=  1294 linePx=  1951 triPx=  4911 | filas=216
+J mareado (espirales) nominal                render host: med    342 us p95    376 max    594 | por cuadro: eyePx=  22455 eyeDrawn=  13280 ellPx=  7445 linePx=     0 triPx=  3180 | filas=187
+K dormido (arcos) nominal                    render host: med     40 us p95     45 max    105 | por cuadro: eyePx=      0 eyeDrawn=      0 ellPx=     0 linePx=  3496 triPx=     0 | filas=23
+L enojado nominal                            render host: med    300 us p95    429 max    507 | por cuadro: eyePx=  20041 eyeDrawn=   9686 ellPx=     0 linePx=  1658 triPx=     0 | filas=144
+M pupila anillo, dos tonos, nominal          render host: med    314 us p95    367 max    448 | por cuadro: eyePx=  21686 eyeDrawn=  14128 ellPx=     0 linePx=     0 triPx=     0 | filas=154

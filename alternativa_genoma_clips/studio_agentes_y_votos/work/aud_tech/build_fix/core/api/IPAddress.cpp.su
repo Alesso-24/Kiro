@@ -1,0 +1,17 @@
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/IPAddress.cpp:24:1:arduino::IPAddress::IPAddress(const arduino::IPAddress&)	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/IPAddress.cpp:29:1:arduino::IPAddress::IPAddress()	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/IPAddress.cpp:33:6:bool arduino::IPAddress::isSet() const	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/IPAddress.cpp:37:1:arduino::IPAddress::IPAddress(uint8_t, uint8_t, uint8_t, uint8_t)	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/IPAddress.cpp:45:6:void arduino::IPAddress::ctor32(uint32_t)	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/IPAddress.cpp:50:1:arduino::IPAddress::IPAddress(const uint8_t*)	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/IPAddress.cpp:69:6:bool arduino::IPAddress::fromString4(const char*)	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/IPAddress.cpp:58:6:bool arduino::IPAddress::fromString(const char*)	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/IPAddress.cpp:112:12:arduino::IPAddress& arduino::IPAddress::operator=(const uint8_t*)	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/IPAddress.cpp:118:12:arduino::IPAddress& arduino::IPAddress::operator=(uint32_t)	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/IPAddress.cpp:124:6:bool arduino::IPAddress::operator==(const uint8_t*) const	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/IPAddress.cpp:133:8:arduino::String arduino::IPAddress::toString() const	48	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/IPAddress.cpp:128:8:virtual size_t arduino::IPAddress::printTo(arduino::Print&) const	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/IPAddress.cpp:174:6:static bool arduino::IPAddress::isValid(const arduino::String&)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/IPAddress.cpp:178:6:static bool arduino::IPAddress::isValid(const char*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/IPAddress.cpp:187:6:void arduino::IPAddress::clear()	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/IPAddress.cpp:189:1:cpp)	4	static

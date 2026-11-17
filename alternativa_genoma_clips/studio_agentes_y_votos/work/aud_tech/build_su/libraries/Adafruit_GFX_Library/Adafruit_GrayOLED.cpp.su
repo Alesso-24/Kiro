@@ -1,0 +1,16 @@
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.h:62:17:virtual int arduino::Print::availableForWrite()	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.h:97:18:virtual void arduino::Print::flush()	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp:285:6:virtual void Adafruit_GrayOLED::drawPixel(int16_t, int16_t, uint16_t)	32	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp:407:6:virtual void Adafruit_GrayOLED::invertDisplay(bool)	32	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp:64:1:Adafruit_GrayOLED::Adafruit_GrayOLED(uint8_t, uint16_t, uint16_t, TwoWire*, int16_t, uint32_t, uint32_t)	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp:100:1:Adafruit_GrayOLED::Adafruit_GrayOLED(uint8_t, uint16_t, uint16_t, int16_t, int16_t, int16_t, int16_t, int16_t)	56	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp:136:1:Adafruit_GrayOLED::Adafruit_GrayOLED(uint8_t, uint16_t, uint16_t, arduino::SPIClass*, int16_t, int16_t, int16_t, uint32_t)	32	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp:150:1:Adafruit_GrayOLED::~Adafruit_GrayOLED()	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp:168:6:void Adafruit_GrayOLED::oled_command(uint8_t)	32	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp:187:6:bool Adafruit_GrayOLED::oled_commandList(const uint8_t*, uint8_t)	40	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp:224:6:bool Adafruit_GrayOLED::_init(uint8_t, bool)	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp:344:6:void Adafruit_GrayOLED::clearDisplay()	8	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp:364:6:bool Adafruit_GrayOLED::getPixel(int16_t, int16_t)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp:391:10:uint8_t* Adafruit_GrayOLED::getBuffer()	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp:417:6:void Adafruit_GrayOLED::setContrast(uint8_t)	32	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_GrayOLED.cpp:420:1:cpp)	0	static

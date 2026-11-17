@@ -1,0 +1,49 @@
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.h:62:17:virtual int arduino::Print::availableForWrite()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:297:8:virtual size_t TwoWire::requestFrom(uint8_t, size_t)	4	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:437:9:virtual uint8_t TwoWire::endTransmission()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:467:8:virtual size_t TwoWire::write(const uint8_t*, size_t)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:477:5:virtual int TwoWire::available()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:495:6:virtual void TwoWire::flush()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:734:6:virtual void TwoWire::onReceive(void (*)(int))	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:738:6:virtual void TwoWire::onRequest(void (*)())	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:301:13:bool _clockStretch(pin_size_t)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:270:6:virtual void TwoWire::beginTransmission(uint8_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:111:6:virtual void TwoWire::setClock(uint32_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:119:6:virtual void TwoWire::begin()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:163:6:virtual void TwoWire::begin(uint8_t)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h:296:20:void channel_config_set_chain_to(dma_channel_config_t*, uint)	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:616:6:0()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:700:6:0()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:248:6:virtual void TwoWire::end()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:488:5:virtual int TwoWire::peek()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:481:5:virtual int TwoWire::read()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:364:6:void TwoWire::_handleTimeout(bool)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:441:8:virtual size_t TwoWire::write(uint8_t)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:281:8:virtual size_t TwoWire::requestFrom(uint8_t, size_t, bool)	56	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:640:6:void _dma_i2c0_irq_handler()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:648:6:void _dma_i2c1_irq_handler()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:43:1:TwoWire::TwoWire(i2c_inst_t*, pin_size_t, pin_size_t)	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:57:6:bool TwoWire::setSDA(pin_size_t)	40	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:84:6:bool TwoWire::setSCL(pin_size_t)	40	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:191:6:void TwoWire::onIRQ()	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:150:13:void _handler1()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:138:13:void _handler0()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:307:6:bool _probe(int, pin_size_t, pin_size_t, int)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:417:9:virtual uint8_t TwoWire::endTransmission(bool)	56	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:364:6:void TwoWire::_handleTimeout(bool)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:500:6:bool TwoWire::busIdle()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:612:6:bool TwoWire::finishedAsync()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:616:6:void TwoWire::abortAsync()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:629:6:void TwoWire::onFinishedAsync(void (*)())	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:656:6:void TwoWire::_dma_irq_handler()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:669:6:void TwoWire::beginAsync()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:510:6:0(uint8_t, const void*, size_t, const void*, size_t, bool)	56	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:510:6:bool TwoWire::writeReadAsync(uint8_t, const void*, size_t, const void*, size_t, bool)	20	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:608:6:bool TwoWire::readAsync(uint8_t, void*, size_t, bool)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:604:6:bool TwoWire::writeAsync(uint8_t, const void*, size_t, bool)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:700:6:void TwoWire::endAsync()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:742:6:void TwoWire::setTimeout(uint32_t, bool)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:748:6:bool TwoWire::getTimeoutFlag()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:752:6:void TwoWire::clearTimeoutFlag()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:756:8:size_t TwoWire::setBufferSize(size_t)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\Wire\src\Wire.cpp:786:60:cpp)	24	static

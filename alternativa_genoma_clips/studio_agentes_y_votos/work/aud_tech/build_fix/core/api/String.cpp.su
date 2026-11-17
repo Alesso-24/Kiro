@@ -1,0 +1,79 @@
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:42:1:arduino::String::String(const char*)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:48:1:arduino::String::String(const char*, unsigned int)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:54:1:arduino::String::String(const arduino::String&)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:60:1:arduino::String::String(const arduino::__FlashStringHelper*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:66:1:arduino::String::String(arduino::String&&)	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:76:1:arduino::String::String(char)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:143:1:arduino::String::~String()	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:159:6:void arduino::String::invalidate()	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:166:6:bool arduino::String::reserve(unsigned int)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:85:1:arduino::String::String(unsigned char, unsigned char)	40	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:93:1:arduino::String::String(int, unsigned char)	64	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:101:1:arduino::String::String(unsigned int, unsigned char)	64	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:109:1:arduino::String::String(long int, unsigned char)	64	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:117:1:arduino::String::String(long unsigned int, unsigned char)	64	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:125:1:arduino::String::String(float, unsigned char)	88	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:134:1:arduino::String::String(double, unsigned char)	360	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:176:6:bool arduino::String::changeBuffer(unsigned int)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:191:10:arduino::String& arduino::String::copy(const char*, unsigned int)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:203:10:arduino::String& arduino::String::copy(const arduino::__FlashStringHelper*, unsigned int)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:214:6:void arduino::String::move(arduino::String&)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:230:10:arduino::String& arduino::String::operator=(const arduino::String&)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:240:10:arduino::String& arduino::String::operator=(arduino::String&&)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:246:10:arduino::String& arduino::String::operator=(const char*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:254:10:arduino::String& arduino::String::operator=(const arduino::__FlashStringHelper*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:266:6:bool arduino::String::concat(const arduino::String&)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:271:6:bool arduino::String::concat(const char*, unsigned int)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:283:6:bool arduino::String::concat(const char*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:289:6:bool arduino::String::concat(char)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:294:6:bool arduino::String::concat(unsigned char)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:301:6:bool arduino::String::concat(int)	40	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:308:6:bool arduino::String::concat(unsigned int)	40	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:315:6:bool arduino::String::concat(long int)	40	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:322:6:bool arduino::String::concat(long unsigned int)	40	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:329:6:bool arduino::String::concat(float)	48	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:336:6:bool arduino::String::concat(double)	48	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:343:6:bool arduino::String::concat(const arduino::__FlashStringHelper*)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:359:19:arduino::StringSumHelper& arduino::operator+(const StringSumHelper&, const String&)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:366:19:arduino::StringSumHelper& arduino::operator+(const StringSumHelper&, const char*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:373:19:arduino::StringSumHelper& arduino::operator+(const StringSumHelper&, char)	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:380:19:arduino::StringSumHelper& arduino::operator+(const StringSumHelper&, unsigned char)	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:387:19:arduino::StringSumHelper& arduino::operator+(const StringSumHelper&, int)	40	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:394:19:arduino::StringSumHelper& arduino::operator+(const StringSumHelper&, unsigned int)	40	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:401:19:arduino::StringSumHelper& arduino::operator+(const StringSumHelper&, long int)	40	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:408:19:arduino::StringSumHelper& arduino::operator+(const StringSumHelper&, long unsigned int)	40	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:415:19:arduino::StringSumHelper& arduino::operator+(const StringSumHelper&, float)	48	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:422:19:arduino::StringSumHelper& arduino::operator+(const StringSumHelper&, double)	48	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:429:19:arduino::StringSumHelper& arduino::operator+(const StringSumHelper&, const __FlashStringHelper*)	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:440:5:int arduino::String::compareTo(const arduino::String&) const	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:450:5:int arduino::String::compareTo(const char*) const	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:460:6:bool arduino::String::equals(const arduino::String&) const	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:465:6:bool arduino::String::equals(const char*) const	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:472:6:bool arduino::String::equalsIgnoreCase(const arduino::String&) const	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:485:6:bool arduino::String::startsWith(const arduino::String&) const	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:491:6:bool arduino::String::startsWith(const arduino::String&, unsigned int) const	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:497:6:bool arduino::String::endsWith(const arduino::String&) const	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:507:6:char arduino::String::charAt(unsigned int) const	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:512:6:void arduino::String::setCharAt(unsigned int, char)	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:517:8:char& arduino::String::operator[](unsigned int)	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:527:6:char arduino::String::operator[](unsigned int) const	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:533:6:void arduino::String::getBytes(unsigned char*, unsigned int, unsigned int) const	16	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:550:5:int arduino::String::indexOf(char) const	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:555:5:int arduino::String::indexOf(char, unsigned int) const	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:563:5:int arduino::String::indexOf(const arduino::String&) const	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:568:5:int arduino::String::indexOf(const arduino::String&, unsigned int) const	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:576:5:int arduino::String::lastIndexOf(char) const	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:581:5:int arduino::String::lastIndexOf(char, unsigned int) const	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:597:5:int arduino::String::lastIndexOf(const arduino::String&, unsigned int) const	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:592:5:int arduino::String::lastIndexOf(const arduino::String&) const	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:610:8:arduino::String arduino::String::substring(unsigned int, unsigned int) const	32	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:628:6:void arduino::String::replace(char, char)	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:636:6:void arduino::String::replace(const arduino::String&, const arduino::String&)	48	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:684:6:void arduino::String::remove(unsigned int)	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:691:6:void arduino::String::remove(unsigned int, unsigned int)	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:701:6:void arduino::String::toLowerCase()	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:709:6:void arduino::String::toUpperCase()	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:717:6:void arduino::String::trim()	24	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:733:6:long int arduino::String::toInt() const	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:739:7:float arduino::String::toFloat() const	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/String.cpp:744:8:double arduino::String::toDouble() const	0	static

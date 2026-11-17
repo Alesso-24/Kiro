@@ -1,0 +1,6 @@
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\Tone.cpp:48:16:int64_t _stopTonePIO(alarm_id_t, void*)	8	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/tools/pqt-gcc/5.0.0-9576866/arm-none-eabi/include/c++/16.1.0/bits/stl_tree.h:2623:5:void std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_erase(_Node_ptr) [with _Key = unsigned char; _Val = std::pair<const unsigned char, Tone*>; _KeyOfValue = std::_Select1st<std::pair<const unsigned char, Tone*> >; _Compare = std::less<unsigned char>; _Alloc = std::allocator<std::pair<const unsigned char, Tone*> >]	48	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\Tone.cpp:117:6:void noTone(uint8_t)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\Tone.cpp:58:6:void tone(uint8_t, unsigned int, long unsigned int)	88	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\Tone.cpp:137:1:cpp)	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\Tone.cpp:137:1:cpp)	8	static

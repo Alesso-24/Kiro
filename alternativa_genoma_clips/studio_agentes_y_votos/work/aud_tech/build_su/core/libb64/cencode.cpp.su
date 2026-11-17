@@ -1,0 +1,6 @@
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\libb64\cencode.cpp:12:10:void base64_init_encodestate(base64_encodestate*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\libb64\cencode.cpp:20:10:void base64_init_encodestate_nonewlines(base64_encodestate*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\libb64\cencode.cpp:25:10:char base64_encode_value(char)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\libb64\cencode.cpp:42:9:int base64_encode_block(const char*, int, char*, base64_encodestate*)	12	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\libb64\cencode.cpp:98:9:int base64_encode_blockend(char*, base64_encodestate*)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\libb64\cencode.cpp:119:9:int base64_encode_chars(const char*, int, char*)	24	static

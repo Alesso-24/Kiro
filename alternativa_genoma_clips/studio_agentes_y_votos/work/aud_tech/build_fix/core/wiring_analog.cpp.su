@@ -1,0 +1,8 @@
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_analog.cpp:41:17:void analogWriteFreq(uint32_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_analog.cpp:58:17:void analogWriteRange(uint32_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_analog.cpp:71:17:void analogWriteResolution(int)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_analog.cpp:79:17:void analogWrite(pin_size_t, int)	64	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_analog.cpp:130:6:void __clearADCPin(pin_size_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_analog.cpp:134:16:int analogRead(pin_size_t)	40	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_analog.cpp:159:18:float analogReadTemp(float)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_analog.cpp:179:17:void analogReadResolution(int)	16	static

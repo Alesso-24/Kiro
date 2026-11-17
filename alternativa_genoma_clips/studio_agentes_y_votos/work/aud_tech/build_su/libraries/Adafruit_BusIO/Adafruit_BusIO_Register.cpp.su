@@ -1,0 +1,21 @@
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:18:1:Adafruit_BusIO_Register::Adafruit_BusIO_Register(Adafruit_I2CDevice*, uint16_t, uint8_t, uint8_t, uint8_t)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:45:1:Adafruit_BusIO_Register::Adafruit_BusIO_Register(Adafruit_SPIDevice*, uint16_t, Adafruit_BusIO_SPIRegType, uint8_t, uint8_t, uint8_t)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:78:1:Adafruit_BusIO_Register::Adafruit_BusIO_Register(Adafruit_I2CDevice*, Adafruit_SPIDevice*, Adafruit_BusIO_SPIRegType, uint16_t, uint8_t, uint8_t, uint8_t)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:99:1:Adafruit_BusIO_Register::Adafruit_BusIO_Register(Adafruit_GenericDevice*, uint16_t, uint8_t, uint8_t, uint8_t)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:118:6:bool Adafruit_BusIO_Register::write(uint8_t*, uint8_t)	32	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:161:6:bool Adafruit_BusIO_Register::write(uint32_t, uint8_t)	20	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:211:10:uint32_t Adafruit_BusIO_Register::readCached()	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:219:6:bool Adafruit_BusIO_Register::read(uint8_t*, uint8_t)	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:188:10:uint32_t Adafruit_BusIO_Register::read()	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:261:6:bool Adafruit_BusIO_Register::read(uint16_t*)	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:284:6:bool Adafruit_BusIO_Register::read(uint8_t*)	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:297:6:void Adafruit_BusIO_Register::print(arduino::Stream*)	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:307:6:void Adafruit_BusIO_Register::println(arduino::Stream*)	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:319:1:Adafruit_BusIO_RegisterBits::Adafruit_BusIO_RegisterBits(Adafruit_BusIO_Register*, uint8_t, uint8_t)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:330:10:uint32_t Adafruit_BusIO_RegisterBits::read()	8	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:342:6:bool Adafruit_BusIO_RegisterBits::write(uint32_t)	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:360:9:uint8_t Adafruit_BusIO_Register::width()	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:366:6:void Adafruit_BusIO_Register::setWidth(uint8_t)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:372:6:void Adafruit_BusIO_Register::setAddress(uint16_t)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:380:6:void Adafruit_BusIO_Register::setAddressWidth(uint16_t)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_BusIO_Register.cpp:382:1:cpp)	0	static

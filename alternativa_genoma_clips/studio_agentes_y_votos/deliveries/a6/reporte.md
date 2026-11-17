@@ -1,0 +1,11 @@
+# A6 - Energia / sistema / easter eggs (22 clips, TAG 6, prefix a6)
+Archivos: a6_energia.clip.txt (fuente), a6_energia.h (generado, CLIPLIST_a6), a6_hoja_e0_m0.png / _m1.png (hoja con expresion fija, 16 fotogramas por clip, normal y espejo con otra paleta), clips_tag6.png (hoja de check.py).
+Clips: arranque_ojos, apagado_lento, conectar_cable, carga_pulso, carga_completa, hambre_bateria, tambaleo_sin_energia, sorbo_de_energia, sobrecarga, cortocircuito_tic, encendido_crt, glitch, reiniciando, modo_ahorro, caminar_energia, cargado_de_poder, flash_pantalla, bostezo_apagado, mirar_a_camara, guino_al_usuario, ojos_corazon_rapido, ojos_espiral_breve. 184 keyframes, 400-2600 ms, <=12 keys. check.py: OK (normal+espejo).
+Criterios: anticipacion (agacharse antes de estirar), squash&stretch con volumen (sy+ => sx-), overshoot y asentamiento, arcos en ox/oy, follow-through con gx/ps/parpados. Todos acaban en reposo. `mirror` en los asimetricos (cable, hambre, tambaleo, sorbo, tic, glitch, caminar, camara, guino, espiral).
+Descartado: el brief enumeraba 24 items para 22 clips; quite "rafaga de energia" (solapa con sobrecarga/cargado_de_poder/sorbo) y "pulgar arriba/ver bateria" (ya existe `asiente` y la expresion ver-bateria).
+Riesgos/decisiones:
+- carga_pulso NO lleva `loop`: el director (TAG 6, peso 0.3) elegiria el clip y un loop nunca liberaria su slot. Son 3 pulsos que empiezan/acaban en 0, encadenables por firmware.
+- apagado_lento acaba reabriendo (regla "acaba en reposo"): el firmware debe apagar la pantalla al final de la fase cerrada (~1850-2250 ms) si quiere "quedarse en linea". Igual arranque_ojos / reiniciando empiezan cerrando en pocos ms.
+- Todos son TAG 6, asi que el director puede disparar apagado/reiniciando/glitch al azar con la criatura despierta; conviene que Motion/firmware reserve los de sistema (apagado, reiniciando, arranque, crt) como eventos y los quite del sorteo, o bajarles el TAG.
+- Los parpados recortan en cuerda plana (motor); la mirada (gx/gy) es aditiva, por eso espiral/camara usan ademas ox/oy para leerse.
+- La hoja clips_tag6.png de check.py deja actuar la autonomia de la criatura (cambia de expresion a ~400 ms); para juzgar usa mis hojas a6_hoja_*.

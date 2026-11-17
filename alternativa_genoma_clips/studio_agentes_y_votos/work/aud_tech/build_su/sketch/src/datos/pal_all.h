@@ -1,0 +1,5 @@
+#line 1 "C:\\Users\\jordi\\OneDrive\\Escritorio\\Alloy\\studio\\work\\aud_tech\\sketch\\Alloy_Eyes\\src\\datos\\pal_all.h"
+#include "pal_base.h"
+#include "p1_calidas.h"
+#include "p2_frias.h"
+#include "p3_raras.h"

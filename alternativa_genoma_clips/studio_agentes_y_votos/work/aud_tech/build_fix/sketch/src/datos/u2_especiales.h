@@ -1,0 +1,16 @@
+#line 1 "C:\\Users\\jordi\\OneDrive\\Escritorio\\Alloy\\studio\\work\\aud_tech\\sketch_fix\\Alloy_Eyes\\src\\datos\\u2_especiales.h"
+// generado por tools/studio_compile.py (pu) desde u2_especiales.pu.txt
+{17.000f,17.000f,10.000f,10.000f,0.000f,0.000f,0.000f,1,0,"Lucero"},
+{13.000f,20.000f,11.000f,9.000f,0.000f,0.000f,0.000f,2,0,"Mitad y mitad"},
+{15.000f,18.000f,10.000f,12.000f,0.000f,0.000f,0.000f,4,0,"Media luna"},
+{17.000f,17.000f,10.000f,10.000f,0.000f,0.000f,0.000f,5,1,"Anillo"},
+{5.500f,23.000f,13.000f,6.000f,0.000f,0.000f,0.050f,1,1,"Gato con brillo"},
+{12.000f,22.000f,11.000f,9.000f,0.000f,0.000f,0.050f,3,1,"Ovalo bicolor"},
+{12.000f,24.000f,11.000f,8.000f,0.200f,0.000f,0.000f,4,1,"Luna menguante"},
+{12.000f,21.000f,11.000f,10.000f,0.000f,0.000f,0.400f,2,1,"Gota bicolor"},
+{21.000f,21.000f,8.000f,11.000f,0.000f,0.000f,0.000f,5,2,"Aro grande"},
+{5.000f,24.000f,13.000f,6.000f,0.300f,0.000f,0.000f,2,2,"Rendija bicolor"},
+{17.000f,24.000f,8.000f,10.000f,0.600f,0.050f,0.000f,1,2,"Inclinada brillo"},
+{19.000f,20.000f,9.000f,12.000f,0.000f,0.000f,0.000f,4,2,"Domo luna"},
+{16.000f,23.000f,8.000f,10.000f,-0.500f,0.150f,0.250f,3,3,"Cometa"},
+{20.000f,24.000f,8.000f,10.000f,0.350f,0.300f,0.000f,5,3,"Eclipse"},

@@ -1,0 +1,28 @@
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.h:68:10:virtual void SerialUART::begin(long unsigned int)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:184:24:gpio_function_t __gpioFunction(int)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:479:1:virtual SerialUART::operator bool()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:303:6:virtual void SerialUART::end()	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:218:6:virtual void SerialUART::begin(long unsigned int, uint16_t)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:34:6:bool SerialUART::setRX(pin_size_t)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:68:6:bool SerialUART::setTX(pin_size_t)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:101:6:bool SerialUART::setRTS(pin_size_t)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:128:6:bool SerialUART::setCTS(pin_size_t)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:154:6:bool SerialUART::setPollingMode(bool)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:162:6:bool SerialUART::setFIFOSize(size_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:170:1:SerialUART::SerialUART(uart_inst_t*, pin_size_t, pin_size_t, pin_size_t, pin_size_t)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:515:6:void SerialUART::_handleIRQ(bool)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:344:6:void SerialUART::_pumpFIFO()	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:358:5:virtual int SerialUART::peek()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:377:5:virtual int SerialUART::read()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:396:6:bool SerialUART::overflow()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:415:5:virtual int SerialUART::available()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:502:6:void arduino::serialEvent1Run()	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:508:6:void arduino::serialEvent2Run()	8	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:428:5:virtual int SerialUART::availableForWrite()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:439:6:virtual void SerialUART::flush()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:450:8:virtual size_t SerialUART::write(uint8_t)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:462:8:virtual size_t SerialUART::write(const uint8_t*, size_t)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:483:6:bool SerialUART::getBreakReceived()	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:570:6:static void SerialUART::_uart0IRQ()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:578:6:static void SerialUART::_uart1IRQ()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\SerialUART.cpp:584:1:cpp)	24	static

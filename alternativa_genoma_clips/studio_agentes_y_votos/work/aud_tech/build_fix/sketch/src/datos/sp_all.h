@@ -1,0 +1,5 @@
+#line 1 "C:\\Users\\jordi\\OneDrive\\Escritorio\\Alloy\\studio\\work\\aud_tech\\sketch_fix\\Alloy_Eyes\\src\\datos\\sp_all.h"
+#include "sp_base.h"
+#include "s1_tiernas.h"
+#include "s2_elegantes.h"
+#include "s3_raras.h"

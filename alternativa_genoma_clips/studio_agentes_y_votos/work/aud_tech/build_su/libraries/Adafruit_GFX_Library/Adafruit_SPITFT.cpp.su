@@ -1,0 +1,42 @@
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.h:62:17:virtual int arduino::Print::availableForWrite()	0	static
+C:/Users/jordi/AppData/Local/Arduino15/packages/rp2040/hardware/rp2040/6.3.0/ArduinoCore-API/api/Print.h:97:18:virtual void arduino::Print::flush()	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\libraries\SPI\src/SPI.h:203:18:virtual void SPIClassRP2040::begin()	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:933:6:virtual void Adafruit_SPITFT::endWrite()	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:921:6:virtual void Adafruit_SPITFT::startWrite()	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:126:1:Adafruit_SPITFT::Adafruit_SPITFT(uint16_t, uint16_t, int16_t, int16_t, int16_t, int16_t, int16_t, int16_t)	40	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:254:1:Adafruit_SPITFT::Adafruit_SPITFT(uint16_t, uint16_t, int16_t, int16_t, int16_t)	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:290:1:Adafruit_SPITFT::Adafruit_SPITFT(uint16_t, uint16_t, arduino::SPIClass*, int16_t, int16_t, int16_t)	32	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:386:1:Adafruit_SPITFT::Adafruit_SPITFT(uint16_t, uint16_t, tftBusWidth, int16_t, int16_t, int16_t, int16_t, int16_t, int16_t)	40	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:536:6:void Adafruit_SPITFT::initSPI(uint32_t, uint8_t)	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:907:6:void Adafruit_SPITFT::setSPISpeed(uint32_t)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:971:6:void Adafruit_SPITFT::swapBytes(uint16_t*, uint32_t, uint16_t*)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:1004:6:void Adafruit_SPITFT::writePixels(uint16_t*, uint32_t, bool, bool)	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:1189:6:void Adafruit_SPITFT::dmaWait()	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:1209:6:bool Adafruit_SPITFT::dmaBusy() const	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:1223:6:void Adafruit_SPITFT::writeColor(uint16_t, uint32_t)	32	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:1744:6:virtual void Adafruit_SPITFT::fillRect(int16_t, int16_t, int16_t, int16_t, uint16_t)	56	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:1610:13:virtual void Adafruit_SPITFT::writeFastHLine(int16_t, int16_t, int16_t, uint16_t)	32	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:1646:13:virtual void Adafruit_SPITFT::writeFastVLine(int16_t, int16_t, int16_t, uint16_t)	32	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:1802:6:virtual void Adafruit_SPITFT::drawFastHLine(int16_t, int16_t, int16_t, uint16_t)	40	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:1843:6:virtual void Adafruit_SPITFT::drawFastVLine(int16_t, int16_t, int16_t, uint16_t)	40	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:1558:6:virtual void Adafruit_SPITFT::writeFillRect(int16_t, int16_t, int16_t, int16_t, uint16_t)	56	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:1898:6:void Adafruit_SPITFT::drawRGBBitmap(int16_t, int16_t, uint16_t*, int16_t, int16_t)	64	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:1959:10:uint16_t Adafruit_SPITFT::color565(uint8_t, uint8_t, uint8_t)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:2092:10:uint16_t Adafruit_SPITFT::readcommand16(uint16_t)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:2179:6:void Adafruit_SPITFT::spiWrite(uint8_t)	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:1943:6:virtual void Adafruit_SPITFT::invertDisplay(bool)	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:2222:6:void Adafruit_SPITFT::writeCommand(uint8_t)	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:2238:9:uint8_t Adafruit_SPITFT::spiRead()	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:2073:9:uint8_t Adafruit_SPITFT::readcommand8(uint8_t, uint8_t)	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:2301:6:void Adafruit_SPITFT::write16(uint16_t)	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:2321:6:void Adafruit_SPITFT::writeCommand16(uint16_t)	8	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:2335:10:uint16_t Adafruit_SPITFT::read16()	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:2463:6:void Adafruit_SPITFT::SPI_WRITE16(uint16_t)	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:954:6:virtual void Adafruit_SPITFT::writePixel(int16_t, int16_t, uint16_t)	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:1714:6:virtual void Adafruit_SPITFT::drawPixel(int16_t, int16_t, uint16_t)	32	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:1876:6:void Adafruit_SPITFT::pushColor(uint16_t)	16	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:1970:6:void Adafruit_SPITFT::sendCommand(uint8_t, uint8_t*, uint8_t)	32	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:2002:6:void Adafruit_SPITFT::sendCommand(uint8_t, const uint8_t*, uint8_t)	32	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:2037:6:void Adafruit_SPITFT::sendCommand16(uint16_t, const uint8_t*, uint8_t)	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:2519:6:void Adafruit_SPITFT::SPI_WRITE32(uint32_t)	24	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_GFX_Library\Adafruit_SPITFT.cpp:2633:1:cpp)	0	static

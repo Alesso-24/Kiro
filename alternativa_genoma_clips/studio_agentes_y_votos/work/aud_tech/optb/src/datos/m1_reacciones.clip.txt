@@ -1,0 +1,200 @@
+// M1 - reacciones de movimiento (TAG 7: solo por eventos del acelerometro). 20 clips.
+// Convencion: sy+ estira alto, sx+ ancho (volumen: sx ~ -sy/2); oy+ baja la cara; lt = parpado superior baja; lb = inferior sube.
+clip sacudida_suave mirror expr=7
+  0:   ox=0
+  70:  ox=-7 tilt=-0.10 sx=-0.05 sy=0.06
+  150: ox=8 tilt=0.12 lt=0.12 gx=-0.4
+  230: ox=-6 tilt=-0.09 gx=0.4
+  310: ox=5 tilt=0.07 gx=-0.2
+  400: ox=-3 tilt=-0.04 gx=0.1
+  500: ox=1 tilt=0.01
+  640: ox=0 tilt=0 sx=0 sy=0 lt=0 gx=0
+end
+clip sacudida_fuerte mirror expr=7
+  0:    ox=0
+  60:   ox=-12 tilt=-0.20 sx=0.10 sy=-0.12 lt=0.30 ev=lines
+  140:  ox=14 tilt=0.22
+  220:  ox=-14 tilt=-0.22
+  300:  ox=13 tilt=0.20
+  390:  ox=-11 tilt=-0.16
+  490:  ox=8 tilt=0.12 sx=0.04 sy=-0.05 lt=0.15
+  620:  ox=-5 tilt=-0.08 gx=0.6 gy=-0.5
+  780:  ox=4 tilt=0.06 gx=0.6 gy=0.5 ps=-0.2 ev=sweat
+  1000: ox=-2 tilt=-0.03 gx=-0.6 gy=0.4
+  1250: ox=1 gx=-0.3 gy=-0.3
+  1500: ox=0 tilt=0 sx=0 sy=0 lt=0 gx=0 gy=0 ps=0
+end
+clip caida mirror expr=7
+  0:    oy=0
+  80:   sy=0.22 sx=-0.12 oy=-10 lt=-0.2 ps=-0.5 gy=-0.6 ev=lines
+  220:  sy=0.28 sx=-0.14 oy=-14 ps=-0.6 gy=-0.9
+  450:  ox=3 tilt=0.08 oy=-12 sy=0.25
+  700:  ox=-3 tilt=-0.08 oy=-12
+  1000: ox=0 tilt=0 oy=-4 sy=0.08 sx=-0.04
+  1250: oy=0 sy=0 sx=0 lt=0 ps=0 gy=0
+end
+clip impacto mirror expr=7
+  0:   oy=0
+  40:  sy=-0.42 sx=0.32 oy=12 lt=0.55
+  130: sy=-0.30 sx=0.24 oy=9 lt=0.45 ev=star
+  250: sy=0.16 sx=-0.10 oy=-5 lt=0.10 tilt=0.06
+  380: sy=-0.07 sx=0.05 oy=2 tilt=-0.03
+  520: sy=0.03 sx=-0.02 oy=0 tilt=0
+  700: sy=0 sx=0 oy=0 lt=0
+end
+clip boca_abajo mirror expr=7
+  0:    lt=0
+  200:  lt=0.20 oy=3
+  700:  lt=0.65 oy=7 sy=-0.10 sx=0.05 ps=-0.3 gy=0.6
+  1100: lt=0.70 oy=9 ev=drop
+  1600: lt=0.65 oy=7
+  2000: lt=0.40 oy=3 gy=0.3
+  2400: lt=0 oy=0 sy=0 sx=0 ps=0 gy=0
+end
+clip m1_asiente expr=7
+  0:   oy=0
+  120: oy=-4 sy=0.05
+  260: oy=9 sy=-0.07 lt=0.12
+  400: oy=-3 sy=0.03 lt=0
+  520: oy=5 sy=-0.03 lt=0.05
+  640: oy=-1 sy=0.01
+  780: oy=0 sy=0 lt=0
+end
+clip arrullo mirror expr=7
+  0:    tilt=0
+  350:  tilt=0.10 ox=5 lt=0.20
+  800:  tilt=-0.10 ox=-5 lt=0.30
+  1250: tilt=0.10 ox=5 lt=0.35 ev=note
+  1700: tilt=-0.08 ox=-4 lt=0.32
+  2050: tilt=0.03 ox=1 lt=0.25
+  2400: tilt=0 ox=0 lt=0
+end
+clip mecido mirror expr=7
+  0:    tilt=0
+  120:  tilt=-0.08 ox=-3 sy=0.03
+  380:  tilt=0.22 ox=9 lb=0.22 sy=-0.05 sx=0.05 ev=heart
+  700:  tilt=-0.22 ox=-9 sy=0 sx=0
+  1000: tilt=0.16 ox=6 lb=0.15
+  1250: tilt=-0.08 ox=-3 lb=0.10
+  1600: tilt=0 ox=0 lb=0
+end
+clip caminata mirror expr=7
+  0:   oy=0
+  130: oy=3 sy=-0.06 sx=0.03 gx=0.4 gy=-0.2
+  290: oy=-6 sy=0.07 sx=-0.04 tilt=0.06
+  480: oy=3 sy=-0.06 sx=0.03 tilt=0
+  630: oy=-6 sy=0.07 sx=-0.04 tilt=-0.06
+  820: oy=2 sy=-0.04 sx=0.02 tilt=0
+  1000: oy=0 sy=0 sx=0 gx=0 gy=0
+end
+clip giro mirror expr=7
+  0:   tilt=0
+  100: tilt=0.20 sx=0.04
+  260: tilt=-0.45 sx=0.08 sy=-0.06 gx=-0.8
+  450: tilt=-0.55 gx=0.7 gy=0
+  650: tilt=0.20 gx=0
+  800: tilt=-0.08 sx=0.02
+  950: tilt=0 sx=0 sy=0 gx=0
+end
+clip tap mirror expr=7
+  0:   sy=0
+  50:  sy=-0.14 sx=0.07 oy=3 lt=0.25
+  130: sy=0.08 sx=-0.04 oy=-2 lt=0 gx=0.3 ev=spark
+  240: sy=-0.02 sx=0.01 oy=0 gx=0.1
+  420: sy=0 sx=0 oy=0 gx=0
+end
+clip doble_tap mirror expr=7
+  0:   sy=0
+  50:  sy=-0.14 sx=0.07 oy=3 lt=0.20
+  130: sy=0.04 sx=-0.02 oy=0 lt=0
+  210: sy=-0.16 sx=0.08 oy=4 lt=0.30
+  320: sy=0.12 sx=-0.06 oy=-4 lt=0 ps=0.15 gx=0.5 ev=sparks
+  480: sy=0.06 sx=-0.03 oy=-2 tilt=0.08
+  700: sy=0.02 oy=0 tilt=0.10 gx=0.4
+  900: sy=0 sx=0 tilt=0 ps=0 gx=0
+end
+clip recogido expr=7
+  0:    sy=0
+  90:   sy=-0.12 sx=0.07 oy=4
+  260:  sy=0.20 sx=-0.10 oy=-10 ps=0.3 gy=-0.7 ev=spark
+  480:  sy=0.10 sx=-0.05 oy=-5 ps=0.2
+  700:  sy=-0.03 sx=0.02 oy=1 gy=-0.4 ps=0.1
+  900:  sy=0.02 sx=0 oy=0
+  1100: sy=0 sx=0 oy=0 ps=0 gy=0
+end
+clip puesto_en_mesa expr=7
+  0:   sy=0
+  80:  sy=0.10 sx=-0.05 oy=-5
+  220: sy=-0.28 sx=0.20 oy=9 lt=0.30
+  340: sy=0.10 sx=-0.06 oy=-4 lt=0
+  470: sy=-0.06 sx=0.04 oy=2
+  640: sy=0.02 sx=-0.01 oy=0
+  900: sy=0 sx=0 oy=0
+end
+clip mareo_de_giro mirror expr=7
+  0:    tilt=0
+  150:  tilt=0.30 ox=8 gx=0.7 gy=-0.4 lt=0.20 ev=star
+  400:  tilt=-0.30 ox=-8 gx=0.3 gy=0.7
+  650:  tilt=0.26 ox=7 gx=-0.6 gy=0.5
+  900:  tilt=-0.24 ox=-6 gx=-0.7 gy=-0.3 ev=star
+  1150: tilt=0.20 ox=5 gx=0 gy=-0.7
+  1400: tilt=-0.15 ox=-4 gx=0.6 gy=-0.2 ps=-0.2
+  1650: tilt=0.10 ox=3 gx=0.4 gy=0.4
+  1900: tilt=-0.05 ox=-2 gx=0 gy=0 lt=0.10
+  2200: tilt=0 ox=0 lt=0 ps=0
+end
+clip alivio mirror expr=7
+  0:    sy=0
+  150:  sy=0.10 sx=-0.05 oy=-3
+  400:  sy=-0.12 sx=0.06 oy=5 lt=0.40 ev=sweat
+  700:  sy=-0.08 sx=0.04 oy=4 lt=0.35
+  950:  sy=-0.02 oy=1 lt=0.10
+  1200: sy=0 sx=0 oy=0 lt=0
+end
+clip susto_de_caida mirror expr=7
+  0:    sy=0
+  60:   sy=0.30 sx=-0.16 oy=-8 ps=-0.6 lt=-0.3 ev=lines
+  160:  ox=4
+  240:  ox=-4
+  320:  ox=4
+  400:  ox=-3 ev=sweat
+  560:  ox=2
+  760:  ox=-2
+  1000: ox=0 sy=0.10 sx=-0.05 oy=2 ps=-0.3 lt=0
+  1250: sy=-0.05 sx=0.02 oy=0 ps=-0.1
+  1500: sy=0 sx=0 oy=0 ps=0
+end
+clip aterrizaje mirror expr=7
+  0:   sy=0
+  60:  sy=0.12 sx=-0.06 oy=-3
+  150: sy=-0.22 sx=0.14 oy=7 ev=dots
+  260: sy=0.07 sx=-0.04 oy=-2
+  380: sy=-0.03 sx=0.02 oy=0
+  600: sy=0 sx=0 oy=0
+end
+clip vibracion mirror expr=7
+  0:   ox=0
+  60:  ox=3 lt=0.12 ps=-0.15 ev=shake
+  120: ox=-3 oy=1
+  180: ox=3 oy=-1
+  240: ox=-3 oy=1
+  300: ox=3 oy=-1
+  360: ox=-3 oy=1
+  420: ox=2 oy=-1
+  480: ox=-2
+  560: ox=1
+  680: ox=-0.5 lt=0.05
+  800: ox=0 oy=0 lt=0 ps=0
+end
+clip cosquillas_de_mov mirror expr=7
+  0:    sy=0
+  100:  sy=-0.10 sx=0.05 oy=3 lb=0.30
+  250:  oy=-4 sy=0.05 sx=-0.03 tilt=0.10 lb=0.40 lt=0.20 ev=heart
+  400:  oy=3 tilt=-0.10
+  550:  oy=-4 tilt=0.10
+  700:  oy=3 tilt=-0.10
+  850:  oy=-3 tilt=0.08
+  1050: oy=1 tilt=-0.04 lb=0.35
+  1300: oy=0 tilt=0 lb=0.15 lt=0.10
+  1500: sy=0 sx=0 lb=0 lt=0
+end

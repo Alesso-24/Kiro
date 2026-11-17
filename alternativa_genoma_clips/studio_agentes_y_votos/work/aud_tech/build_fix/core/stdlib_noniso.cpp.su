@@ -1,0 +1,6 @@
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\stdlib_noniso.cpp:35:18:char* ulltoa(long long unsigned int, char*, int, unsigned int)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\stdlib_noniso.cpp:47:18:char* lltoa(long long int, char*, int, unsigned int)	32	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\stdlib_noniso.cpp:65:18:char* ltoa(long int, char*, int)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\stdlib_noniso.cpp:69:18:char* ultoa(long unsigned int, char*, int)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\stdlib_noniso.cpp:73:19:char* dtostrf(double, signed char, unsigned char, char*)	48	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\stdlib_noniso.cpp:162:24:const char* strrstr(const char*, const char*)	24	static

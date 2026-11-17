@@ -1,0 +1,3 @@
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_digital.cpp:29:17:void __pinMode(pin_size_t, PinMode)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_digital.cpp:88:17:void __digitalWrite(pin_size_t, PinStatus)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\wiring_digital.cpp:112:22:PinStatus __digitalRead(pin_size_t)	0	static

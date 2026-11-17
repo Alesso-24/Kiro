@@ -1,0 +1,82 @@
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:456:16:uint8_t rarPal(int)	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:457:16:uint8_t rarSp(int)	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:458:16:uint8_t rarPu(int)	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:460:12:int pickTier(int, uint8_t (*)(int))	48	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:498:5:0(int, uint32_t, bool, float)	12	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\Alloy_Eyes.ino:46:6:0()	24	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:27:7:float frand()	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:28:7:float frand01()	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:29:7:float clampf(float, float, float)	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:33:6:void markRows(float, float)	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:63:6:0(float, float, float, float, uint16_t)	40	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:58:6:void setAlpha(float)	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:63:6:void ellipseAA(float, float, float, float, uint16_t)	4	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:79:6:void discAA(float, float, float, uint16_t)	16	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:82:6:void lineAA(float, float, float, float, float, uint16_t)	40	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:104:6:void triAA(float, float, float, float, float, float, uint16_t, float)	112	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:127:6:void heartAA(float, float, float, float, uint16_t)	32	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:135:6:void boltAA(float, float, float, uint16_t)	104	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:147:6:void drawZ(float, float, float, uint16_t)	48	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:155:6:void arcAA(float, float, float, float, float, float, uint16_t)	64	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:168:6:void sparkAA(float, float, float, float, uint16_t)	152	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:182:6:void veinAA(float, float, float, uint16_t)	96	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:213:7:float shapeF(const EyeDraw&, float, float)	32	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:222:6:void renderEye(const EyeDraw&)	176	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:396:6:void formReset(float*)	8	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:400:6:void chooseForm(uint32_t)	40	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:443:6:void spawn(uint8_t, float, float, float, float, float, float, uint8_t, float, float)	16	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:473:6:void genomeFromSeed(uint32_t)	16	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:494:5:int clipFind(const char*)	16	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:498:5:int clipPlay(int, uint32_t, bool, float)	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:520:6:void clipEmit(uint8_t, bool)	56	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:542:6:void clipUpdate(uint32_t)	56	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:563:6:void directorClip(uint32_t)	704	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:602:9:uint8_t baseExpr()	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:609:6:void startStep(uint32_t)	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:615:6:void play(uint32_t, uint8_t, Step, Step, Step)	16	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:624:6:void wake(uint32_t)	40	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:629:6:bool isAsleep()	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:630:6:void evSet(uint8_t, uint32_t, uint16_t)	40	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:634:6:void evTap(uint32_t)	40	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:644:6:void evPet(uint32_t, bool)	40	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:654:6:void evPlay(uint32_t)	32	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:661:6:void evShake(uint32_t, bool)	40	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:668:6:void evLoud(uint32_t)	32	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:673:6:void evCold(uint32_t, bool)	32	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:674:6:void evThumbs(uint32_t)	32	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:679:6:void evFlick(uint32_t)	32	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:684:6:void evUsb(uint32_t, bool)	40	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:689:6:void evBatFull(uint32_t)	32	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:692:6:void evBatLow(uint32_t, bool)	32	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:693:6:void evPoke(uint32_t)	32	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:698:6:void evWink()	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:699:6:void newLook()	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:703:6:void evNewCreature(uint32_t, uint32_t)	88	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:708:6:void evTheme(uint32_t)	8	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:712:6:void evNextExpr(uint32_t)	32	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:717:6:void setGaze(float, float, uint32_t, uint32_t)	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\Motion.h:39:6:bool mReady(int, uint32_t, uint32_t)	4	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\Motion.h:64:6:void mOscConfirm(MOsc&, float, float, float, float)	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\Motion.h:73:6:void mOscFeed(MOsc&, float, float, float, float, float)	16	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\Motion.h:85:6:void mOscClear(MOsc&)	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\Motion.h:91:7:float mClean(float, float)	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\Motion.h:94:6:void mClip(const char*, uint32_t, bool, float, const char*)	32	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\Motion.h:100:6:bool mWake(uint32_t)	8	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\Motion.h:104:6:void mBegin(uint32_t)	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\Motion.h:114:6:void motionReact(uint8_t, float, uint32_t)	304	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\Motion.h:175:6:void motionFeed(float, float, float, uint32_t, float)	152	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:729:6:void setTargets()	16	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:759:6:void updateStats(uint32_t)	32	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:770:6:void onEnter(uint8_t, uint32_t)	104	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:811:6:void updateAnimation(uint32_t)	312	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:1016:6:void drawParticles()	80	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:1040:6:void renderFrame(uint32_t)	352	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:1153:6:void coreInit(uint32_t, uint32_t)	96	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\EyesCore.h:1178:6:void coreFrame(uint32_t, float)	8	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\Alloy_Eyes.ino:46:6:void pushWait()	0	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\Alloy_Eyes.ino:57:6:void pushStart(const uint16_t*, int, int)	32	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\Alloy_Eyes.ino:78:6:void pollButtons(uint32_t)	64	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\Alloy_Eyes.ino:198:1:ino)	16	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\Alloy_Eyes.ino:119:6:void pollSerial(uint32_t)	56	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\Alloy_Eyes.ino:163:6:void loop()	64	static
+C:\Users\jordi\OneDrive\Escritorio\Alloy\studio\work\aud_tech\sketch\Alloy_Eyes\Alloy_Eyes.ino:143:6:void setup()	16	static

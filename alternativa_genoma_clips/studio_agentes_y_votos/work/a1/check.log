@@ -1,0 +1,12 @@
+datos: 16 paletas, 6 especies, 8 pupilas, 34 clips  (combinaciones base: 768)
+[1] 20 semillas x 20 expresiones: 16000 cuadros en 16.0s (host)
+[2] 34 clips probados (normal+espejo)
+[3] movimiento aleatorio (600 cuadros): ok
+[4] out/criaturas.png
+[5] hojas de datos:
+   out/paletas.png
+   out/especies.png
+   out/pupilas.png
+[6] tiras de clips por tag [0, 1, 5] en out/
+
+OK: sin errores graves.

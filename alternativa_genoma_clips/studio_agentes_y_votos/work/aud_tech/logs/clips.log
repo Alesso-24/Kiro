@@ -1,0 +1,5 @@
+clips: 169 clips x mirror x 3 velocidades x 3 expresiones = 3042 corridas; invalidas=0, no terminan=0
+  eventos (ev!=0) esperados vs emitidos a velocidad 0.2 (no-loop, sin espejo): 115 vs 115
+  eventos (ev!=0) esperados vs emitidos a velocidad 1.0 (no-loop, sin espejo): 115 vs 115
+  eventos (ev!=0) esperados vs emitidos a velocidad 3.0 (no-loop, sin espejo): 115 vs 115
+  |clipAdd| maximo por canal (1 clip): 0.45 0.55 13.99 21.89 0.60 1.08 1.08 0.48 0.48 0.86 1.18 1.04

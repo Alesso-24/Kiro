@@ -1,0 +1,7 @@
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_GenericDevice.cpp:16:1:Adafruit_GenericDevice::Adafruit_GenericDevice(void*, busio_genericdevice_read_t, busio_genericdevice_write_t, busio_genericdevice_readreg_t, busio_genericdevice_writereg_t)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_GenericDevice.cpp:32:6:bool Adafruit_GenericDevice::begin()	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_GenericDevice.cpp:43:6:void Adafruit_GenericDevice::end()	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_GenericDevice.cpp:49:6:bool Adafruit_GenericDevice::write(const uint8_t*, size_t)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_GenericDevice.cpp:59:6:bool Adafruit_GenericDevice::read(uint8_t*, size_t)	0	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_GenericDevice.cpp:71:6:bool Adafruit_GenericDevice::readRegister(uint8_t*, uint8_t, uint8_t*, uint16_t)	8	static
+c:\Users\jordi\OneDrive\Documentos\Arduino\libraries\Adafruit_BusIO\Adafruit_GenericDevice.cpp:84:6:bool Adafruit_GenericDevice::writeRegister(uint8_t*, uint8_t, const uint8_t*, uint16_t)	8	static

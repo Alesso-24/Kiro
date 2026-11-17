@@ -1,0 +1,8 @@
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\malloc-lock.cpp:45:18:void* __wrap__malloc_r(void*, size_t)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\malloc-lock.cpp:53:18:void* __wrap__calloc_r(void*, size_t, size_t)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\malloc-lock.cpp:82:18:void* pmalloc(size_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\malloc-lock.cpp:87:18:void* pcalloc(size_t, size_t)	0	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\malloc-lock.cpp:95:18:void* __wrap__realloc_r(void*, void*, size_t)	24	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\malloc-lock.cpp:112:17:void __wrap__free_r(void*, void*)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\malloc-lock.cpp:127:28:mallinfo __wrap__mallinfo_r(void*)	16	static
+C:\Users\jordi\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\6.3.0\cores\rp2040\malloc-lock.cpp:137:18:void* __wrap__memalign_r(void*, size_t, size_t)	24	static

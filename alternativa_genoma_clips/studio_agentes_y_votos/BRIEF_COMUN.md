@@ -1,0 +1,10 @@
+# BRIEF COMÚN — estudio de animación Alloy (léelo completo)
+
+**Producto**: tamagotchi estilo Lil Guy/Starboy. Pantalla redonda 240×240 con dos ojos de dibujos animados sobre negro. Queremos cientos de criaturas únicas y cientos de animaciones adorables y con emoción, al nivel de un estudio de animación profesional. El cliente (Alessandro) quiere ver mucha variedad con calidad "Disney".
+**Lee primero**: (1) `firmware/Alloy_Eyes/CONTRATO_DATOS.md` (formatos, rangos, flujo), (2) `studio/biblia_de_diseno.md` (proporciones, paletas, emociones, errores a evitar), (3) mira varias imágenes de `studio/referencias/` con la herramienta Read (ref_27/28/31 = galerías de looks; ref_4–26 = capturas del producto real), (4) `studio/reportes/R1_producto.md` si te sirve.
+**Rutas** (raíz del proyecto = `C:\Users\jordi\OneDrive\Escritorio\Alloy`; usa rutas absolutas):
+- Herramientas: `python tools/mkwork.py <agente>` · `python tools/studio_compile.py ...` · `python tools/check.py studio/work/<agente>` (ejecútalas con cwd = raíz).
+- Tu sandbox: `studio/work/<agente>/` · tus entregas: `studio/deliveries/<agente>/`.
+**Reglas**: nunca edites `firmware/`, `sim/`, `tools/` ni `docs/` del proyecto principal; solo tu sandbox y tu carpeta de entregas. No dejes procesos corriendo. No uses el puerto serie ni la placa. Trabaja con rigor: genera tus hojas con `check.py`, **míralas con Read** y corrige hasta que se vean bien (adorables, legibles, distintas entre sí). Si algo del contrato/herramientas falla, descríbelo con precisión en tu reporte (no lo parches fuera de tu sandbox).
+**Entrega**: tus fuentes de texto (`.txt`) + los `.h` generados + imágenes de `out/` relevantes + `reporte.md` (1 página: qué hiciste, criterios, qué descartaste y por qué, riesgos/pendientes). Tu mensaje final: máximo 120 palabras (cantidad entregada + 2 hallazgos + ruta de entrega).
+**Presupuesto**: eres un profesional eficiente: planea, produce en lotes, revisa visualmente 2–3 veces, entrega. No te pases de ~45 llamadas a herramientas.

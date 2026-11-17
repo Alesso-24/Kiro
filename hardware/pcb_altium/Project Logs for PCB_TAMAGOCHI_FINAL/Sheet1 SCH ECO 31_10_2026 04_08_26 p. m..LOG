@@ -1,0 +1,6 @@
+Change Component Footprint: Designator=J2 Old Footprint=JST_S2B-PH-K-S(LF)(SN) New Footprint=JST-S2B-XH-A(LF)(SN)_V
+Change Component Footprint: Designator=J3 Old Footprint=JST_S2B-PH-K-S(LF)(SN) New Footprint=JST-S2B-XH-A(LF)(SN)_V
+Change Component Footprint: Designator=J4 Old Footprint=JST_S2B-PH-K-S(LF)(SN) New Footprint=JST-S2B-XH-A(LF)(SN)_V
+Change Component Comment: Designator=J2 Old Comment=S2B-PH-K-S(LF)(SN) New Comment=S2B-XH-A(LF)(SN)
+Change Component Comment: Designator=J3 Old Comment=S2B-PH-K-S(LF)(SN) New Comment=S2B-XH-A(LF)(SN)
+Change Component Comment: Designator=J4 Old Comment=S2B-PH-K-S(LF)(SN) New Comment=S2B-XH-A(LF)(SN)
