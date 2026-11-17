@@ -1,0 +1,4 @@
+// nombre | rareza | prx pry pdx pdy ptilt pc1 pc2 | tipo
+Ovalo alto     | common   | 12 27 12 10 0 0 0      | none
+Redonda        | common   | 17 17 10 10 0 0 0      | none
+Ancha grande   | uncommon | 20 23 8 12 0 0 0       | none

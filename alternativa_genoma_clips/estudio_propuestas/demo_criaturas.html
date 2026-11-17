@@ -1,0 +1,107 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>Alloy · estilo tinta · Criaturas</title>
+<style>
+html,body{margin:0;height:100%;background:#0b0b0d;display:grid;place-items:center;font:14px system-ui;color:#8a857c}
+#w{text-align:center}canvas{width:min(80vmin,720px);height:min(80vmin,720px);border-radius:50%;box-shadow:0 0 0 10px #1a1a1d;display:block;margin:0 auto 18px;cursor:pointer}
+</style>
+<div id="w"><canvas id="c" width="480" height="480"></canvas>
+<div>Alloy · estilo tinta · mouse = te mira · <b>clic = criatura nueva</b> (forma, asimetría y colores) · espacio = parpadeo lento · E = sorpresa</div></div>
+<script>
+const c=document.getElementById('c'),g=c.getContext('2d');g.scale(2,2);
+const H=['#4de3ff','#ff5fa2','#ffb02e','#8dff6a','#b48cff','#ff6a4d','#2effc0','#ff8ad8','#ffe14d','#5b8cff','#ff4d6d','#c6ff3d','#f3eee3','#ff9a5c'];
+const hex=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
+const rgb=(a,al=1)=>`rgba(${a[0]|0},${a[1]|0},${a[2]|0},${al})`;
+const mix=(a,b,k)=>a.map((v,i)=>v+(b[i]-v)*k);
+let seed=1;function rnd(){seed=(seed*16807)%2147483647;return seed/2147483647-.5}
+let boil=0;function wob(i,a){seed=(boil*977+i*131)%2147483646+1;return rnd()*a}
+const R=(a,b)=>a+Math.random()*(b-a);
+const S=(x=0)=>({x,v:0,t:x});
+function st(s,dt,k,d){s.v+=((s.t-s.x)*k-s.v*d)*dt;s.x+=s.v*dt}
+const gx=S(),gy=S(),oL=S(1),oR=S(1),tilt=S(),pup=S(1),happy=S(),brL=S(),brR=S(),pop=S(1),droop=S();
+// ---------- GENOMA: cada ojo tiene su propia forma ----------
+const KEYS=['rx','ryT','ryB','n','sh','tl','ps','cy','lw'];
+function genEye(big){return{rx:R(18,30)*big,ryT:R(24,38)*big,ryB:R(22,40)*big,n:R(2,2.9),sh:R(-7,7),tl:R(-9,9),ps:R(.85,1.2),cy:R(-4,4),lw:R(8,14)}}
+function genCreature(){
+  const big=R(.9,1.1),a=genEye(big);let b=genEye(big);
+  const mode=Math.random();
+  if(mode<.35){b={...a,sh:-a.sh,tl:-a.tl,cy:-a.cy*.5,ryT:a.ryT*R(.9,1.1)}}
+  else if(mode<.6){b.rx=a.rx*R(.7,.85);b.ryT=a.ryT*R(.7,.85);b.ryB=a.ryB*R(.7,.85)}
+  const c1=H[Math.random()*H.length|0];let c2=c1;
+  if(Math.random()<.5){do c2=H[Math.random()*H.length|0];while(c2===c1)}
+  return{A:a,B:b,gap:R(70,92),cA:hex(c1),cB:hex(c2)}
+}
+const cur={A:{},B:{},gap:80,cA:[77,227,255],cB:[77,227,255]},tgt=genCreature();
+KEYS.forEach(k=>{cur.A[k]=tgt.A[k];cur.B[k]=tgt.B[k]});cur.gap=tgt.gap;cur.cA=[...tgt.cA];cur.cB=[...tgt.cB];
+function newCreature(){const n=genCreature();tgt.A=n.A;tgt.B=n.B;tgt.gap=n.gap;tgt.cA=n.cA;tgt.cB=n.cB;pop.v-=7;setTimeout(()=>pop.v+=9,100)}
+function morph(){KEYS.forEach(k=>{cur.A[k]+=(tgt.A[k]-cur.A[k])*.1;cur.B[k]+=(tgt.B[k]-cur.B[k])*.1});cur.gap+=(tgt.gap-cur.gap)*.1;
+  for(let i=0;i<3;i++){cur.cA[i]+=(tgt.cA[i]-cur.cA[i])*.1;cur.cB[i]+=(tgt.cB[i]-cur.cB[i])*.1}}
+// ---------- dibujo ----------
+function shape(rx,ryT,ryB,n,sh,id,amp=.7){
+  const p=[],N=44;for(let i=0;i<N;i++){const a=i/N*6.2832,co=Math.cos(a),si=Math.sin(a),e=2/n;
+    const ry=si<0?ryT:ryB;let x=rx*Math.sign(co)*Math.pow(Math.abs(co),e)+wob(id*60+i,amp),y=ry*Math.sign(si)*Math.pow(Math.abs(si),e)+wob(id*60+i+99,amp);
+    x+=sh*(y/Math.max(ryT,1));p.push([x,y])}
+  g.beginPath();p.forEach((q,i)=>i?g.lineTo(...q):g.moveTo(...q));g.closePath()
+}
+function lid(cx,cy,half,bulge,thick,id,color){
+  const n=28,A=[],B=[];
+  for(let i=0;i<=n;i++){const u=i/n,x=(u*2-1)*half,y=cy-bulge*Math.sin(Math.PI*u)+Math.pow(Math.abs(u*2-1),2.2)*14+wob(id*70+i,.6),w=thick*Math.pow(Math.sin(Math.PI*(.12+.76*u)),.9)+.6;A.push([cx+x,y-w/2]);B.push([cx+x,y+w/2])}
+  g.beginPath();A.forEach((p,i)=>i?g.lineTo(...p):g.moveTo(...p));B.reverse().forEach(p=>g.lineTo(...p));g.closePath();g.fillStyle=color;g.fill()
+}
+function eye(cx,e,col,id,o,gX,gY,br){
+  const C=rgb(col),D=rgb(mix(col,[0,0,0],.82)),LT=rgb(mix(col,[255,255,255],.8));
+  o=Math.max(0,Math.min(1.12,o));const hp=happy.x,dr=droop.x;
+  const op=o*(1-.3*hp)*(1-.35*dr),vel=Math.hypot(gx.v,gy.v),stx=1+Math.min(.16,vel*.004);
+  const k=pop.x,rx=e.rx*(1+(1-Math.min(o,1))*.35)/Math.sqrt(stx)*k,f=(.06+.94*op)*stx*k;
+  const ryT=e.ryT*f,ryB=e.ryB*f,cy=126+e.cy;
+  g.save();g.translate(cx+gX*.9,cy+gY*.9+(e.ryT-ryT)*.4);g.rotate((e.tl+tilt.x)*.01745);
+  shape(rx,ryT,ryB,e.n,e.sh,id);g.fillStyle=rgb(col,.16);g.fill();g.lineWidth=6;g.strokeStyle=C;g.lineJoin='round';g.stroke();
+  if(op>.2){
+    const px=gX*.45,py=gY*.45,pr=Math.min(rx*.62*e.ps*pup.x,rx-5),pyr=Math.min(Math.max(ryT,ryB)*.7*e.ps*pup.x,Math.min(ryT,ryB)-4);
+    g.save();g.translate(px,py+(ryB-ryT)*.12);shape(pr,pyr,pyr*1.05,2.2,0,id+7,.5);g.fillStyle=D;g.fill();g.lineWidth=4.4;g.strokeStyle=C;g.stroke();
+    g.fillStyle=LT;g.beginPath();g.ellipse(-pr*.32,-pyr*.38,Math.max(3,pr*.3),Math.max(3.6,pyr*.26),-.3,0,6.3);g.fill();
+    g.beginPath();g.ellipse(pr*.38,pyr*.4,Math.max(1.6,pr*.12),Math.max(1.6,pr*.12),0,0,6.3);g.fillStyle=rgb(mix(col,[255,255,255],.6),.85);g.fill();g.restore()}
+  if(hp>.15){g.beginPath();g.ellipse(0,ryB*.9+4,rx*1.15,10+hp*9,0,0,Math.PI);g.fillStyle='#050506';g.fill()}
+  g.restore();
+  g.save();g.translate(cx+gX*.4,0);g.rotate((e.tl*.5+tilt.x*.6)*.01745);
+  lid(0,cy-ryT-9+gY*.35+dr*8,rx+13,13-(1-Math.min(o,1))*7,e.lw*.9+(1-o)*2,id+3,C);
+  if(op>.5){const b=br*9;g.beginPath();for(let i=0;i<=10;i++){const u=i/10,x=(u*2-1)*(rx*.75),y=cy-ryT-32-b+gY*.2-Math.sin(Math.PI*u)*3.5+(u-.5)*br*5;i?g.lineTo(x,y):g.moveTo(x,y)}
+    g.lineWidth=2.6;g.strokeStyle=rgb(col,.55);g.lineCap='round';g.stroke()}
+  g.restore()
+}
+// ---------- comportamiento ----------
+const now=()=>performance.now()/1000;let T0=now(),mouse=null,E={blink:2,sacc:1.2,slow:16,mood:5,slowUntil:0};
+const look=(x,y)=>{gx.t=x;gy.t=y};
+function blink(){oL.t=1.1;oR.t=1.1;setTimeout(()=>oL.t=0,50);setTimeout(()=>oR.t=0,90);setTimeout(()=>oL.t=1,230);setTimeout(()=>oR.t=1,260)}
+function slow(){E.slowUntil=now()-T0+2.5;oL.t=oR.t=0;droop.t=.4;
+  [.6,1.2,1.8].forEach(d=>setTimeout(()=>look(R(-16,16),R(-8,8)),d*1000));
+  setTimeout(()=>{look(0,0);oL.t=1;setTimeout(()=>oR.t=1,60);droop.t=0;pop.v+=2;tilt.t=0},2100)}
+function mood(kind){
+  const k=kind||['curioso','feliz','sono','curioso','feliz','nuevo'][Math.random()*6|0];
+  if(k==='curioso'){const s=Math.random()<.5?-1:1;tilt.t=s*8;look(s*15,-5);brL.t=s>0?1:.2;brR.t=s>0?.2:1;pup.t=1.12;pop.v+=2}
+  if(k==='feliz'){happy.t=1;pop.v+=3;tilt.t=R(-5,5);setTimeout(()=>happy.t=0,1800)}
+  if(k==='sono'){droop.t=1;pup.t=.9;look(0,6);setTimeout(()=>{droop.t=0;pup.t=1;pop.v+=2},2200)}
+  if(k==='sorpresa'){pup.t=.62;pop.t=1.12;brL.t=brR.t=1.4;oL.t=oR.t=1.1;pop.v+=4;setTimeout(()=>{pup.t=1;pop.t=1;brL.t=brR.t=0;oL.t=oR.t=1},1400);return}
+  if(k==='nuevo'){newCreature();return}
+  setTimeout(()=>{tilt.t=0;brL.t=brR.t=0;pup.t=1;look(0,0)},1900)
+}
+let last=now();
+function frame(){
+  const n=now(),t=n-T0,dt=Math.min(.033,n-last);last=n;boil=Math.floor(t*10);
+  if(t>E.blink&&t>E.slowUntil){blink();if(Math.random()<.2)setTimeout(blink,330);E.blink=t+2+Math.random()*3.6}
+  if(t>E.slow){slow();E.slow=t+24+Math.random()*18}
+  if(t>E.mood&&t>E.slowUntil&&!mouse){mood();E.mood=t+6+Math.random()*6}
+  if(!mouse&&t>E.sacc&&t>E.slowUntil&&Math.abs(tilt.t)<1){Math.random()<.3?look(0,0):look(R(-17,17),R(-11,11));E.sacc=t+1.2+Math.random()*2.6}
+  if(mouse)look(mouse.x*19,mouse.y*13);
+  st(gx,dt,150,9);st(gy,dt,150,9);st(oL,dt,520,28);st(oR,dt,520,28);st(tilt,dt,90,8);st(pup,dt,120,10);st(happy,dt,60,10);
+  st(brL,dt,100,9);st(brR,dt,100,9);st(pop,dt,170,10);st(droop,dt,50,9);morph();
+  g.fillStyle='#050506';g.fillRect(0,0,240,240);
+  g.save();g.translate(Math.sin(t*.6)*1.5+gx.x*.12,Math.sin(t*1.7)*1.4);
+  eye(120-cur.gap/2,cur.A,cur.cA,1,oL.x,gx.x,gy.x,brL.x);
+  eye(120+cur.gap/2,cur.B,cur.cB,2,oR.x,gx.x-gx.v*.012,gy.x-gy.v*.012,brR.x);
+  g.restore();requestAnimationFrame(frame)
+}
+c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();mouse={x:((e.clientX-r.left)/r.width-.5)*2,y:((e.clientY-r.top)/r.height-.5)*2}});
+c.addEventListener('mouseleave',()=>{mouse=null;look(0,0)});
+c.addEventListener('click',newCreature);
+addEventListener('keydown',e=>{if(e.code==='Space'){e.preventDefault();slow()}if(e.key==='e'||e.key==='E')mood('sorpresa')});
+frame();
+</script></html>

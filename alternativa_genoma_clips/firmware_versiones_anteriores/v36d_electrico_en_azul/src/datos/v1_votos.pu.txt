@@ -1,0 +1,6 @@
+// Pupilas nuevas (ronda 1 de votos): variantes de las familias mejor votadas (ovalo alto, redonda, rendija girada, bizca, ovalo ladeado). Todas tipo none.
+Ovalo grande     | common   | 14 29 12 10 0 0 0      | none
+Redonda grande   | common   | 20 20 10 10 0 0 0      | none
+Ovalo ladeado fino | uncommon | 8 22 12 8 -0.35 0 0  | none
+Bizca ovalo      | uncommon | 10 19 18 8 0 0 0       | none
+Gota alta        | uncommon | 10 21 10 10 0 0 0.3    | none

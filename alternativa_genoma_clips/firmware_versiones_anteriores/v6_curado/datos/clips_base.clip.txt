@@ -1,0 +1,13 @@
+// clip nombre [mirror] [loop] [expr=TAG]   TAG: 0 idle 1 alegria 2 enojo 3 triste/miedo 4 sueno 5 curioso 6 energia 7 reaccion-movimiento
+clip meneo mirror expr=0
+  0:   tilt=0
+  220: tilt=0.14 ox=4
+  520: tilt=-0.12 ox=-4
+  800: tilt=0 ox=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip asiente expr=5
+  0:   oy=0
+  160: oy=7 lt=0.08
+  360: oy=-3
+  560: oy=0 lt=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end

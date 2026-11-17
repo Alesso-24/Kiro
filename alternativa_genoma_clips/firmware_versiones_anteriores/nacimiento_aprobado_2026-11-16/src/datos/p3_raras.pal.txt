@@ -1,0 +1,19 @@
+// P3 - raras y miticas (40). Acento = 2.o tono del ojo; pupila legible sobre ojo Y acento.
+Chicle explotado | rare | #FF5CB8 | #2E0A45 | #FFE14D
+Helado de pistache | rare | #B8E986 | #4A2210 | #FF9EB8
+Sorbete de mango | rare | #FFB02E | #5A1040 | #FF7A9A
+Amanecer rosado | rare | #FFC2A8 | #6A2050 | #FFE6A0
+Musgo y rocio | rare | #8FBF5A | #1E2A0A | #DDF5C8
+Hojas de otono | rare | #E8742A | #2A0E04 | #FFD08A
+Rubi del dragon | rare | #E0245E | #2A000F | #FF9AB0
+Opalo lechoso | rare | #E8F0FF | #3E2E94 | #FFC8E8
+Arcade nocturno | rare | #FFE600 | #3A1470 | #FF5CB8
+Vaporwave | rare | #B38CFF | #2E0850 | #5FF2E0
+Cielo de tormenta | rare | #5C7CFA | #080C30 | #FFD54A
+Ojo de dragon | mythic | #FF3A00 | #2A0840 | #FFD400
+Eclipse solar | mythic | #FFF5D0 | #2E0A5A | #FF6A00
+Cometa nevado | mythic | #E0FBFF | #32005E | #29B0FF
+Medianoche rosa | mythic | #FF1493 | #1A0030 | #00FFC6
+Supernova violeta | mythic | #9D00FF | #0E0024 | #FFEA00
+Lava y hielo | mythic | #00C8A8 | #0A0A28 | #FF5A00
+Jardin de neon | mythic | #39FF14 | #320058 | #FF70D0

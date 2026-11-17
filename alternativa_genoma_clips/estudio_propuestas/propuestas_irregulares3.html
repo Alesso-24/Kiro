@@ -1,0 +1,123 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>Alloy · irregulares v3 · orgánico + diseño original</title>
+<style>
+html,body{margin:0;background:#0b0b0d;color:#9a958b;font:14px system-ui}
+h1{font-size:18px;text-align:center;margin:18px 0 4px;color:#e8e3d8}p.s{text-align:center;margin:0 0 14px;padding:0 16px}
+#g{display:grid;grid-template-columns:repeat(3,minmax(260px,340px));gap:26px 34px;justify-content:center;padding:10px 20px 40px}
+.card{text-align:center}.card canvas{width:100%;aspect-ratio:1;border-radius:50%;box-shadow:0 0 0 8px #1a1a1d;cursor:pointer}
+.card b{display:block;color:#e8e3d8;margin:12px 0 2px;font-size:16px}.card span{font-size:13px}
+a{color:#7fd}@media(max-width:1000px){#g{grid-template-columns:1fr}}
+</style>
+<h1>Irregulares v3 · orgánico, con el diseño original de Alloy</h1>
+<p class="s">reposo = óvalos redondeados (tu regla) · de vez en cuando hace una pose de boceto y se acomoda · cada ojo y cada pupila se mueven por su cuenta · mouse = te miran · <b>clic = criatura nueva</b> (con personalidad) · <a href="index.html">← todas</a></p>
+<div id="g"></div>
+<script>
+const R=(a,b)=>a+Math.random()*(b-a),P=a=>a[Math.random()*a.length|0];
+const hex=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
+const rgb=a=>`rgb(${a[0]|0},${a[1]|0},${a[2]|0})`;
+const now=()=>performance.now()/1000;
+const PAIRS=[['#4de3ff','#06222c'],['#ff5fa2','#2a0614'],['#ffb02e','#2b1a00'],['#8dff6a','#0a2a06'],['#b48cff','#1a0b3d'],['#ffe14d','#000000'],['#ff5a4d','#000000'],['#f3eee3','#000000'],['#2effc0','#00251c'],['#5b8cff','#000000'],['#ff9f3d','#000000'],['#ff8ad8','#2a0830']].map(p=>p.map(hex));
+// poses de los bocetos: [rx, ry, base plana, ángulo cresta, alto cresta, ancho cresta, alto punta, ancho punta, inclinación, gancho, muesca, giro°]
+const POSES={
+ huevo:[40,46,.12,-1.57,0,.3,0,.05,0,0,0,0],
+ bandera:[42,40,.2,-1.9,.55,.35,.5,.04,.25,.3,0,0],pico:[38,42,.2,-1.3,.45,.25,.9,.03,.3,0,0,0],
+ torre:[34,50,.25,-1.2,.5,.4,1.1,.035,.45,.2,.25,0],agachado:[48,32,.35,-1.57,.15,.5,.25,.05,0,0,0,0],
+ cola:[38,44,.2,-2.0,.5,.3,.95,.035,-.4,-.2,0,0],gancho:[40,44,.25,-1.8,.45,.3,.8,.04,-.35,-.7,.3,0],cabecita:[36,48,.25,-1.0,.35,.2,.6,.05,.1,.5,0,0]};
+const FLOURISH=['bandera','pico','torre','cola','gancho','cabecita'];
+function outline(p,t,id,sx,sy){
+  const [rx,ry,flat,ca,ch,cw,th,tw,lean,hook,notch]=p,pts=[],n=84;
+  for(let i=0;i<n;i++){const a=i/n*6.2832;let r=1+.028*Math.sin(3*a+t*1.3+id*2)+.022*Math.sin(5*a-t*.9+id)+.015*Math.sin(2*a+t*.7); // el borde nunca está quieto
+    const d=Math.atan2(Math.sin(a-ca),Math.cos(a-ca)),d2=Math.atan2(Math.sin(a-ca-hook*.5),Math.cos(a-ca-hook*.5));
+    r+=ch*Math.exp(-d*d/Math.max(.02,cw))+th*.6*Math.exp(-d2*d2/Math.max(.01,tw))*(1+Math.sin(t*2.3+id)*.07);
+    if(notch>0){const dn=Math.atan2(Math.sin(a-ca-.55),Math.cos(a-ca-.55));r-=notch*Math.exp(-dn*dn/.02)}
+    let x=Math.cos(a)*rx*r,y=Math.sin(a)*ry*r;if(y>0)y=ry*Math.pow(Math.sin(a),1-flat*.7)*r;
+    x+=-y*lean*.55;pts.push([x*sx,y*sy])}
+  return pts
+}
+const path=(g,p)=>{g.beginPath();p.forEach((q,i)=>i?g.lineTo(...q):g.moveTo(...q));g.closePath()};
+const mkEye=(k,d,kp)=>({p:POSES.huevo.slice(),v:POSES.huevo.map(()=>0),tgt:POSES.huevo.slice(),k,d,
+  o:1,ov:0,ot:1,gx:0,gy:0,gvx:0,gvy:0,px:0,py:0,pvx:0,pvy:0,kp,sz:1,szv:0,szT:1,jx:0,jy:0,jn:R(.3,1),ph:R(0,6.3),gene:R(.88,1.12)});
+function Face(title,desc,mode){
+  const card=document.createElement('div');card.className='card';
+  card.innerHTML=`<canvas width="480" height="480"></canvas><b>${title}</b><span>${desc}</span>`;document.getElementById('g').appendChild(card);
+  const c=card.querySelector('canvas'),g=c.getContext('2d');g.scale(2,2);
+  const S={t:0,tx:0,ty:0,pop:1,popv:0,sur:0,tilt:0,tiltT:0,pupT:1,conv:0};
+  let cr,mir,mouse=null,E={b:1.5,sc:1,fl:3.5,m:6,sl:16,w:12,sz:9,u:0};
+  const eyes=[mkEye(R(105,125),R(7.5,9),R(190,240)),mkEye(R(120,145),R(8.5,10),R(170,215))]; // cada ojo con su propia "rigidez"
+  function fresh(){
+    cr={scale:R(1.0,1.1),gap:R(110,120),pair:P(PAIRS),pair2:P(PAIRS),two:Math.random()<.3,pd:R(-1,1),
+      // personalidad: sesgo de comportamiento
+      curious:R(0,1),energy:R(.4,1.6),sleepy:R(0,1),grumpy:R(0,1),shy:R(0,1)};
+    mir=Math.random()<.5;S.popv-=7;setTimeout(()=>S.popv+=9,100)}
+  fresh();
+  const pstyle=i=>mode==='mixed'?(cr.pd*(i?-1:1)>0?'round':'tall'):mode;
+  const setPose=(i,n)=>{eyes[i].tgt=POSES[n].map((x,k)=>x*(k<2?R(.94,1.06):1))};
+  function goPose(a,b,delay=0){ // anticipación + salto; el 2º ojo llega un poco después
+    setPose(0,'agachado');setPose(1,'agachado');
+    setTimeout(()=>{setPose(0,a);S.popv+=2.5},110);
+    setTimeout(()=>setPose(1,mir?a:(b||a)),110+delay)}
+  const settle=(ms)=>setTimeout(()=>{if(S.t>E.u-2.2||true){setPose(0,'huevo');setTimeout(()=>setPose(1,'huevo'),R(40,160));S.popv+=1.5}},ms);
+  const look=(x,y)=>{S.tx=x;S.ty=y};
+  const blinkEye=(i,d=0)=>setTimeout(()=>{eyes[i].ot=1.08;setTimeout(()=>eyes[i].ot=0,50);setTimeout(()=>eyes[i].ot=1,240)},d);
+  const blink=()=>{blinkEye(0,0);blinkEye(1,R(15,60))};
+  const reset=()=>{S.tiltT=0;S.pupT=1;S.sur=0;eyes.forEach(e=>e.szT=1);look(0,0);settle(0)};
+  function mood(){const k=P(['feliz','triste','enojado','curioso','sorpresa']);
+    if(k==='feliz'){goPose('agachado','agachado',60);setTimeout(()=>S.popv+=4,300)}
+    if(k==='triste'){goPose('gancho','cola',90);S.tiltT=1;S.pupT=.9;look(0,6)}
+    if(k==='enojado'){goPose('pico','pico',40);S.tiltT=-1;S.pupT=.85}
+    if(k==='curioso'){goPose(P(['cabecita','bandera']),P(['pico','cola']),R(60,160));look(R(-14,14),-4);eyes[R(0,1)>.5?1:0].szT=1.2}
+    if(k==='sorpresa'){goPose('torre','torre',50);S.pupT=.65;S.sur=1}
+    setTimeout(reset,2300);E.u=S.t+2.6}
+  function slow(){E.u=S.t+2.7;eyes[0].ot=0;setTimeout(()=>eyes[1].ot=0,70);[.6,1.2,1.8].forEach(d=>setTimeout(()=>look(R(-14,14),R(-7,7)),d*1000));
+    setTimeout(()=>{look(0,0);eyes[0].ot=1;setTimeout(()=>eyes[1].ot=1,90);S.popv+=2},2300)}
+  let last=now();
+  (function f(){
+    const n=now(),dt=Math.min(.033,n-last);last=n;S.t+=dt;const t=S.t;
+    if(t>E.b&&t>E.u){blink();if(Math.random()<.2)setTimeout(blink,330);E.b=t+(2+Math.random()*3.4)/(.6+cr.energy*.4)}
+    if(t>E.w&&t>E.u){blinkEye(Math.random()<.5?0:1);E.w=t+9+Math.random()*10}                                   // guiño de un solo ojo
+    if(t>E.sz&&t>E.u){const i=Math.random()<.5?0:1;eyes[i].szT=P([.8,1.18,1.25]);eyes[1-i].szT=1;setTimeout(()=>eyes.forEach(e=>e.szT=1),R(1500,3000));E.sz=t+7+Math.random()*8} // una pupila crece, la otra no
+    if(t>E.sl&&t>E.u){slow();E.sl=t+(30-cr.sleepy*14)+Math.random()*14}
+    if(t>E.fl&&t>E.u){ // floritura: pose de boceto y luego se acomoda a ovalo redondeado
+      const w=cr.grumpy>.6?['pico','gancho','cola']:cr.curious>.6?['cabecita','bandera','torre']:FLOURISH;
+      goPose(P(w),P(w),R(40,200));settle(R(900,1700));E.fl=t+(3.4+Math.random()*3.2)/cr.energy}
+    if(t>E.m&&t>E.u&&!mouse){Math.random()<.18?fresh():mood();E.m=t+6+Math.random()*5}
+    if(!mouse&&t>E.sc&&t>E.u){Math.random()<.3?look(0,0):look(R(-15,15),R(-9,9));E.sc=t+(1.5+Math.random()*2.5)/(.6+cr.curious*.6)}
+    if(mouse)look(mouse.x*16,mouse.y*11);
+    if(t>(S.cv||0)){S.conv=R(-3.5,3.5);S.cv=t+R(4,9)}
+    eyes.forEach((e,i)=>{
+      const out=i?1:-1;
+      // cuerpo del ojo: sigue la mirada con su propio rebote
+      e.gvx+=((S.tx-e.gx)*e.k*1.25-e.gvx*e.d)*dt;e.gx+=e.gvx*dt;e.gvy+=((S.ty-e.gy)*e.k*1.25-e.gvy*e.d)*dt;e.gy+=e.gvy*dt;
+      // pupila INDEPENDIENTE: va más lejos que el ojo, con su propio resorte, deriva orgánica y microsacadas propias
+      e.jn-=dt;if(e.jn<0){e.jx=R(-3,3);e.jy=R(-2.2,2.2);e.jn=R(.35,1.3)}
+      const wx=Math.sin(t*(.9+i*.37)+e.ph)*1.6,wy=Math.cos(t*(1.1+i*.29)+e.ph)*1.2;
+      const tx=S.tx*.82+out*-S.conv*.5+e.jx+wx,ty=S.ty*.7+e.jy+wy;
+      e.pvx+=((tx-e.px)*e.kp-e.pvx*11)*dt;e.px+=e.pvx*dt;e.pvy+=((ty-e.py)*e.kp-e.pvy*11)*dt;e.py+=e.pvy*dt;
+      e.szv+=((e.szT*S.pupT*(1+.07*Math.sin(t*1.3+e.ph))-e.sz)*130-e.szv*10)*dt;e.sz+=e.szv*dt;
+      for(let k=0;k<12;k++){e.v[k]+=((e.tgt[k]-e.p[k])*e.k-e.v[k]*e.d)*dt;e.p[k]+=e.v[k]*dt}
+      e.ov+=((e.ot-e.o)*520-e.ov*28)*dt;e.o+=e.ov*dt});
+    S.popv+=((1-S.pop)*170-S.popv*10)*dt;S.pop+=S.popv*dt;S.tilt+=(S.tiltT-S.tilt)*.12;
+    g.fillStyle='#050506';g.fillRect(0,0,240,240);
+    g.save();g.translate(Math.sin(t*.6)*1.4,Math.sin(t*1.7)*1.3);
+    eyes.forEach((e,side)=>{
+      const p=e.p,out=side?1:-1,o=Math.max(0,Math.min(1.1,e.o)),f=(.07+.93*o)*(1+Math.sin(t*1.6+e.ph)*.012);
+      const pair=side&&cr.two?cr.pair2:cr.pair,sp=Math.hypot(e.gvx,e.gvy),ang=Math.atan2(e.gvy,e.gvx),str=1+Math.min(.25,sp*.006);
+      const k=S.pop*cr.scale*(1+S.sur*.12)*e.gene;
+      g.save();g.translate(120+out*cr.gap/2+e.gx*.9,134+e.gy*.9+(1-f)*p[1]*.3);
+      if(mir&&side)g.scale(-1,1);
+      g.rotate((p[11]+S.tilt*(mir&&side?-1:1)*out*-14)*.01745);
+      g.save();g.rotate(sp>2?ang:0);g.scale(str,1/Math.sqrt(str));g.rotate(sp>2?-ang:0);
+      const pts=outline(p,t,side,k,k*f);path(g,pts);g.fillStyle=rgb(pair[0]);g.fill();
+      g.save();g.clip();
+      const fl=mir&&side?-1:1,lim=p[0]*.38,px=Math.max(-lim,Math.min(lim,(cr.pd*p[0]*.2+e.px)*fl)),py=p[1]*.12+e.py;
+      const rd=pstyle(side)==='round',pr=rd?[p[0]*.42,p[0]*.42]:[p[0]*.52,p[1]*.6];
+      g.beginPath();g.ellipse(px,py,pr[0]*e.sz,pr[1]*e.sz*f,0,0,6.3);g.fillStyle=rgb(pair[1]);g.fill();
+      g.restore();g.restore();g.restore()});
+    g.restore();requestAnimationFrame(f)
+  })();
+  c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();mouse={x:((e.clientX-r.left)/r.width-.5)*2,y:((e.clientY-r.top)/r.height-.5)*2}});
+  c.addEventListener('mouseleave',()=>{mouse=null;reset()});c.addEventListener('click',fresh);
+}
+Face('I1 · Pupila alargada','Ojo de un color + pupila plana alta. Pupilas con su propio resorte, deriva y microsacadas.','tall');
+Face('I2 · Pupila redonda','Pupila redonda más chica. A veces una pupila se agranda y la otra no; a veces se cruzan un poco.','round');
+Face('I3 · Cada ojo distinto','Cada ojo puede tener pupila distinta (alta o redonda) y su propio par de colores.','mixed');
+</script></html>

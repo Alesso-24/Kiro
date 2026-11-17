@@ -1,0 +1,115 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>Alloy · irregulares v2 · siluetas de los bocetos, 2 colores</title>
+<style>
+html,body{margin:0;background:#0b0b0d;color:#9a958b;font:14px system-ui}
+h1{font-size:18px;text-align:center;margin:18px 0 4px;color:#e8e3d8}p.s{text-align:center;margin:0 0 14px}
+#g{display:grid;grid-template-columns:repeat(3,minmax(260px,340px));gap:26px 34px;justify-content:center;padding:10px 20px 20px}
+.card{text-align:center}.card canvas{width:100%;aspect-ratio:1;border-radius:50%;box-shadow:0 0 0 8px #1a1a1d;cursor:pointer}
+.card b{display:block;color:#e8e3d8;margin:12px 0 2px;font-size:16px}.card span{font-size:13px}
+#poses{max-width:900px;margin:0 auto 40px;text-align:center;font-size:13px}#poses canvas{background:#050506;border-radius:10px;margin:4px}
+a{color:#7fd}@media(max-width:1000px){#g{grid-template-columns:1fr}}
+</style>
+<h1>Formas irregulares v2 · siluetas sacadas de tus bocetos · solo 2 colores (ojo + pupila)</h1>
+<p class="s">cada ojo recorre las poses del boceto: se agacha (anticipación) → se estira en pico → se asienta · mouse = te miran · <b>clic = criatura nueva</b> · <a href="index.html">← todas las propuestas</a></p>
+<div id="g"></div>
+<div id="poses"><div>Las 8 poses (una por cada dibujo del boceto) que usan los ojos:</div></div>
+<script>
+const R=(a,b)=>a+Math.random()*(b-a),P=a=>a[Math.random()*a.length|0];
+const hex=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
+const rgb=a=>`rgb(${a[0]|0},${a[1]|0},${a[2]|0})`;
+const now=()=>performance.now()/1000;
+// pares [color del ojo, color de la pupila] — todo plano, solo dos colores como en el proyecto original
+const PAIRS=[['#4de3ff','#06222c'],['#ff5fa2','#2a0614'],['#ffb02e','#2b1a00'],['#8dff6a','#0a2a06'],['#b48cff','#1a0b3d'],['#ffe14d','#000000'],['#ff5a4d','#000000'],['#f3eee3','#000000'],['#2effc0','#00251c'],['#5b8cff','#000000'],['#ff9f3d','#000000'],['#ff8ad8','#2a0830']].map(p=>p.map(hex));
+// POSES: [rx, ry, base plana, ángulo de la cresta, alto cresta, ancho cresta, alto punta, ancho punta, inclinación, gancho, muesca, giro°]
+const POSES={
+ huevo:    [40,46,.12,-1.57,0,.3,0,.05,0,0,0,0],
+ bandera:  [42,40,.2,-1.9,.55,.35,.5,.04,.25,.3,0,0],      // boceto 14: cresta que cae hacia un lado
+ pico:     [38,42,.2,-1.3,.45,.25,.9,.03,.3,0,0,0],        // boceto 16: pico fino inclinado
+ torre:    [34,50,.25,-1.2,.5,.4,1.1,.035,.45,.2,.25,0],   // boceto 18: se estira alto, con muesca
+ agachado: [48,32,.35,-1.57,.15,.5,.25,.05,0,0,0,0],       // boceto 20: anticipación (aplastado)
+ cola:     [38,44,.2,-2.0,.5,.3,.95,.035,-.4,-.2,0,0],     // boceto 52: cresta hacia atrás
+ gancho:   [40,44,.25,-1.8,.45,.3,.8,.04,-.35,-.7,.3,0],   // boceto 60: pico que se enrosca
+ cabecita: [36,48,.25,-1.0,.35,.2,.6,.05,.1,.5,0,0]        // boceto 66: bultito arriba
+};
+const NAMES=Object.keys(POSES);
+function outline(p,t,id,sx,sy){
+  const [rx,ry,flat,ca,ch,cw,th,tw,lean,hook,notch]=p,pts=[],n=84;
+  for(let i=0;i<n;i++){const a=i/n*6.2832;let r=1;
+    const d=Math.atan2(Math.sin(a-ca),Math.cos(a-ca)),d2=Math.atan2(Math.sin(a-ca-hook*.5),Math.cos(a-ca-hook*.5));
+    r+=ch*Math.exp(-d*d/Math.max(.02,cw))+th*.6*Math.exp(-d2*d2/Math.max(.01,tw))*(1+Math.sin(t*2.3+id)*.06);
+    if(notch>0){const dn=Math.atan2(Math.sin(a-ca-.55),Math.cos(a-ca-.55));r-=notch*Math.exp(-dn*dn/.02)}
+    let x=Math.cos(a)*rx*r,y=Math.sin(a)*ry*r;
+    if(y>0)y=ry*Math.pow(Math.sin(a),1-flat*.7)*r;   // base más plana
+    x+=-y*lean*.55;pts.push([x*sx,y*sy])}
+  return pts
+}
+const path=(g,p)=>{g.beginPath();p.forEach((q,i)=>i?g.lineTo(...q):g.moveTo(...q));g.closePath()};
+function Face(title,desc,pupStyle){
+  const card=document.createElement('div');card.className='card';
+  card.innerHTML=`<canvas width="480" height="480"></canvas><b>${title}</b><span>${desc}</span>`;document.getElementById('g').appendChild(card);
+  const c=card.querySelector('canvas'),g=c.getContext('2d');g.scale(2,2);
+  const S={t:0,gx:0,gy:0,vx:0,vy:0,tx:0,ty:0,o:[1,1],ot:[1,1],pop:1,popv:0,sur:0,tilt:0,tiltT:0,pup:1,pupT:1};
+  let cr,mouse=null,E={b:1.5,sc:1,pose:2.2,m:5,sl:16,u:0},mir;
+  const P0=NAMES.map(n=>POSES[n]);
+  function fresh(){cr={scale:R(1.08,1.2),gap:R(104,114),pair:P(PAIRS),pair2:P(PAIRS),two:Math.random()<.3,pd:R(-1,1)};mir=Math.random()<.55;S.popv-=7;setTimeout(()=>S.popv+=9,100)}
+  fresh();
+  const eyes=[0,1].map(()=>({p:POSES.huevo.slice(),v:POSES.huevo.map(()=>0),tgt:POSES.huevo.slice()}));
+  const setPose=(i,name,jit=true)=>{const b=POSES[name];eyes[i].tgt=b.map((x,k)=>x*(jit&&k<2?R(.94,1.06):1)); };
+  function goPose(a,b){ // anticipación: se agacha 110 ms y luego salta a la pose
+    setPose(0,'agachado');setPose(1,'agachado');
+    setTimeout(()=>{setPose(0,a);setPose(1,mir?a:(b||a));S.popv+=2.5},110)}
+  const look=(x,y)=>{S.tx=x;S.ty=y};
+  const blink=()=>{S.ot=[1.08,1.08];setTimeout(()=>S.ot[0]=0,50);setTimeout(()=>S.ot[1]=0,90);setTimeout(()=>S.ot[0]=1,240);setTimeout(()=>S.ot[1]=1,270)};
+  const reset=()=>{S.tiltT=0;S.pupT=1;S.sur=0;look(0,0);goPose(P(["huevo","bandera","pico"]))};
+  function mood(){const k=P(['feliz','triste','enojado','curioso','sorpresa']);
+    if(k==='feliz'){goPose('agachado');setTimeout(()=>S.popv+=4,300)}
+    if(k==='triste'){goPose('gancho');S.tiltT=1;S.pupT=.9;look(0,6)}
+    if(k==='enojado'){goPose('pico');S.tiltT=-1;S.pupT=.85}
+    if(k==='curioso'){goPose(P(['cabecita','bandera']),P(['pico','cola']));look(R(-14,14),-4)}
+    if(k==='sorpresa'){goPose('torre');S.pupT=.65;S.sur=1}
+    setTimeout(reset,2200);E.u=S.t+2.4}
+  function slow(){E.u=S.t+2.6;S.ot=[0,0];[.6,1.2,1.8].forEach(d=>setTimeout(()=>look(R(-14,14),R(-7,7)),d*1000));setTimeout(()=>{look(0,0);S.ot=[1,1];S.popv+=2},2200)}
+  let last=now();
+  (function f(){
+    const n=now(),dt=Math.min(.033,n-last);last=n;S.t+=dt;const t=S.t;
+    if(t>E.b&&t>E.u){blink();if(Math.random()<.2)setTimeout(blink,330);E.b=t+2+Math.random()*3.4}
+    if(t>E.sl){slow();E.sl=t+26+Math.random()*16}
+    if(t>E.pose&&t>E.u){goPose(P(NAMES.filter(x=>x!=='agachado')),P(NAMES.filter(x=>x!=='agachado')));E.pose=t+2.6+Math.random()*2.4}
+    if(t>E.m&&t>E.u&&!mouse){Math.random()<.2?fresh():mood();E.m=t+6+Math.random()*5}
+    if(!mouse&&t>E.sc&&t>E.u){Math.random()<.3?look(0,0):look(R(-15,15),R(-9,9));E.sc=t+1.5+Math.random()*2.5}
+    if(mouse)look(mouse.x*16,mouse.y*11);
+    S.vx+=((S.tx-S.gx)*150-S.vx*9)*dt;S.gx+=S.vx*dt;S.vy+=((S.ty-S.gy)*150-S.vy*9)*dt;S.gy+=S.vy*dt;
+    for(let i=0;i<2;i++){const e=eyes[i];for(let k=0;k<12;k++){e.v[k]+=((e.tgt[k]-e.p[k])*120-e.v[k]*8.5)*dt;e.p[k]+=e.v[k]*dt}}
+    S.o.forEach((_,i)=>{S.o[i]+=0;});
+    S.ov=S.ov||[0,0];for(let i=0;i<2;i++){S.ov[i]+=((S.ot[i]-S.o[i])*520-S.ov[i]*28)*dt;S.o[i]+=S.ov[i]*dt}
+    S.popv+=((1-S.pop)*170-S.popv*10)*dt;S.pop+=S.popv*dt;S.tilt+=(S.tiltT-S.tilt)*.12;S.pup+=(S.pupT-S.pup)*.12;
+    g.fillStyle='#050506';g.fillRect(0,0,240,240);
+    g.save();g.translate(Math.sin(t*.6)*1.4,Math.sin(t*1.7)*1.3);
+    [0,1].forEach(side=>{
+      const e=eyes[side],p=e.p,out=side?1:-1,o=Math.max(0,Math.min(1.1,S.o[side])),f=.07+.93*o;
+      const pair=side&&cr.two?cr.pair2:cr.pair,sp=Math.hypot(S.vx,S.vy),ang=Math.atan2(S.vy,S.vx),str=1+Math.min(.25,sp*.006);
+      const k=S.pop*cr.scale*(1+S.sur*.12);
+      g.save();g.translate(120+out*cr.gap/2+S.gx*.9*(side?1:1)+0,134+S.gy*.9+(1-f)*p[1]*.3);
+      if(mir&&side)g.scale(-1,1);          // espejo: los picos miran hacia afuera
+      g.rotate((p[11]+S.tilt*(mir&&side?-1:1)*out*-14)*.01745);
+      g.save();g.rotate(sp>2?ang:0);g.scale(str,1/Math.sqrt(str));g.rotate(sp>2?-ang:0);
+      const pts=outline(p,S.t,side,k,k*f);path(g,pts);g.fillStyle=rgb(pair[0]);g.fill();
+      g.save();g.clip();
+      const lim=p[0]*.35,px=Math.max(-lim,Math.min(lim,(cr.pd*p[0]*.25+S.gx*.8)*(mir&&side?-1:1))),py=p[1]*.12+S.gy*.6;
+      const pr=pupStyle==='round'?[p[0]*.42,p[0]*.42]:[p[0]*.52,p[1]*.6];
+      g.beginPath();g.ellipse(px,py,pr[0]*S.pup,pr[1]*S.pup*f,0,0,6.3);g.fillStyle=rgb(pair[1]);g.fill();
+      g.restore();g.restore();g.restore()});
+    g.restore();requestAnimationFrame(f)
+  })();
+  c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();mouse={x:((e.clientX-r.left)/r.width-.5)*2,y:((e.clientY-r.top)/r.height-.5)*2}});
+  c.addEventListener('mouseleave',()=>{mouse=null;reset()});c.addEventListener('click',fresh);
+}
+Face('I1 · Pupila alargada','Ojo de un color + pupila oscura alta. Dos colores planos, sin contornos ni brillos.','tall');
+Face('I2 · Pupila redonda','Misma silueta de boceto con pupila redonda más chica (más tierno).','round');
+Face('I3 · Dos tonos por ojo','Cada ojo puede tener su propio par de colores (ojo + pupila). Sigue siendo plano.','tall');
+// galería de poses
+const pb=document.getElementById('poses');
+NAMES.forEach(n=>{const c=document.createElement('canvas');c.width=c.height=110;const g=c.getContext('2d');g.translate(55,62);g.scale(.55,.55);
+  const pts=outline(POSES[n],0,0,1,1);path(g,pts);g.fillStyle='#4de3ff';g.fill();g.beginPath();g.ellipse(0,POSES[n][1]*.12,POSES[n][0]*.52,POSES[n][1]*.6,0,0,6.3);g.save();g.clip();g.restore();
+  g.save();path(g,pts);g.clip();g.beginPath();g.ellipse(0,POSES[n][1]*.12,POSES[n][0]*.5,POSES[n][1]*.58,0,0,6.3);g.fillStyle='#06222c';g.fill();g.restore();
+  const w=document.createElement('span');w.style.cssText='display:inline-block;text-align:center;margin:4px';w.appendChild(c);w.appendChild(document.createElement('br'));w.append(n);pb.appendChild(w)});
+</script></html>

@@ -1,0 +1,158 @@
+// A4 - animador de sueno / cansancio / bostezo / ensuenio.  TAG 4.
+// Convencion: lt = parpado superior baja; lb = inferior sube; oy+ = cabeza cae.
+
+clip cabeceo mirror expr=4
+  0:    lt=0
+  500:  oy=5 lt=0.3 tilt=0.05 sy=-0.04
+  900:  oy=11 lt=0.6 tilt=0.1 sy=-0.08 gy=0.5
+  1250: oy=14 lt=0.78 tilt=0.15 sy=-0.1
+  1400: oy=-7 lt=0 tilt=-0.05 sy=0.14 sx=-0.07 ps=-0.25 gy=0
+  1650: oy=2 lt=0.2 tilt=0.02 sy=-0.03 sx=0.02 ps=0
+  1950: oy=0 lt=0.08 tilt=0 sy=0.01 sx=0
+  2300: lt=0 sy=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip bostezo expr=4
+  0:    sy=0
+  250:  oy=3 sy=-0.05 sx=0.03 lt=0.1
+  700:  oy=-6 sy=0.22 sx=-0.1 lt=0.2 ps=-0.2
+  1100: oy=0 sy=-0.08 sx=0.14 lt=0.42 lb=0 ps=0
+  1700: sy=-0.07 sx=0.13 lt=0.4 lb=0 oy=1
+  2000: oy=-1 sy=0.05 sx=-0.03 lt=0.35 lb=0.1
+  2300: oy=0 sy=-0.03 sx=0.02 lt=0.12 lb=0
+  2700: sy=0 sx=0 lt=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip parpados_pesados expr=4
+  0:    lt=0
+  400:  lt=0.3 oy=2
+  620:  lt=0.12 oy=0 sy=0.03
+  1100: lt=0.58 oy=4 sy=-0.04
+  1320: lt=0.38 oy=1 sy=0
+  1900: lt=0.75 oy=7 sy=-0.07 gy=0.35
+  2150: lt=0.45 oy=2 sy=0.02 gy=0
+  2600: lt=0 oy=0 sy=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip parpadeo_lento expr=4
+  0:    lt=0
+  300:  lt=0.4 sy=-0.04 oy=1
+  700:  lt=0.8 sy=-0.08 sx=0.07 oy=4
+  1000: lt=0.8 sy=-0.08 sx=0.07 oy=4
+  1450: lt=0 sy=0.07 sx=-0.03 oy=-2
+  1700: sy=-0.01 sx=0 oy=0.5
+  2000: sy=0 oy=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip estira_al_despertar mirror expr=4
+  0:    lt=0
+  400:  lt=0.7 sy=-0.08 sx=0.05 oy=4
+  800:  lt=0.78 sy=-0.12 sx=0.08 oy=7
+  1250: lt=0.35 sy=0.3 sx=-0.14 oy=-13 ps=0.2
+  1700: lt=0.5 lb=0.15 sy=0.32 sx=-0.15 oy=-14 tilt=0.04
+  2000: lt=0.45 sy=0.3 sx=-0.14 oy=-13 tilt=-0.03
+  2300: lt=0.2 lb=0 sy=-0.12 sx=0.08 oy=3 tilt=0 ps=0 ev=spark
+  2600: lt=0 sy=0.03 sx=-0.02 oy=-1
+  3000: sy=0 sx=0 oy=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip desperezarse mirror expr=4
+  0:    tilt=0
+  300:  tilt=-0.08 ox=-3 sy=-0.05 sx=0.03
+  800:  tilt=0.2 ox=8 sy=0.18 sx=-0.08 ltl=0.2 ltr=-0.1 oy=-6
+  1300: tilt=0.25 ox=10 sy=0.2 sx=-0.09 ltl=0.35 ltr=0.1 oy=-7
+  1700: tilt=-0.1 ox=-3 sy=-0.08 sx=0.06 lt=0.2 oy=2
+  2000: tilt=0.04 ox=1 sy=0.02 sx=0 lt=0.05 oy=0
+  2400: tilt=0 ox=0 sy=0 lt=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip acurrucarse mirror expr=4
+  0:    oy=0
+  300:  oy=-2 sy=0.05 sx=-0.02
+  800:  oy=8 sy=-0.15 sx=0.1 tilt=0.1 lt=0.4
+  1300: oy=12 sy=-0.12 sx=0.12 tilt=0.17 ox=-5 lt=0.42 lb=0
+  1700: oy=11 tilt=0.1 ox=-3 sy=-0.12
+  2100: oy=12 tilt=0.16 ox=-5 sy=-0.14
+  2500: oy=6 tilt=0.06 ox=-2 sy=-0.08 lt=0.4 lb=0.1
+  2900: oy=0 tilt=0 ox=0 sy=0 sx=0 lt=0 lb=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip ronquido_rebote expr=4
+  0:    lt=0
+  300:  lt=0.7 sy=-0.05 oy=3
+  800:  lt=0.65 sy=0.06 sx=-0.03 oy=-3
+  1100: lt=0.75 sy=-0.15 sx=0.09 oy=6 ev=dots
+  1350: sy=0.05 sx=-0.02 oy=-2
+  1550: sy=-0.04 sx=0.02 oy=2
+  2000: sy=0.05 sx=-0.025 oy=-2.5 lt=0.68
+  2250: sy=-0.1 sx=0.06 oy=5 lt=0.75 ev=dots
+  2600: sy=-0.03 oy=3 lt=0.35
+  2900: sy=0 sx=0 oy=0 lt=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip sonar_bonito mirror expr=4
+  0:    lt=0
+  350:  lt=0.5 oy=3 sy=-0.04
+  800:  lt=0.6 lb=0.25 sy=-0.08 sx=0.05 tilt=0.05 oy=1 ev=heart
+  1300: tilt=-0.05 oy=-2 sy=-0.04 lb=0.35 ev=sparks
+  1800: tilt=0.04 oy=0 ev=hearts
+  2300: lt=0.4 lb=0.2 tilt=0 sy=0 sx=0
+  2800: lt=0 lb=0 oy=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip mirada_somnolienta mirror expr=4
+  0:    lt=0
+  400:  lt=0.45 oy=2
+  900:  gx=-0.7 gy=0.2 lt=0.5 ox=-2 tilt=-0.03
+  1500: gx=-0.7 lt=0.6 ox=-2
+  1750: gx=0.1 gy=-0.2 lt=0.4 ox=0 tilt=0
+  2150: gx=0.8 gy=0.3 lt=0.6 ox=3 tilt=0.03
+  2500: gx=0.8 lt=0.75 oy=4
+  2900: gx=0 gy=0 lt=0 ox=0 oy=0 tilt=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip cinco_minutos_mas mirror expr=4
+  0:    lt=0
+  350:  lt=0.5 oy=3
+  700:  lt=0.15 sy=0.04 oy=-2
+  1000: lt=0.1 ox=3 tilt=0.06
+  1300: lt=0.72 oy=7 sy=-0.1 sx=0.05 tilt=-0.1 ox=-4
+  1500: lt=0.76 oy=8 sy=-0.12 sx=0.07
+  2100: sy=-0.07 oy=7 sx=0.04
+  2500: lt=0.4 oy=2 tilt=-0.03 sy=0 sx=0
+  2900: lt=0 oy=0 tilt=0 ox=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip dormido_a_mitad mirror expr=4
+  0:    gx=0
+  250:  gx=0.8
+  600:  gx=-0.8
+  900:  gx=-0.2 lt=0.25 oy=2
+  1250: gx=0 gy=0.3 lt=0.6 oy=6 sy=-0.05
+  1600: lt=0.85 oy=10 tilt=0.08 sy=-0.08
+  1750: lt=0 oy=-4 sy=0.1 sx=-0.05 gx=0.5 gy=0 tilt=-0.03
+  2000: lt=0.4 oy=3 sy=0 sx=0 gx=0 tilt=0
+  2300: lt=0.8 oy=9 tilt=0.1 sy=-0.07
+  2650: lt=0.85 oy=10
+  3000: lt=0 oy=0 tilt=0 sy=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip tallarse_ojos mirror expr=4
+  0:    lt=0
+  250:  lt=0.4 oy=2 sy=-0.06
+  450:  ltl=0.3 ltr=0.9 sy=-0.12 sx=0.06 ox=3 tilt=0.06
+  650:  ox=-3 tilt=-0.04
+  850:  ox=3 tilt=0.06
+  1050: ox=-2 tilt=-0.02
+  1300: ltl=0.15 ltr=0.5 sy=0.05 sx=0 ox=0 tilt=0
+  1600: lt=0 sy=0.1 sx=-0.04 oy=-3 ps=0.15
+  1950: sy=0 sx=0 oy=0 ps=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip despertar_feliz mirror expr=4
+  0:    lt=0
+  250:  lt=0.5 sy=-0.06 oy=2
+  550:  lt=0.1 sy=0.2 sx=-0.1 oy=-8 ps=0.25 ev=sparks
+  800:  lt=0 sy=-0.06 sx=0.05 oy=1
+  1050: sy=0.1 sx=-0.04 oy=-5 tilt=0.07 lb=0.2 ev=heart
+  1350: sy=-0.03 sx=0.01 oy=0 tilt=-0.05 lb=0.1
+  1650: tilt=0 lb=0 ps=0
+  2000: sy=0 sx=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip insomnio mirror expr=4
+  0:    lt=0
+  250:  lt=0.55 oy=3
+  330:  lt=0 sy=0.14 sx=-0.06 oy=-4 ps=-0.35 ev=lines
+  700:  sy=0.08 sx=-0.03 oy=-2 ps=-0.3
+  1200: gx=0.6 gy=0.4 sy=0.06 lb=0.2
+  1800: gx=-0.6 gy=0.3
+  2300: gx=0 gy=-0.4 lb=0.25 lt=0.15
+  2800: gx=0 gy=0 sy=0 sx=0 oy=0 ps=0 lb=0 lt=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end

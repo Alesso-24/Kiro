@@ -1,0 +1,135 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>Alloy · propuestas WALL·E / EVE</title>
+<style>
+html,body{margin:0;background:#0b0b0d;color:#9a958b;font:14px system-ui}
+h1{font-size:18px;text-align:center;margin:18px 0 4px;color:#e8e3d8}p.s{text-align:center;margin:0 0 14px}
+#g{display:grid;grid-template-columns:repeat(2,minmax(280px,380px));gap:26px 40px;justify-content:center;padding:10px 20px 40px}
+.card{text-align:center}.card canvas{width:100%;aspect-ratio:1;border-radius:50%;box-shadow:0 0 0 8px #1a1a1d;cursor:pointer}
+.card b{display:block;color:#e8e3d8;margin:12px 0 2px;font-size:16px}.card span{font-size:13px}
+@media(max-width:800px){#g{grid-template-columns:1fr}}
+</style>
+<h1>Propuestas · estilo WALL·E / EVE</h1>
+<p class="s">mouse = te miran · clic = cambia color · cada una cambia de emoción sola (feliz, triste, enojado, curioso, sorpresa)</p>
+<div id="g"></div>
+<script>
+const R=(a,b)=>a+Math.random()*(b-a);
+const S=(x=0)=>({x,v:0,t:x});const st=(s,dt,k,d)=>{s.v+=((s.t-s.x)*k-s.v*d)*dt;s.x+=s.v*dt};
+const hex=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
+const rgb=(a,al=1)=>`rgba(${a[0]|0},${a[1]|0},${a[2]|0},${al})`;
+const mixc=(a,b,k)=>a.map((v,i)=>v+(b[i]-v)*k);
+const COLS=['#4de3ff','#7dff6a','#ff9f3d','#ff5fa2','#b48cff','#ffe14d','#ff5a4d'].map(hex);
+const now=()=>performance.now()/1000;
+// ================= motor común: resortes, parpadeo, miradas, emociones =================
+function Face(title,desc,draw,theme){
+  const card=document.createElement('div');card.className='card';
+  card.innerHTML=`<canvas width="480" height="480"></canvas><b>${title}</b><span>${desc}</span>`;
+  document.getElementById('g').appendChild(card);
+  const c=card.querySelector('canvas'),g=c.getContext('2d');g.scale(2,2);
+  const s={g,gx:S(),gy:S(),oL:S(1),oR:S(1),hp:S(),tilt:S(),cur:S(),sur:S(),dr:S(),pop:S(1),pup:S(1),ci:0,col:[...COLS[0]],colT:COLS[0],t:0,theme};
+  let mouse=null,E={b:1.5,sc:1,m:4,sl:15,until:0};
+  const look=(x,y)=>{s.gx.t=x;s.gy.t=y};
+  const blink=()=>{s.oL.t=s.oR.t=1.08;setTimeout(()=>s.oL.t=0,50);setTimeout(()=>s.oR.t=0,90);setTimeout(()=>s.oL.t=1,240);setTimeout(()=>s.oR.t=1,270)};
+  const reset=()=>{s.hp.t=s.tilt.t=s.cur.t=s.sur.t=s.dr.t=0;s.pup.t=1;look(0,0)};
+  function mood(k){
+    k=k||['feliz','triste','enojado','curioso','sorpresa','feliz','curioso'][Math.random()*7|0];
+    if(k==='feliz'){s.hp.t=1;s.pop.v+=3}
+    if(k==='triste'){s.tilt.t=1;s.dr.t=.5;look(0,6)}
+    if(k==='enojado'){s.tilt.t=-1;s.pup.t=.8}
+    if(k==='curioso'){const d=Math.random()<.5?-1:1;s.cur.t=d;look(d*14,-4)}
+    if(k==='sorpresa'){s.sur.t=1;s.pup.t=.6;s.pop.v+=4}
+    setTimeout(reset,2000);E.until=s.t+2.2
+  }
+  function slow(){E.until=s.t+2.6;s.oL.t=s.oR.t=0;[.6,1.2,1.8].forEach(d=>setTimeout(()=>look(R(-14,14),R(-7,7)),d*1000));
+    setTimeout(()=>{look(0,0);s.oL.t=1;setTimeout(()=>s.oR.t=1,60);s.pop.v+=2},2200)}
+  let last=now();
+  (function f(){
+    const n=now(),dt=Math.min(.033,n-last);last=n;s.t+=dt;const t=s.t;
+    if(t>E.b&&t>E.until){blink();if(Math.random()<.2)setTimeout(blink,330);E.b=t+2+Math.random()*3.4}
+    if(t>E.sl){slow();E.sl=t+26+Math.random()*16}
+    if(t>E.m&&t>E.until&&!mouse){mood();E.m=t+5+Math.random()*5}
+    if(!mouse&&t>E.sc&&t>E.until){Math.random()<.3?look(0,0):look(R(-15,15),R(-9,9));E.sc=t+1.3+Math.random()*2.6}
+    if(mouse)look(mouse.x*16,mouse.y*11);
+    st(s.gx,dt,150,9);st(s.gy,dt,150,9);st(s.oL,dt,520,28);st(s.oR,dt,520,28);
+    [s.hp,s.tilt,s.cur,s.sur,s.dr,s.pup].forEach(q=>st(q,dt,90,9));st(s.pop,dt,170,10);
+    for(let i=0;i<3;i++)s.col[i]+=(s.colT[i]-s.col[i])*.12;
+    draw(s);requestAnimationFrame(f)
+  })();
+  c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();mouse={x:((e.clientX-r.left)/r.width-.5)*2,y:((e.clientY-r.top)/r.height-.5)*2}});
+  c.addEventListener('mouseleave',()=>{mouse=null;reset()});
+  c.addEventListener('click',()=>{s.ci=(s.ci+1)%COLS.length;s.colT=COLS[s.ci];s.pop.v-=6;setTimeout(()=>s.pop.v+=8,90)});
+}
+// ================= A y C: casco de WALL·E (binoculares inclinados, pupila negra con aro) =================
+const HOUS=new Path2D('M112 74 L112 130 C102 150 80 168 56 168 C32 168 22 142 27 116 C31 94 40 88 66 83 Z');
+function wall(s){
+  const g=s.g,T=s.theme,col=s.col,C=rgb(col);
+  g.fillStyle=T.bg;g.fillRect(0,0,240,240);
+  const eyeD=(side,o)=>{
+    o=Math.max(0,Math.min(1.1,o));
+    const grow=1+s.cur.x*(side?.16:-.16)*-1+s.sur.x*.1,k=s.pop.x*grow;
+    g.save();if(side){g.translate(240,0);g.scale(-1,1)}
+    g.translate(112,118);g.scale(k,k);g.rotate((side?1:-1)*(s.tilt.x*-.05+s.cur.x*.06*(side?1:-1)));g.translate(-112,-118);
+    g.translate(s.gx.x*(side?-1:1)*.3,s.gy.x*.35);
+    g.lineJoin='round';
+    if(T.glow){g.shadowColor=C;g.shadowBlur=14}
+    g.fillStyle=T.fill(col);g.fill(HOUS);g.shadowBlur=0;
+    g.save();g.clip(HOUS);
+    const gxe=s.gx.x*(side?-1:1)*.7,pr=25*s.pup.x*(1+s.sur.x*.0),px=72+Math.max(-12,Math.min(12,gxe)),py=118+s.gy.x*.8;
+    g.beginPath();g.arc(px,py,pr,0,6.3);g.fillStyle=T.pupil;g.fill();
+    g.beginPath();g.arc(px,py,pr*.6,0,6.3);g.lineWidth=3;g.strokeStyle=T.ring(col);g.stroke();
+    g.beginPath();g.arc(px-pr*.4,py-pr*.45,pr*.13,0,6.3);g.fillStyle=T.hi;g.fill();
+    // párpado superior (cae al parpadear / triste / enojado / sueño)
+    const yL=60+(1-o)*112+s.dr.x*26+s.hp.x*8,sl=s.tilt.x*.38*(1);
+    g.beginPath();g.moveTo(10,0);g.lineTo(125,0);g.lineTo(125,yL+sl*(112-125)*-1);g.lineTo(10,yL+sl*(112-10)*-1*-1);g.closePath();g.fillStyle=T.lid;g.fill();
+    g.beginPath();g.moveTo(10,yL-sl*102);g.lineTo(125,yL+sl*13);g.lineWidth=3;g.strokeStyle=T.edge;g.stroke();
+    // párpado inferior que sube al sonreír
+    if(s.hp.x>.05){g.beginPath();g.ellipse(70,176,70,s.hp.x*52,0,0,6.3);g.fillStyle=T.lid;g.fill();g.lineWidth=3;g.strokeStyle=T.edge;g.stroke()}
+    g.restore();
+    g.lineWidth=7;g.strokeStyle=T.glow?C:T.stroke;if(T.glow){g.shadowColor=C;g.shadowBlur=12}g.stroke(HOUS);g.restore()
+  };
+  eyeD(0,s.oL.x);eyeD(1,s.oR.x);
+  g.fillStyle=T.glow?rgb(col,.85):T.stroke;g.beginPath();g.roundRect(114,86,12,46,6);g.fill()
+}
+Face('A · WALL·E fiel','Casco arena con borde café sobre amarillo, pupilas negras con aro. Párpados caen para triste/enojado.',wall,
+ {bg:'#f2b61f',fill:()=>'#c4a572',pupil:'#050505',ring:()=>'#4a1034',hi:'rgba(255,255,255,.0)',lid:'#a88d5e',edge:'#3f3626',stroke:'#3f3626',glow:false});
+// ================= B: EVE (cara negra brillante, ojos de luz que se recortan para cada emoción) =================
+const oc=document.createElement('canvas');oc.width=oc.height=140;const og=oc.getContext('2d');
+function eveEye(s,side,o,cx,cy){
+  const g=s.g,col=s.col,C=rgb(col);o=Math.max(0,Math.min(1.1,o));
+  const sc=s.pop.x*(1+s.sur.x*.14+(side?-1:1)*s.cur.x*.15),ry=30*sc*(.07+.93*o)*(1-.3*s.dr.x),rx=25*sc*(1+(1-Math.min(o,1))*.25);
+  og.clearRect(0,0,140,140);og.fillStyle=C;og.beginPath();og.ellipse(70,70,rx,ry,0,0,6.3);og.fill();
+  og.globalCompositeOperation='destination-out';
+  if(s.hp.x>.02){og.beginPath();og.arc(70,70+(1-s.hp.x)*80+18,30*sc,0,6.3);og.fill()}
+  const tl=s.tilt.x,m=side?-1:1;
+  if(Math.abs(tl)>.02){og.beginPath();const y0=70-ry+Math.abs(tl)*20,sl=tl*.5*m*-1;og.moveTo(0,y0-sl*70);og.lineTo(140,y0+sl*70);og.lineTo(140,0);og.lineTo(0,0);og.closePath();og.fill()}
+  og.globalCompositeOperation='source-over';
+  g.save();g.translate(cx+s.gx.x*.9-70,cy+s.gy.x*.9-70);
+  g.shadowColor=C;g.shadowBlur=22;g.drawImage(oc,0,0,140,140);g.shadowBlur=8;g.drawImage(oc,0,0,140,140);g.restore()
+}
+Face('B · EVE fiel','Cara negra brillante, ojos de luz sin pupila. Feliz = arco ^, triste/enojado = recorte inclinado, curioso = uno más grande.',s=>{
+  const g=s.g;g.fillStyle='#050506';g.fillRect(0,0,240,240);
+  const gr=g.createRadialGradient(120,70,5,120,90,130);gr.addColorStop(0,'rgba(255,255,255,.07)');gr.addColorStop(1,'rgba(255,255,255,0)');g.fillStyle=gr;g.fillRect(0,0,240,240);
+  g.save();g.translate(Math.sin(s.t*.6)*1.4,Math.sin(s.t*1.7)*1.3);
+  eveEye(s,0,s.oL.x,78,124);eveEye(s,1,s.oR.x,162,124);g.restore()});
+// ================= C: híbrido: casco de WALL·E hecho de luz (EVE) =================
+Face('C · Híbrido WALL·E × EVE','Mismo casco inclinado de WALL·E pero luminoso sobre negro, con color propio y pupila oscura con aro.',wall,
+ {bg:'#050506',fill:c=>rgb(c,.2),pupil:'#050506',ring:c=>rgb(c),hi:'rgba(255,255,255,.0)',lid:'#050506',edge:'rgba(0,0,0,0)',stroke:'#000',glow:true});
+// ================= D: lentes de cámara (ojos redondos con iris que se cierra) =================
+Face('D · Lentes de cámara','Dos lentes redondos: carcasa gris, iris de color que se contrae (pupila grande/chica) y párpados tipo obturador.',s=>{
+  const g=s.g,C=rgb(s.col);g.fillStyle='#0b0b0d';g.fillRect(0,0,240,240);
+  g.save();g.translate(Math.sin(s.t*.6)*1.4,Math.sin(s.t*1.7)*1.3);
+  [[0,s.oL.x,78],[1,s.oR.x,162]].forEach(([side,o,cx])=>{
+    o=Math.max(0,Math.min(1.1,o));const k=s.pop.x*(1+s.sur.x*.12+(side?-1:1)*s.cur.x*.14),cy=124,m=side?-1:1;
+    g.save();g.translate(cx+s.gx.x*.25,cy+s.gy.x*.25);g.scale(k,k);g.rotate(s.tilt.x*-.06*m);
+    g.beginPath();g.arc(0,0,40,0,6.3);g.fillStyle='#17171b';g.fill();g.lineWidth=8;g.strokeStyle='#3a3a42';g.stroke();
+    g.save();g.beginPath();g.arc(0,0,37,0,6.3);g.clip();
+    const px=s.gx.x*.75,py=s.gy.x*.75,ir=27*(.75+.25*s.pup.x),pr=17*s.pup.x;
+    g.shadowColor=C;g.shadowBlur=14;g.beginPath();g.arc(px,py,ir,0,6.3);g.lineWidth=6;g.strokeStyle=C;g.stroke();g.shadowBlur=0;
+    g.beginPath();g.arc(px,py,ir-3,0,6.3);g.fillStyle=rgb(s.col,.18);g.fill();
+    g.beginPath();g.arc(px,py,pr,0,6.3);g.fillStyle='#030303';g.fill();
+    g.beginPath();g.arc(px-pr*.4,py-pr*.45,pr*.26,0,6.3);g.fillStyle=rgb(mixc(s.col,[255,255,255],.75),.95);g.fill();
+    const lid=-40+o*0+(1-o)*43+s.dr.x*14+Math.abs(s.tilt.x)*6,sl=s.tilt.x*.35;
+    g.fillStyle='#0d0d10';g.beginPath();g.moveTo(-45,-45);g.lineTo(45,-45);g.lineTo(45,lid+sl*45*m);g.lineTo(-45,lid-sl*45*m);g.closePath();g.fill();
+    g.beginPath();g.moveTo(-45,45);g.lineTo(45,45);g.lineTo(45,45-(1-o)*43-0);g.lineTo(-45,45-(1-o)*43);g.closePath();g.fill();
+    if(s.hp.x>.03){g.beginPath();g.ellipse(0,52,52,s.hp.x*44,0,0,6.3);g.fill()}
+    g.restore();g.restore()});
+  g.restore()});
+</script></html>

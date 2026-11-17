@@ -1,0 +1,68 @@
+// P1 - calidas / pastel / tierra / neutros
+// nombre | rareza | #ojo | #pupila | #acento
+Mandarina noche     | common   | #FF9A2E | #1F4E8C | #FFD08A
+Limonada rosa       | common   | #FFE95C | #D6336C | #FFF3A0
+Sandia fresca       | common   | #FF6B81 | #0F5A3C | #FFB3BE
+Coral laguna        | common   | #FF7F6B | #07555C | #FFC1B5
+Vainilla ciruela    | common   | #FFF1C1 | #6A2C70 | #FFD98A
+Rosa bebe uva       | common   | #FFC6DD | #5B3A9E | #FFE3EE
+Menta noche         | common   | #A8F0CF | #3D2A66 | #E2FFF2
+Lila atardecer      | common   | #CDB8FF | #B8400F | #F0E6FF
+Cielo coral         | common   | #BFE6FF | #D2391F | #FFD0C4
+Crema aguamarina    | common   | #FFF6DA | #00907F | #9FE8DC
+Arena turquesa      | common   | #F0D9A8 | #0B7C8F | #8FD9E6
+Marfil frambuesa    | common   | #FFF8E6 | #C2185B | #FFB3D0
+Chocolate caramelo  | common   | #8A5230 | #FFD28A | #C98F55
+Miel dorada         | common   | #FFB81C | #7A3E00 | #FFE08A
+Canela rosa         | common   | #E8A090 | #5C1F2E | #FFD6CC
+Terracota cielo     | common   | #D4562B | #CFEFFF | #FFB89A
+Papaya menta        | common   | #FF9F5A | #0A5C40 | #FFD0A8
+Fresa vainilla      | common   | #FF4D6D | #FFFAE8 | #FFB0BF
+Albaricoque lila    | common   | #FFBE8A | #7A4FD0 | #FFE0C4
+Rosa te oliva       | common   | #F7B7C0 | #2F6A4A | #FFD9A8
+Hortensia rosa      | common   | #CFE3FF | #D43B6A | #FFE0EE
+Algodon jade        | common   | #E6D2FF | #1F7A66 | #BFF0DE
+Nube celeste        | common   | #FFE9B8 | #1F7AC4 | #BFE6FF
+Girasol cobalto     | common   | #FFD21F | #1F46A8 | #FFF080
+Mango fucsia        | common   | #FFB02E | #A8186A | #FFE08A
+Azafran bosque      | common   | #F5A800 | #0E5A2A | #FFD966
+Salmon oliva        | common   | #FF9E94 | #4F5A12 | #FFD0CA
+Peonia profunda     | common   | #FF8FB8 | #4B1D6B | #FFD0E4
+Brasa crema         | common   | #F03A1A | #FFE9A8 | #FF9A70
+Cereza menta        | common   | #E8344A | #C8FFE6 | #FF8E9C
+Tulipan granate     | common   | #FF7096 | #7A1030 | #FFC4D4
+Lavanda miel        | common   | #BFA6F0 | #6B3F00 | #FFD98A
+Perla oliva         | common   | #E9E4F2 | #5F6B12 | #F2F0D0
+Hueso azul          | common   | #F1E8D8 | #3F5B8C | #CBD9F0
+Avena canela        | common   | #E8D6B5 | #1F6F5C | #C9A06A
+Arcilla marfil      | common   | #BF6A48 | #FFF0D8 | #F0B79C
+Pomelo noche        | common   | #FF8A7A | #2B2F7A | #FFD0C8
+Atardecer morado    | uncommon | #FF7A45 | #5B1F8C | #FFC24D
+Flamenco crema      | uncommon | #F2408F | #FFF6CC | #FF9EC8
+Cacao chicle        | uncommon | #8F5233 | #FFC1D0 | #D98FA8
+Caramelo marino     | uncommon | #E8A24A | #1D3FA0 | #FFD79A
+Zanahoria nieve     | uncommon | #F26A00 | #FFFDF5 | #FFB868
+Helado de durazno   | uncommon | #FFCBA4 | #55701A | #FFE8D2
+Sorbete de lima     | uncommon | #E4FF8A | #17734A | #FFFFC4
+Piruleta menta      | uncommon | #FF7EB3 | #00545E | #9CF5D2
+Menta frambuesa     | uncommon | #9CF5D2 | #D13F7C | #D8FFF0
+Lila vainilla       | uncommon | #8F6BE8 | #FFF6CC | #E4D8FF
+Cielo ambar         | uncommon | #9ED8FF | #B35A00 | #FFE0A0
+Rosa pizarra        | uncommon | #E8B4C4 | #46506B | #F6DCE4
+Arena granada       | uncommon | #E8C08F | #A3233F | #FFE3C0
+Crema orquidea      | uncommon | #FFF3D6 | #7B5CD6 | #D9CCFF
+Pistacho ciruela    | uncommon | #CDEBA0 | #5B2A63 | #F0FFD0
+Bronce vino         | uncommon | #D79A3B | #6E1B3A | #F5CE80
+Rubor zafiro        | uncommon | #FFB3B3 | #0B5D8A | #FFD6D6
+Tostado petroleo    | uncommon | #D98C5F | #12444D | #F5C9A8
+Jengibre violeta    | uncommon | #D97A2B | #3B1E6E | #FFD08A
+Orquidea marino     | uncommon | #E8A6F2 | #1B5E8C | #F7D6FB
+Petalo pistacho     | uncommon | #D6F5C8 | #A2285F | #F6FFE8
+Ambar violeta       | rare     | #FFB000 | #4A0FA8 | #FF6AD5
+Frambuesa helada    | rare     | #FF3F94 | #C4F6FF | #7FD6F0
+Oro rosa            | rare     | #EDB88F | #1F4D7A | #FFE3A8
+Luna de miel        | rare     | #FFF0B8 | #E8508C | #FFC7A0
+Durazno ultravioleta| rare     | #FFC4A0 | #5A1FE0 | #FF7ACD
+Coral abismo        | rare     | #FF7061 | #06283D | #3DE0D0
+Sol y brasa         | rare     | #FFE14D | #C21F1F | #FF8A3D
+Bombon esmeralda    | rare     | #FF9BD2 | #005C3C | #FFD1EE

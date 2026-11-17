@@ -1,0 +1,227 @@
+// A6 - ANIMADOR energia / carga / bateria / electricidad / arranque / apagado / easter eggs   (TAG 6)
+// Convencion: lt/lb = parpado superior/inferior (+ cierra/sube). Capa aditiva sobre cualquier expresion.
+
+// ---- 1. arranque: abre los ojos por primera vez, perezoso, se asusta de ver el mundo
+clip arranque_ojos expr=6
+  0:    lt=0
+  90:   lt=0.9 sy=-0.32 sx=0.14 oy=7
+  480:  lt=0.62 sy=-0.22 sx=0.1 oy=5 ps=-0.3
+  700:  lt=0.9 sy=-0.3 sx=0.13 oy=7
+  1100: lt=0.4 sy=-0.1 sx=0.06 oy=3 ps=-0.2
+  1380: lt=0 sy=0.24 sx=-0.11 oy=-6 ps=0.4 ev=spark
+  1650: lt=0 sy=-0.07 sx=0.05 oy=1 ps=0.15
+  1950: sy=0.02 sx=-0.01 oy=0 ps=0
+  2300: sy=0 sx=0 oy=0 ps=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+
+// ---- 2. apagado: se cierra lento luchando contra el sueno, se queda en linea y vuelve de a poquito
+clip apagado_lento expr=6
+  0:    lt=0
+  320:  lt=0.22 sy=-0.04 oy=3
+  700:  lt=0.1 sy=0 oy=1
+  1250: lt=0.6 sy=-0.16 sx=0.07 oy=6
+  1850: lt=0.9 sy=-0.34 sx=0.16 oy=9
+  2250: lt=0.9 sy=-0.34 sx=0.16 oy=9
+  2500: lt=0.4 sy=-0.12 sx=0.05 oy=3
+  2600: lt=0 sy=0 sx=0 oy=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+
+// ---- 3. conectar el cable: sobresalto + chispas, luego alivio
+clip conectar_cable mirror expr=6
+  0:    sy=0
+  70:   sy=0.3 sx=-0.14 oy=-8 ox=-3 tilt=-0.08 ps=-0.4 ev=bolts
+  190:  sy=-0.13 sx=0.1 oy=3 ox=2 tilt=0.05 ps=-0.2
+  320:  sy=0.1 sx=-0.05 oy=-3 ox=-2 tilt=0.07 ps=0.1
+  480:  sy=-0.04 sx=0.03 oy=1 ox=1 tilt=-0.04 ps=0.2
+  720:  sy=0.05 sx=-0.02 oy=-1 ox=0 tilt=0 ps=0.25
+  1100: sy=0 sx=0 oy=0 ps=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+
+// ---- 4. carga constante: respira con pulso suave (3 pulsos, empieza y acaba en reposo: encadenable)
+clip carga_pulso expr=6
+  0:    sy=0
+  400:  sy=0.09 sx=-0.045 ps=0.3 oy=-2
+  800:  sy=-0.05 sx=0.03 ps=-0.15 lt=0.14 oy=2
+  1200: sy=0.09 sx=-0.045 ps=0.3 lt=0 oy=-2
+  1600: sy=-0.05 sx=0.03 ps=-0.15 lt=0.14 oy=2
+  2000: sy=0.09 sx=-0.045 ps=0.3 lt=0 oy=-2
+  2300: sy=-0.02 sx=0.01 ps=-0.05 lt=0.06 oy=0
+  2600: sy=0 sx=0 ps=0 lt=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+
+// ---- 5. carga completa: se agacha, se estira satisfecho con ojitos felices, chispitas
+clip carga_completa expr=6
+  0:    sy=0
+  300:  sy=-0.17 sx=0.12 oy=5 lt=0.15
+  760:  sy=0.3 sx=-0.14 oy=-10 lt=0.38 lbl=0.15 lbr=0.15 tilt=0.05
+  1100: sy=0.33 sx=-0.15 oy=-11 lt=0.42 tilt=0.05 ev=sparks
+  1450: sy=-0.08 sx=0.06 oy=2 lt=0.08 lbl=0 lbr=0 tilt=0
+  1750: sy=0.04 sx=-0.02 oy=-1 lt=0
+  2300: sy=0 sx=0 oy=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+
+// ---- 6. hambre / bateria baja: decae, mira al suelo, parpadeo debil, gota de sudor
+clip hambre_bateria mirror expr=6
+  0:    sy=0
+  420:  sy=-0.1 sx=0.06 oy=4 lt=0.2 ps=-0.2 gy=0.25
+  920:  sy=-0.18 sx=0.1 oy=8 lt=0.45 ps=-0.32 gy=0.5 tilt=-0.05
+  1250: sy=-0.24 sx=0.12 oy=9 lt=0.82
+  1470: sy=-0.15 sx=0.08 oy=7 lt=0.4
+  1900: sy=-0.14 sx=0.08 oy=7 lt=0.3 ps=-0.35 gy=0.6 tilt=-0.06 ev=sweat
+  2400: sy=0 sx=0 oy=0 lt=0 ps=0 gy=0 tilt=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+
+// ---- 7. tambaleo sin energia: se mece cada vez mas cansado, la mirada se retrasa
+clip tambaleo_sin_energia mirror expr=6
+  0:    ox=0
+  250:  ox=-7 tilt=-0.18 oy=3 lt=0.3 sy=-0.08 gx=0.25
+  620:  ox=9 tilt=0.22 oy=5 lt=0.5 sy=-0.12 gx=-0.3
+  980:  ox=-10 tilt=-0.26 oy=7 lt=0.66 sy=-0.15 gx=0.35
+  1330: ox=6 tilt=0.15 oy=8 lt=0.45 sy=-0.12 gx=-0.2
+  1700: ox=-2 tilt=-0.06 oy=4 lt=0.25 sy=-0.05 gx=0.1
+  2200: ox=0 tilt=0 oy=0 lt=0 sy=0 gx=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+
+// ---- 8. sorbo de energia: decaido -> traga -> zap! -> revive con rebote
+clip sorbo_de_energia mirror expr=6
+  0:    sy=0
+  160:  sy=-0.12 sx=0.07 oy=4 lt=0.3
+  400:  sy=-0.2 sx=0.12 oy=6 lt=0.45 ps=-0.25
+  620:  sy=0.3 sx=-0.14 oy=-8 lt=0 ps=0.45 ev=spark
+  820:  sy=-0.06 sx=0.05 oy=2 ps=0.1
+  1030: sy=0.1 sx=-0.05 oy=-3 ps=0.2
+  1330: sy=0 sx=0 oy=0 ps=0
+  1600: sy=0 sx=0 oy=0 ps=0 lt=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+
+// ---- 9. sobrecarga: se hincha, vibra con chispas, se desinfla
+clip sobrecarga expr=6
+  0:    sy=0
+  140:  sy=0.18 sx=0.07 ps=0.4 oy=-2
+  200:  ox=4.5 ev=bolts
+  260:  ox=-4.5 oy=-3
+  320:  ox=5 oy=-1
+  380:  ox=-5 oy=-3 ev=bolts
+  440:  ox=4.5 oy=-1
+  500:  ox=-3.5 oy=-2
+  700:  ox=0 sy=-0.13 sx=0.1 ps=-0.2 oy=2
+  1000: sy=0.03 sx=-0.01 ps=0 oy=0
+  1500: sy=0 sx=0 ox=0 oy=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+
+// ---- 10. cortocircuito: dos tics electricos secos con calma entre medio
+clip cortocircuito_tic mirror linear expr=6
+  0:    ox=0
+  420:  ox=0 tilt=0
+  450:  ox=-6 oy=-2 tilt=0.12 ltl=0.45 ev=bolt
+  500:  ox=5 oy=1 tilt=-0.1 ltl=0 ltr=0.5
+  560:  ox=0 oy=0 tilt=0 ltr=0
+  900:  ox=0
+  930:  ox=4 tilt=0.08 sy=-0.07 lt=0.2 ev=bolt
+  975:  ox=-3 tilt=-0.06 sy=0.05 lt=0
+  1050: ox=0 tilt=0 sy=0
+  1400: ox=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+
+// ---- 11. encendido CRT: linea horizontal, parpadea, se abre de golpe, parpadeo lento
+clip encendido_crt expr=6
+  0:    sy=0
+  70:   sy=-0.5 sx=0.4 lt=0.5
+  280:  sy=-0.5 sx=0.4 lt=0.5
+  340:  sy=-0.18 sx=0.1 lt=0.2
+  400:  sy=-0.5 sx=0.4 lt=0.5
+  500:  sy=0.22 sx=-0.09 lt=0 ps=0.25 ev=blink
+  640:  sy=-0.05 sx=0.03 ps=0.05
+  860:  sy=-0.08 sx=0.05 lt=0.6
+  1130: sy=0 sx=0 lt=0 ps=0
+  1400: sy=0 sx=0 lt=0 ps=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+
+// ---- 12. glitch: saltos bruscos de posicion y parpados
+clip glitch mirror linear expr=6
+  0:    ox=0
+  100:  ox=-8 oy=2 ltl=0.5 ev=shake
+  160:  ox=10 oy=-3 ltl=0 ltr=0.45
+  210:  ox=-4 oy=5 ltr=0 lt=0.3 sy=-0.1
+  330:  ox=0 oy=0 lt=0 sy=0
+  540:  ox=0
+  570:  ox=12 sx=0.22 sy=-0.2
+  610:  ox=-6 sx=-0.1 sy=0.1 ltr=0.6
+  650:  ox=3 sx=0 sy=0 ltr=0 oy=-2
+  730:  ox=0 oy=0
+  1100: ox=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+
+// ---- 13. reiniciando: cierra, espera con puntitos, abre
+clip reiniciando expr=6
+  0:    lt=0
+  340:  lt=0.9 sy=-0.3 sx=0.12 oy=5
+  720:  lt=0.9 sy=-0.3 sx=0.12 oy=5 ev=dots
+  1280: lt=0.88 sy=-0.28 sx=0.12 oy=5
+  1520: lt=0.5 sy=-0.08 sx=0.04 oy=2
+  1720: lt=0 sy=0.22 sx=-0.1 oy=-5 ps=0.3
+  1980: lt=0 sy=-0.04 sx=0.03 oy=1 ps=0.05
+  2250: sy=0 sx=0 oy=0 ps=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+
+// ---- 14. modo ahorro: ojos pequenos, quietos, parpadeo tenue
+clip modo_ahorro expr=6
+  0:    sx=0
+  450:  sx=-0.22 sy=-0.22 ps=-0.4 oy=3 lt=0.1
+  1000: sx=-0.25 sy=-0.25 ps=-0.45 oy=3 lt=0.12
+  1180: lt=0.6
+  1400: lt=0.12
+  1950: sx=-0.22 sy=-0.22 ps=-0.4
+  2500: sx=0 sy=0 ps=0 oy=0 lt=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+
+// ---- 15. caminar con energia: balanceo con rebote en cada paso
+clip caminar_energia mirror expr=6
+  0:    ox=0
+  200:  ox=-6 oy=-4 tilt=-0.1 sy=0.05 sx=-0.03 gx=-0.35
+  400:  ox=0 oy=3 tilt=0 sy=-0.06 sx=0.04 gx=0
+  600:  ox=6 oy=-4 tilt=0.1 sy=0.05 sx=-0.03 gx=0.35
+  800:  ox=0 oy=3 tilt=0 sy=-0.06 sx=0.04 gx=0
+  1000: ox=-6 oy=-4 tilt=-0.1 sy=0.05 sx=-0.03 gx=-0.35
+  1200: ox=0 oy=3 tilt=0 sy=-0.06 sx=0.04 gx=0
+  1400: ox=6 oy=-4 tilt=0.1 sy=0.05 sx=-0.03 gx=0.35
+  1700: ox=0 oy=2 tilt=0 sy=-0.03 gx=0
+  2100: ox=0 oy=0 sy=0 sx=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+
+// ---- 16. cargado de poder: se agacha, vibra acumulando, explota en grande
+clip cargado_de_poder expr=6
+  0:    sy=0
+  350:  sy=-0.18 sx=0.14 oy=5 lt=0.25 ps=-0.25
+  620:  ox=-2 sy=-0.2 ps=-0.1
+  780:  ox=2 sy=-0.19 sx=0.15 ps=0.1
+  920:  ox=-2 ps=0.3
+  1040: ox=0 sy=0.34 sx=0.08 oy=-8 lt=0 ps=0.6 ev=star
+  1380: sy=0.22 sx=0.1 oy=-5 ps=0.45 ev=sparks
+  1800: sy=0 sx=0 oy=0 ps=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+
+// ---- 17. flash de pantalla: deslumbrado, pupilas a punto, entrecierra
+clip flash_pantalla expr=6
+  0:    sx=0
+  70:   sx=0.26 sy=0.22 ps=0.7 oy=-3
+  150:  sx=0.34 sy=0.34 ps=-0.8 ev=star
+  330:  sx=0.1 sy=0.04 lt=0.6 ps=-0.5
+  560:  sx=0.02 sy=-0.04 lt=0.3 ps=-0.2
+  900:  sx=0 sy=0 lt=0 ps=0 oy=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+
+// ---- 18. bostezo de apagado: inhala, bostezo con lagrima, cabeceo de sueno
+clip mirar_a_camara mirror expr=6
+  0:    gx=0
+  300:  gx=-0.7 gy=-0.3 ox=-2
+  720:  gx=-0.7 gy=-0.3 ox=-2
+  880:  gx=0 gy=0 ox=0 sy=-0.04
+  1000: sy=0.18 sx=-0.07 oy=-4 ps=0.5 tilt=0.06
+  1500: sy=0.14 sx=-0.05 oy=-3 ps=0.5 tilt=0.1
+  1700: lt=0.55 sy=0.05 ps=0.3
+  1880: lt=0 sy=0 sx=0 oy=0 ps=0 tilt=0.04
+  2100: tilt=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+
+// ---- 20. easter egg: guino al usuario (un ojo con mejilla, chispita)

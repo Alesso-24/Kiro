@@ -1,0 +1,2 @@
+frames despierto=65609  max seguido ojo<75%=2.4s  max seguido ry<36=0.4s  lid>.1:71 arc>.1:0
+despierto=1093s curioso=166s feliz=39s triste=10s enojado=5s amor=11s sorprendido=18s orgulloso=13s ansioso=32s hype=35s mareado=20s frio=8s bostezo=58s guino=31s nacimiento=0s pantalla=60s cara-llena=12s electrico=0s cargando=0s ver-bateria=161s bateria-baja=26s dormido=0s dormido-tenue=0s 

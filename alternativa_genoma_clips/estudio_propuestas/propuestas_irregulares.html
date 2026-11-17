@@ -1,0 +1,110 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>Alloy · formas muy irregulares</title>
+<style>
+html,body{margin:0;background:#0b0b0d;color:#9a958b;font:14px system-ui}
+h1{font-size:18px;text-align:center;margin:18px 0 4px;color:#e8e3d8}p.s{text-align:center;margin:0 0 14px}
+#g{display:grid;grid-template-columns:repeat(3,minmax(260px,340px));gap:26px 34px;justify-content:center;padding:10px 20px 40px}
+.card{text-align:center}.card canvas{width:100%;aspect-ratio:1;border-radius:50%;box-shadow:0 0 0 8px #1a1a1d;cursor:pointer}
+.card b{display:block;color:#e8e3d8;margin:12px 0 2px;font-size:16px}.card span{font-size:13px}
+a{color:#7fd}@media(max-width:1000px){#g{grid-template-columns:1fr}}
+</style>
+<h1>Formas MUY irregulares · gelatina que se estira, se aplasta y saca puntas</h1>
+<p class="s">inspirado en los bocetos de squash &amp; stretch · mouse = te miran · <b>clic = criatura nueva</b> · <a href="index.html">← todas las propuestas</a></p>
+<div id="g"></div>
+<script>
+const R=(a,b)=>a+Math.random()*(b-a),P=a=>a[Math.random()*a.length|0];
+const S=(x=0)=>({x,v:0,t:x});const st=(s,dt,k,d)=>{s.v+=((s.t-s.x)*k-s.v*d)*dt;s.x+=s.v*dt};
+const hex=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
+const rgb=(a,al=1)=>`rgba(${a[0]|0},${a[1]|0},${a[2]|0},${al})`;
+const mixc=(a,b,k)=>a.map((v,i)=>v+(b[i]-v)*k);
+const now=()=>performance.now()/1000;
+const NEON=['#4de3ff','#7dff6a','#ff9f3d','#ff5fa2','#b48cff','#ffe14d','#ff5a4d','#2effc0','#5b8cff','#ff8ad8'].map(hex);
+const INK=['#1f8f9e','#c2185b','#e07b00','#3a8a2a','#6a3fb5','#c0392b','#1b5fb0'].map(hex);
+// ADN de un ojo: [rx, ry, a2,a3,a4,a5 (amplitud de armónicos), f2..f5 (fase), puntaAmp, puntaAng, tilt]
+const N=15;
+function eyeGene(wild){
+  const a=[R(.08,.3),R(.06,.26),R(.03,.18),R(.02,.12)].map(v=>v*wild),f=[R(0,6.3),R(0,6.3),R(0,6.3),R(0,6.3)];
+  const tip=Math.random()<.9?R(.55,1.0):0; // picos / salientes: casi siempre uno grande
+  return[R(36,46),R(42,56),...a,...f,tip,R(-2.3,-.8),R(-14,14),R(-.45,.45),R(0,.5)];
+}
+function creature(wild,pal,twoCol){
+  const A=eyeGene(wild);let B=eyeGene(wild);const m=Math.random();
+  if(m<.4){B=A.slice();B[12]=-A[12];B[11]=-Math.PI-A[11];B[13]=-A[13]}else if(m<.6){B[0]=A[0]*.82;B[1]=A[1]*.82}
+  const c=P(pal);return{A,B,gap:R(98,112),pd:R(-1,1),cA:[...c],cB:[...(Math.random()<twoCol?P(pal):c)]}
+}
+function blobPts(e,t,id,calm,sx,sy){
+  const pts=[],n=64,[rx,ry]=e;
+  for(let i=0;i<n;i++){const th=i/n*6.2832;let r=1;
+    for(let k=0;k<4;k++)r+=e[2+k]*calm*Math.cos((k+2)*th+e[6+k]+Math.sin(t*(.5+k*.37)+id*2+k)*.5); // las ondas viven
+    if(e[10]>0){let d=Math.atan2(Math.sin(th-e[11]),Math.cos(th-e[11]));r+=e[10]*calm*Math.exp(-d*d/.035)*(1+Math.sin(t*2.2+id)*.12)} // punta tipo llama
+    let x=Math.cos(th)*rx*r*sx,y=Math.sin(th)*ry*r*sy;x+=-y*e[13]*.55;if(y>0)y*=1-e[14];pts.push([x,y])}
+  return pts
+}
+const path=(g,p)=>{g.beginPath();p.forEach((q,i)=>i?g.lineTo(...q):g.moveTo(...q));g.closePath()};
+function eye(s,T,side,cx,e,col,id,o,gX,gY){
+  const g=s.g,out=side?1:-1;o=Math.max(0,Math.min(1.1,o));
+  const k=s.pop.x*(1+s.sur.x*.15+(side?-1:1)*s.cur.x*.14),vx=s.gx.v,vy=s.gy.v,sp=Math.hypot(vx,vy),ang=Math.atan2(vy,vx);
+  const str=1+Math.min(.28,sp*.007),calm=(1-.55*s.sur.x)*(1+.5*s.hp.x);
+  const f=(.07+.93*o)*(1-.25*s.dr.x)*(1-.28*s.hp.x);
+  g.save();g.translate(cx+gX*.95,126+gY*.95+(1-f)*e[1]*.35);
+  g.rotate((e[12]+s.tilt.x*out*-16+s.cur.x*out*5)*.01745);
+  // estirar en la dirección del movimiento (squash & stretch)
+  g.save();g.rotate(sp>2?ang:0);g.scale(str,1/Math.sqrt(str));g.rotate(sp>2?-ang:0);
+  const pts=blobPts(e,s.t,id,calm,k,k*f);path(g,pts);
+  g.fillStyle=T.fill(col);g.fill();
+  g.save();g.clip();
+  const lim=e[0]*.4,px=Math.max(-lim,Math.min(lim,s.pd*e[0]*.25+gX*.8)),py=gY*.7;
+  if(T.pup==='giant'){g.beginPath();g.ellipse(px,py,e[0]*.55*s.pup.x,e[1]*.62*s.pup.x*f,0,0,6.3);g.fillStyle='#050505';g.fill();
+    g.fillStyle=T.hi;g.beginPath();g.ellipse(px-e[0]*.2,py-e[1]*.25*f,Math.max(2.5,e[0]*.1),Math.max(3,e[1]*.16*f),-.3,0,6.3);g.fill()}
+  else{const ir=e[0]*.55*s.pup.x,iy=e[1]*.58*s.pup.x*f;g.beginPath();g.ellipse(px*.8,py*.8,ir,iy,0,0,6.3);g.fillStyle=T.iris(col);g.fill();g.lineWidth=3.4;g.strokeStyle=T.irisLine(col);g.stroke();
+    g.beginPath();g.ellipse(px*.8,py*.8,ir*.5,iy*.52,0,0,6.3);g.fillStyle='#070707';g.fill();
+    g.beginPath();g.ellipse(px*.8-ir*.3,py*.8-iy*.35,Math.max(2.5,ir*.18),Math.max(3,iy*.18),-.3,0,6.3);g.fillStyle=T.hi;g.fill()}
+  g.restore();
+  if(T.lw){path(g,pts);g.lineWidth=T.lw;g.lineJoin='round';g.strokeStyle=T.line(col);g.stroke()}
+  g.restore();g.restore()
+}
+function Face(title,desc,T){
+  const card=document.createElement('div');card.className='card';
+  card.innerHTML=`<canvas width="480" height="480"></canvas><b>${title}</b><span>${desc}</span>`;document.getElementById('g').appendChild(card);
+  const c=card.querySelector('canvas'),g=c.getContext('2d');g.scale(2,2);
+  const s={g,gx:S(),gy:S(),oL:S(1),oR:S(1),hp:S(),tilt:S(),cur:S(),sur:S(),dr:S(),pop:S(1),pup:S(1),t:0,pd:0};
+  const mk=()=>creature(T.wild,T.pal,T.two),tgt=mk(),cur={A:tgt.A.slice(),B:tgt.B.slice(),gap:tgt.gap,cA:[...tgt.cA],cB:[...tgt.cB]};
+  let mouse=null,E={b:1.5,sc:1,m:4,sl:15,u:0};
+  const look=(x,y)=>{s.gx.t=x;s.gy.t=y};
+  const blink=()=>{s.oL.t=s.oR.t=1.08;setTimeout(()=>s.oL.t=0,50);setTimeout(()=>s.oR.t=0,90);setTimeout(()=>s.oL.t=1,240);setTimeout(()=>s.oR.t=1,270)};
+  const reset=()=>{s.hp.t=s.tilt.t=s.cur.t=s.sur.t=s.dr.t=0;s.pup.t=1;look(0,0)};
+  function saccade(x,y){ // anticipación: se aplasta un instante y luego salta hacia donde mira
+    s.pop.t=.9;setTimeout(()=>{s.pop.t=1;look(x,y);s.pop.v+=2.5},110)}
+  function mood(k){k=k||P(['feliz','triste','enojado','curioso','sorpresa','feliz','curioso','enojado']);
+    if(k==='feliz'){s.hp.t=1;s.pop.v+=3}if(k==='triste'){s.tilt.t=1;s.dr.t=.5;look(0,6)}if(k==='enojado'){s.tilt.t=-1;s.pup.t=.8}
+    if(k==='curioso'){const d=Math.random()<.5?-1:1;s.cur.t=d;saccade(d*14,-4)}if(k==='sorpresa'){s.sur.t=1;s.pup.t=.6;s.pop.v+=4}
+    setTimeout(reset,2000);E.u=s.t+2.2}
+  function slow(){E.u=s.t+2.6;s.oL.t=s.oR.t=0;[.6,1.2,1.8].forEach(d=>setTimeout(()=>look(R(-14,14),R(-7,7)),d*1000));setTimeout(()=>{look(0,0);s.oL.t=1;setTimeout(()=>s.oR.t=1,60);s.pop.v+=2},2200)}
+  function fresh(){const n=mk();tgt.A=n.A;tgt.B=n.B;tgt.gap=n.gap;tgt.cA=n.cA;tgt.cB=n.cB;s.pd=n.pd;s.pop.v-=7;setTimeout(()=>s.pop.v+=9,100)}
+  s.pd=tgt.pd;let last=now();
+  (function f(){
+    const n=now(),dt=Math.min(.033,n-last);last=n;s.t+=dt;const t=s.t;
+    if(t>E.b&&t>E.u){blink();if(Math.random()<.2)setTimeout(blink,330);E.b=t+2+Math.random()*3.4}
+    if(t>E.sl){slow();E.sl=t+26+Math.random()*16}
+    if(t>E.m&&t>E.u&&!mouse){Math.random()<.25?fresh():mood();E.m=t+5+Math.random()*5}
+    if(!mouse&&t>E.sc&&t>E.u){Math.random()<.3?look(0,0):saccade(R(-16,16),R(-10,10));E.sc=t+1.4+Math.random()*2.6}
+    if(mouse)look(mouse.x*16,mouse.y*11);
+    st(s.gx,dt,150,9);st(s.gy,dt,150,9);st(s.oL,dt,520,28);st(s.oR,dt,520,28);[s.hp,s.tilt,s.cur,s.sur,s.dr,s.pup].forEach(q=>st(q,dt,90,9));st(s.pop,dt,170,10);
+    for(let i=0;i<N;i++){cur.A[i]+=(tgt.A[i]-cur.A[i])*.08;cur.B[i]+=(tgt.B[i]-cur.B[i])*.08}cur.gap+=(tgt.gap-cur.gap)*.1;
+    for(let i=0;i<3;i++){cur.cA[i]+=(tgt.cA[i]-cur.cA[i])*.1;cur.cB[i]+=(tgt.cB[i]-cur.cB[i])*.1}
+    T.bg(g);g.save();g.translate(Math.sin(t*.6)*1.4,Math.sin(t*1.7)*1.3);
+    eye(s,T,0,120-cur.gap/2,cur.A,cur.cA,1,s.oL.x,s.gx.x,s.gy.x);
+    eye(s,T,1,120+cur.gap/2,cur.B,cur.cB,2,s.oR.x,s.gx.x-s.gx.v*.012,s.gy.x-s.gy.v*.012);
+    g.restore();requestAnimationFrame(f)
+  })();
+  c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();mouse={x:((e.clientX-r.left)/r.width-.5)*2,y:((e.clientY-r.top)/r.height-.5)*2}});
+  c.addEventListener('mouseleave',()=>{mouse=null;reset()});c.addEventListener('click',fresh);
+}
+const black=g=>{g.fillStyle='#050506';g.fillRect(0,0,240,240)};
+Face('I1 · Gelatina','Color liso sobre negro, formas torcidas con puntas tipo llama, pupila gigante. Se aplasta antes de mirar y se estira al moverse.',
+ {wild:1.2,pal:NEON,two:.4,bg:black,fill:c=>rgb(c),lw:0,pup:'giant',hi:'#fff'});
+Face('I2 · Tinta torcida','Contorno de color con iris relleno; las ondas del borde respiran solas, como dibujadas a mano.',
+ {wild:1.15,pal:NEON,two:.35,bg:black,fill:c=>rgb(c,.1),lw:5.5,line:c=>rgb(c),pup:'iris',iris:c=>rgb(mixc(c,[0,0,0],.7)),irisLine:c=>rgb(c),hi:'#f6f6ee'});
+Face('I3 · Cuaderno torcido','Tinta negra sobre papel con un acento de color; formas muy irregulares tipo boceto.',
+ {wild:1.155,pal:INK,two:.3,bg:g=>{const r=g.createRadialGradient(120,110,40,120,120,150);r.addColorStop(0,'#ecdcb6');r.addColorStop(1,'#cdb98a');g.fillStyle=r;g.fillRect(0,0,240,240)},
+  fill:()=>'rgba(0,0,0,0)',lw:4.8,line:()=>'#16110d',pup:'iris',iris:c=>rgb(c),irisLine:()=>'#16110d',hi:'#ecdcb6'});
+</script></html>

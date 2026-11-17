@@ -1,0 +1,63 @@
+clip acecho_y_salto mirror expr=5
+  0:    gx=0
+  160:  gx=0.5 gy=0.3 sy=0.05 oy=-2 ps=0.2
+  380:  gx=0.6 gy=0.4 sy=-0.18 sx=0.14 oy=7 ps=0.5 lt=0.15
+  560:  ox=2 tilt=0.04
+  640:  ox=-2 tilt=-0.04
+  720:  ox=2 tilt=0.04
+  800:  ox=0 tilt=0 sy=-0.22 sx=0.17 oy=8 lt=0.2
+  930:  sy=0.3 sx=-0.14 oy=-15 ox=8 tilt=0.14 gx=0.8 gy=-0.2 lt=-0.1 ps=0.3 ev=spark
+  1100: sy=-0.2 sx=0.16 oy=7 ox=5 tilt=0.05 gx=0 gy=0 ps=0 lt=0.1
+  1250: sy=0.07 sx=-0.05 oy=-3 ox=2 tilt=0 lt=0
+  1400: sy=-0.03 sx=0.02 oy=1 ox=0
+  1600: sy=0 sx=0 oy=0
+end
+clip lupa_inspector mirror expr=5
+  0:    gx=0
+  180:  tilt=-0.05 ox=-2 sy=0.04
+  420:  tilt=0.14 ox=5 oy=-2 sy=0.08 sx=-0.04 ltl=0.5 lbl=0.38 ltr=-0.12 gx=0.5 gy=0.1 ps=0.35
+  700:  tilt=0.17 ox=7 ltl=0.55 lbl=0.4 ltr=-0.15 gx=-0.2 gy=0.4
+  980:  gx=0.6 gy=-0.2 ox=5 tilt=0.12
+  1200: ltl=0.2 lbl=0.1 ltr=-0.2 sy=0.14 sx=-0.07 oy=-4 ps=0.5 tilt=0.05 gx=0 gy=0 ox=0 ev=spark
+  1400: ltl=0 lbl=0 ltr=0 sy=0.03 oy=-1 tilt=0 ps=0.1
+  1650: sy=0 sx=0 oy=0 ps=0
+end
+clip regalo_sorpresa expr=1
+  0:    gy=0
+  200:  gy=0.7 gx=0.2 sy=-0.06 sx=0.04 oy=3 lt=0.12
+  520:  sy=-0.08 sx=0.06 oy=4 lt=0.15
+  700:  gy=0 gx=0 sy=0.34 sx=-0.14 oy=-8 ps=0.9 lt=-0.1 ev=sparks
+  860:  sy=0.2 sx=-0.08 oy=-16 tilt=0.1 ps=0.8
+  1020: sy=-0.18 sx=0.14 oy=5 tilt=-0.1 ps=0.6 lb=0.2
+  1180: sy=0.2 sx=-0.09 oy=-12 tilt=0.1 ps=0.7 ev=star
+  1340: sy=-0.12 sx=0.1 oy=4 tilt=-0.06 lb=0.28 lt=0.2 ps=0.4 ev=hearts
+  1560: sy=0.06 sx=-0.04 oy=-2 tilt=0.02 ps=0.15
+  1900: sy=-0.03 sx=0.02 oy=1 tilt=0 ps=0 lb=0.15 lt=0.1
+  2200: sy=0 sx=0 oy=0 lb=0 lt=0
+end
+clip bufido_indignado mirror expr=2
+  0:    sy=0
+  180:  sy=0.1 sx=-0.05 oy=-4 lt=-0.05 ps=0.1
+  420:  sy=0.16 sx=-0.08 oy=-6 ps=0.15
+  560:  sy=-0.2 sx=0.16 oy=7 lt=0.34 ps=-0.25 ev=lines
+  700:  sy=-0.12 sx=0.1 oy=4 lt=0.3 ox=2
+  800:  sy=0.1 sx=-0.05 oy=-3 lt=0.1
+  980:  sy=-0.24 sx=0.18 oy=8 lt=0.42 ps=-0.3 ev=shake
+  1120: sy=-0.14 sx=0.11 oy=5 tilt=0.1 ox=4 lt=0.38 gx=0.8
+  1500: sy=-0.1 sx=0.08 oy=4 tilt=0.12 ox=5 lt=0.3 gx=0.9
+  1800: sy=0.02 sx=-0.01 oy=-1 tilt=0.03 ox=1 lt=0.08 gx=0.2 ps=0
+  2100: sy=0 sx=0 oy=0 tilt=0 ox=0 lt=0 gx=0
+end
+clip congelado_de_miedo expr=3
+  0:    sy=0
+  90:   sy=-0.12 sx=0.07 oy=3 ps=-0.2
+  240:  sy=0.28 sx=-0.13 oy=-9 ps=-0.75 lt=-0.1 ev=lines
+  420:  sy=0.2 sx=-0.09 oy=-5 ps=-0.7
+  1000: ox=0
+  1080: ox=2 gx=-0.4
+  1160: ox=-2 gx=0.4
+  1240: ox=1.5 gx=0
+  1600: sy=-0.1 sx=0.07 oy=5 ps=0.2 lt=0.2 ox=0 ev=sweat
+  1950: sy=0.02 sx=0 oy=-1 ps=0 lt=0
+  2200: sy=0 oy=0
+end

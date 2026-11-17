@@ -1,0 +1,3 @@
+// U2 - pupilas especiales
+// nombre | rareza | prx pry pdx pdy ptilt pc1 pc2 | tipo
+Media luna        | common   | 15 18 10 12 0 0 0        | halfmoon

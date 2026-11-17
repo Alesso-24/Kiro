@@ -1,0 +1,4 @@
+// nombre | rareza | clave=valor ...  (ver CONTRATO_DATOS.md)
+Clasico        | common   |
+Altito         | common   | sx=0.9 sy=1.08 c4=0.06
+Asimetrico     | uncommon | asx=0.12 atilt=0.1 ac4=0.1 aps=0.2

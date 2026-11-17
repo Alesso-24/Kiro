@@ -1,0 +1,6 @@
+// u1 - pupilas simples | nombre | rareza | prx pry pdx pdy ptilt pc1 pc2 | tipo
+Rendija bajita | common | 4.5 18 13 15 0 0 0 | none
+Ovalo ladeado      | common   | 10 20 12 8 0.4 0 0      | none
+Gota tierna        | uncommon | 11 17 10 10 0 0 0.35    | none
+Bizca tierna       | uncommon | 11 15 19 8 0 0 0        | none
+Mirada al cielo    | rare     | 12 14 7 -11 0.1 0 0     | none

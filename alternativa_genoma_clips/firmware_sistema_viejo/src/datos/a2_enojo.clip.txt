@@ -1,0 +1,167 @@
+// A2 - enojo / molestia / orgullo / celos / travesura  (enojado adorable)
+clip puchero expr=2
+  0:    sy=0
+  200:  sy=0.05 sx=-0.03 oy=-2
+  520:  sy=-0.14 sx=0.08 oy=5 lt=0.16 lb=0.14 ps=-0.2 gy=0.5
+  720:  sx=0.1 sy=-0.15
+  820:  sx=0.06
+  920:  sx=0.1
+  1020: sx=0.07 sy=-0.14
+  1380: sy=0 sx=0 oy=0 lt=0 lb=0 ps=0 gy=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip inflarse_coraje expr=2
+  0:    sx=0
+  260:  sy=-0.06 sx=0.04 oy=2 lt=0.1
+  1000: sy=0.12 sx=0.18 oy=-1 lt=0.3 lb=0.08 ps=-0.2 ox=0
+  1250: sy=0.2 sx=0.27 ox=2 ev=lines
+  1330: ox=-2
+  1410: ox=2
+  1700: sy=-0.12 sx=-0.06 oy=4 lt=0.05 lb=0 ps=0.1 ox=0 ev=drop
+  2000: sy=0.03 sx=0.02 oy=-1 lt=0 ps=0
+  2300: sy=0 sx=0 oy=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip patada_al_aire mirror expr=2
+  0:    tilt=0
+  200:  sy=-0.1 sx=0.06 oy=4 tilt=-0.1 ox=-3 lt=0.1
+  330:  sy=0.1 sx=-0.05 oy=-3 tilt=0.2 ox=8 lt=0.4 ev=line
+  430:  tilt=0.14 ox=6 lt=0.4 ps=-0.2
+  620:  tilt=-0.04 ox=-1 sy=-0.03 sx=0.02 lt=0.15 ps=0
+  800:  tilt=0 ox=0 sy=0 sx=0 oy=0 lt=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip mirada_de_lado mirror expr=2
+  0:    gx=0
+  200:  ox=-2 lt=0.05
+  420:  gx=0.95 ox=3 lt=0.32 lb=0.1 ps=-0.15 sx=0.04 sy=-0.04
+  1100: gx=1 ox=4 lt=0.34 lb=0.12
+  1300: gx=1 ltl=0.4 ltr=0.3
+  1700: gx=-0.1 ox=-1 lt=0.1 lb=0 ps=0.05 sx=0 sy=0
+  1900: gx=0 ox=0 lt=0 ps=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip pisoton expr=2
+  0:    oy=0
+  180:  oy=-6 sy=0.1 sx=-0.06 lt=0.1
+  280:  oy=7 sy=-0.22 sx=0.15 lt=0.35 ev=shake
+  380:  oy=-3 sy=0.07 sx=-0.04
+  480:  oy=5 sy=-0.12 sx=0.08 lt=0.3
+  580:  oy=-1 sy=0.03 sx=-0.02
+  760:  oy=0 sy=0 sx=0 lt=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip hmph mirror expr=2
+  0:    tilt=0
+  180:  tilt=-0.05 oy=2 sy=-0.04
+  420:  tilt=0.22 ox=5 oy=-4 sy=0.04 gx=-0.7 lt=0.3 ev=line
+  520:  tilt=0.2 ox=4
+  900:  tilt=0.2 ox=4 gx=-0.8 lt=0.3
+  1250: tilt=-0.03 ox=-1 oy=0 gx=0 lt=0.08 sy=0
+  1450: tilt=0 ox=0 lt=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip travesura mirror expr=0
+  0:    ltr=0
+  180:  sy=0.05 oy=-3 tilt=-0.05
+  420:  ltr=0.65 lbl=0.28 lbr=0.1 sy=-0.07 sx=0.05 tilt=0.12 oy=2 ev=wink
+  520:  ev=sparks
+  1000: ltr=0.65 lbl=0.3 tilt=0.1 ox=2
+  1300: ltr=0 lbl=0 lbr=0 sy=0 sx=0 tilt=0 oy=0 ox=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip orgullo_cara_alta expr=0
+  0:    oy=0
+  240:  oy=3 sy=-0.04
+  560:  oy=-5 sy=0.09 sx=-0.04 lt=0.3 gy=-0.45 ps=0.1
+  1200: oy=-6 sy=0.1 lt=0.32 gy=-0.5
+  1450: oy=-4 sy=0.07 lt=0.45
+  1700: oy=0 sy=0 sx=0 lt=0 gy=0 ps=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip desconfianza mirror expr=0
+  0:    gx=0
+  260:  sy=-0.03
+  620:  ltr=0.55 lbr=0.32 gx=-0.35 ps=-0.12 sy=0.04 sx=-0.02 tilt=-0.08 ltl=-0.05
+  1100: ltr=0.58 lbr=0.36 gx=-0.4 tilt=-0.1
+  1400: gx=0.2 ltr=0.5
+  1700: ltr=0 lbr=0 ltl=0 gx=0 ps=0 sy=0 sx=0 tilt=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip irritacion_lenta expr=2
+  0:    lt=0
+  500:  lt=0.12 sx=0.03 oy=1
+  1100: lt=0.28 sx=0.07 sy=-0.04 lb=0.06
+  1500: lt=0.4 sx=0.1 ox=1 lb=0.1 ps=-0.2
+  1620: ox=-1 ev=line
+  1740: ox=1
+  1950: lt=0.15 sx=0.02 sy=-0.07 oy=4 ps=0 ox=0 lb=0
+  2200: lt=0 sx=0 sy=0.02 oy=-1
+  2400: sy=0 oy=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip rabieta_berrinche expr=2
+  0:    oy=0
+  150:  oy=-5 sy=0.08 tilt=-0.1 ox=-4 lt=0.2
+  260:  oy=5 sy=-0.15 sx=0.1 tilt=-0.12 ox=-6 lt=0.4 ev=shake
+  420:  oy=-5 sy=0.08 tilt=0.1 ox=4
+  540:  oy=5 sy=-0.15 sx=0.1 tilt=0.12 ox=6 ev=shake
+  680:  ox=-5 tilt=-0.08 oy=0 sy=0.05
+  780:  ox=5 tilt=0.08
+  880:  ox=-5 tilt=-0.08 ev=lines
+  980:  ox=4 tilt=0.06
+  1500: ox=-2 tilt=-0.02 sy=-0.1 sx=0.06 oy=4 lt=0.2
+  2000: ox=0 tilt=0 sy=0 sx=0 oy=0 lt=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip enfado_se_deshace expr=2
+  0:    lt=0
+  250:  lt=0.2 sx=0.03
+  500:  lt=0.4 lb=0.08 sx=0.07 sy=-0.04 ps=-0.2 ox=1
+  800:  lt=0.4 ox=-1
+  1100: lt=0.15 sx=0.02 ox=0 ps=0 gy=0.3
+  1450: lt=-0.12 lb=0.1 sy=0.1 sx=-0.02 oy=-3 ps=0.3 gy=0 ev=hearts
+  1800: lt=-0.05 lb=0.12 sy=0.04 oy=0 ps=0.2
+  2200: lt=0 lb=0 sy=0 sx=0 ps=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip me_ignoras mirror expr=2
+  0:    gx=0
+  280:  oy=3 sy=-0.05 gx=-0.3
+  600:  gx=-1 ox=-4 oy=4 sy=-0.09 sx=0.05 lt=0.22 lb=0.05 ps=-0.1
+  1100: gx=-1 lt=0.24
+  1250: gx=0.5 lt=0.1 ps=0.1
+  1400: gx=0.5
+  1550: gx=-1 lt=0.26 ps=-0.1 ev=sweat
+  1950: gx=0 ox=0 oy=0 sy=0 sx=0 lt=0 lb=0 ps=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip mirada_fulminante expr=2
+  0:    ps=0
+  250:  sy=-0.04 oy=2 lt=0.1 ps=0.05
+  520:  ps=-0.65 lt=0.32 lb=0.18 sy=0.05 sx=-0.06 oy=-1 gy=0.1
+  900:  ps=-0.7 lt=0.36 lb=0.2 ox=1
+  1000: ox=-1 ev=bolts
+  1100: ox=1
+  1500: ps=0.12 lt=0.05 lb=0 sy=-0.03 sx=0.02 ox=0 oy=0 gy=0
+  1800: ps=0 lt=0 sy=0 sx=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip cruzar_brazos expr=2
+  0:    sy=0
+  240:  sy=0.05 oy=-2 sx=-0.02
+  520:  sy=-0.27 sx=0.2 oy=8 lt=0.22 lb=0.04 ps=-0.1 gy=0.4
+  620:  sy=-0.25 sx=0.19 oy=7
+  1500: sy=-0.25 sx=0.19 oy=7 lt=0.24
+  1800: sy=0.06 sx=-0.03 oy=-2 lt=0.05 ps=0.05
+  2000: sy=0 sx=0 oy=0 lt=0 lb=0 ps=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip explosion_enojo expr=2
+  0:    sy=0
+  300:  sy=-0.22 sx=0.15 oy=6 lt=0.25
+  500:  sy=-0.26 sx=0.18 oy=7 lt=0.4 ps=-0.3 ox=-1
+  600:  sy=0.3 sx=-0.14 oy=-8 lt=0.45 ps=-0.5 ox=0 ev=lines
+  680:  ev=shake ox=4
+  760:  ox=-4 sy=0.2 sx=-0.08
+  840:  ox=4
+  920:  ox=-3 sy=0.1
+  1100: ox=2 sy=-0.08 sx=0.05 oy=3 lt=0.2 ps=0
+  1300: ox=0 sy=0.02 sx=0 oy=0 lt=0.05
+  1500: sy=0 lt=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
+clip arrepentimiento mirror expr=2
+  0:    gy=0
+  300:  oy=2 sy=-0.04
+  700:  oy=6 sy=-0.1 sx=0.06 gy=0.9 gx=0.3 lt=0.08 lb=0.1 ps=0.25 tilt=0.1
+  1200: gy=0.9 oy=6 ev=drop
+  1400: gy=-0.5 gx=0 lt=-0.08 ps=0.35 sy=-0.04
+  1700: gy=-0.5 sy=-0.04
+  2000: gy=0.5 gx=0.2 oy=4 ps=0.2 tilt=0.06
+  2300: gy=0 gx=0 oy=0 sy=0 sx=0 lt=0 lb=0 ps=0 tilt=0 sx=0 sy=0 ox=0 oy=0 tilt=0 ltl=0 ltr=0 lbl=0 lbr=0 ps=0 gx=0 gy=0
+end
