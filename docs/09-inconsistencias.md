@@ -12,7 +12,7 @@ Resultado de comparar tres fuentes: **(A)** las notas de contexto del equipo ("K
 | 4 | 🟠 | Reset del display | Las notas dicen dos cosas; el esquemático fija RST a 3V3; el firmware aún usa un RST |
 | 5 | 🟡 | Q1 | Nombre ambiguo (AO3407 vs BSS84) |
 | 6 | 🟡 | Lado de J1 | Notas: Bottom; Pick & Place y Gerbers: **Top** |
-| 7 | 🟠 | Contorno de la placa | Notas: circular; Gerbers: círculo + pestaña rectangular |
+| 7 | 🟠 | Contorno de la placa | Notas: circular; `PCB1` y Gerbers: círculo + pestaña rectangular (confirmado) |
 | 8 | 🟠 | BOM y metadatos | Comentarios de biblioteca (953 kΩ, 470 pF, XH), BOM antiguo, cantidad de JST PH |
 | 9 | 🟡 | Nombre en la placa | La serigrafía dice "Alux v1", no Kiro |
 | 10 | 🟡 | Archivos "Kiro" no encontrados | `BOM_Kiro.csv`, `Gerbers_Kiro.zip` no están en este equipo |
@@ -73,7 +73,8 @@ La nota titula "AO3407 (BSS84LT1G equivalente)". El esquemático, el BOM y el LC
 ## 7. 🟠 Contorno de la placa
 - **Notas:** circular de 55 mm.
 - **Gerbers (render):** el contorno (`PCB1.GM`) es un círculo con una **pestaña rectangular** hacia J1. El DRC de `PCB1` además marca 6 colisiones de serigrafía con el borde (el contorno del XIAO y de J1).
-- **Acción:** revisar el contorno en el visor de JLCPCB; si la pestaña es intencional, actualizar la descripción de la forma.
+- **Confirmado con la captura de `PCB1.PcbDoc` en Altium** (la placa enviada): el contorno de verdad es un círculo con una pestaña rectangular arriba; no es un artefacto del render. Las 6 colisiones del DRC cuadran con que el contorno del XIAO queda pegado al borde.
+- **Acción:** actualizar la descripción de la forma en las notas ("círculo + pestaña"); verificar en el 3D que la pestaña sea intencional para el display.
 
 ## 8. 🟠 BOM y metadatos del esquemático
 1. **Descripciones de biblioteca**: los símbolos de resistencias (todas) dicen "953 kΩ" y los capacitores "470 pF 50 V" (esto sale en el *Pick & Place* y en el *Comment*). Los **valores** que muestra la hoja son 4k7 / 100k / 100n / 10u. Los LCSC de la tabla de [hardware](02-hardware.md) son los correctos.

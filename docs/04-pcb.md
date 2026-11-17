@@ -40,6 +40,12 @@ Archivos: [`hardware/pcb_altium/PCB1.PcbDoc`](../hardware/pcb_altium/PCB1.PcbDoc
 
 > Las capturas 1–5 provienen de la práctica de Altium (placa `PCB_ALTIUM_PRUEBA`, misma metodología y mismo esquemático `PCB_TAMAGOCHI_FINAL`). La disposición final de componentes de `PCB1.PcbDoc` se ve en los renders de los Gerbers (abajo).
 
+## `PCB1.PcbDoc` — la placa enviada a fabricar (captura de Altium)
+
+![PCB1 en Altium](img/pcb1_altium_top_enviada.png)
+
+*Confirmada por el equipo como la placa enviada a fabricar. Vista Top (rojo = cobre Top, azul = cobre Bottom) en la capa Mechanical 1.* Se ve: el nombre **"Alux V1"** con "Created by Alexa and Alessandro", el logo **IBERO PUEBLA**, `J2` con `BAT−/BAT+`, `J3` (`BTN1`), `J4` (`BTN2`), `Q1`, el `IMU` (U2) con `C3`/`C5`, los capacitores/resistencias del lado Bottom en transparencia, los **tres agujeros de montaje numerados 7, 8 y 9** y el contorno: un **círculo con una pestaña/cuello rectangular arriba** (donde van `J3` y el header del display). El rectángulo amarillo grande del `XIAO` llega hasta el borde inferior del círculo.
+
 ## Render de los Gerbers enviados (`Gerbers_Alux.zip`)
 
 Generados con *gerbonara* a partir del paquete real de fabricación del 31-oct-2026:
@@ -54,7 +60,7 @@ Generados con *gerbonara* a partir del paquete real de fabricación del 31-oct-2
 
 Se aprecian: header del display **J1** arriba, **XIAO** al centro, **J2** (batería, `BAT+`/`BAT−`), **J3/J4** (`BTN1`/`BTN2`), **Q1**, el IMU (U2), el logo **IBERO Puebla** en la serigrafía y el texto **"Alux v1"** — el nombre anterior del proyecto.
 
-> **Nota de contorno.** En el render el contorno (capa `.GM`) aparece como el círculo con una **pestaña rectangular** arriba, hacia J1. Las notas decían "circular 55 mm". Confirmar en el visor de JLCPCB que ese es el contorno deseado ([inconsistencia 7](09-inconsistencias.md)).
+> **Nota de contorno.** El contorno (capa `.GM` / Mechanical 1) es un círculo con una **pestaña rectangular** arriba, igual que en la captura de Altium de `PCB1.PcbDoc`. Las notas decían "circular 55 mm": el cuerpo es circular, pero con esa pestaña ([inconsistencia 7](09-inconsistencias.md)).
 
 ## Colocación (Pick & Place, 31-oct)
 
