@@ -7,7 +7,9 @@ Tamagotchi estilo "Lil Guy / Starboy" de Alessandro: **dos ojos planos de color 
 ## Estructura
 ```
 Kiro/
-  CLAUDE.md                    <- este documento (único general)
+  README.md + docs/            <- DOCUMENTACION DEL REPO por capitulos (concepto, hardware, esquematico, PCB, fabricacion, ensamble, firmware, animaciones, inconsistencias, pendientes) con imagenes en docs/img/
+  hardware/                    <- COPIA del proyecto Altium PCB_TAMAGOCHI_FINAL (original en C:\Users\Public\Documents\Altium\, NO moverlo: es proyecto Altium 365) + fabricacion/
+  CLAUDE.md                    <- contexto tecnico vivo para Claude Code (este documento)
   Abrir estudio.bat            <- abre el estudio en Chrome
   estudio/kiro_v4.html        <- FUENTE DE VERDAD del diseño (todas las animaciones, en el navegador)
   estudio/intro_kiro_10.html   <- propuestas de la intro del logo KIRO (la 12 es la elegida y esta en la placa)
@@ -86,7 +88,14 @@ Al encender: sin criatura guardada -> nace y guarda; con guardada -> NO nace, ab
 5. Decidir si "eléctrico" queda fijo en la rotación azul (no quitarlo del código).
 6. Futuro: guardar stats en flash, MPU6050/micrófono/temperatura/USB/batería reales (la lógica de `Motion.h` está en la alternativa), "swap eyes" entre dispositivos.
 
+## Electronica (resumen; detalle en docs/)
+- PCB enviada = `PCB1.PcbDoc` (31-oct, Gerbers_Alux.zip, serigrafia dice "Alux v1"); `PCB_ALTIUM_PRUEBA.PcbDoc` es la placa de practica. Esquematico: `Sheet1.SchDoc` (XIAO + LIS3DHTR + BSS84 + divisor VBAT + 2 botones + header display 1x7).
+- **Pinout PCB (D -> GPIO del core RP2350)**: D0=26 VBAT_DIV (ADC), D1=27 CS, D2=28 DC, **D3=5** DISP_PWR (LOW=ON; NO es GPIO29), D4=6 SDA, D5=7 SCL, D6=0 BTN1, **D7=1 LIS_INT2**, D8=2 SCK, **D9=4 BTN2**, D10=3 MOSI. Display RST a 3V3 (RST=-1 en firmware).
+- **Antes de subir firmware a la PCB**: DC->D2, sin RST, DISP_PWR=D3, boton verde->D9 (hoy D7 choca con INT2), VBAT_ADC=D0. Ver docs/07 y docs/09.
+- docs/09-inconsistencias.md lista 14 hallazgos (criticos: D3 != GPIO29, boton verde vs INT2, pines del LIS3DH en las notas, contorno con pestana, BOM/JST).
+
 ## Bitácora breve
+- 2026-11-17: repo + documentacion por capitulos (README, docs/01-10, hardware/) y auditoria de inconsistencias entre notas, Altium y firmware.
 - 2026-11-17: **V38 (cargada en la XIAO, aprobada por Alessandro "asi se queda")**: intro KIRO 6.9 s (colores cambiantes ~3 s, final en partículas al punto) + transición suave: los hilos del nacimiento salen de los bordes (3.4 s, más gruesos y calmados al inicio; `gi`/`cf` en `drawBirth`). 52-60 fps (caída puntual 43). Respaldo `respaldos/v38_intro_kiro/`. La placa quedó con una criatura de prueba (`n`, no guardada): al reiniciar vuelve la guardada.
 - 2026-11-14: cableado, pantalla, bug SPI/DMA, simulador, 1.ª versión aprobada.
 - 2026-11-14..16: estudio de agentes, sistema genoma/clips, votaciones, nacimiento aprobado (todo en `alternativa_genoma_clips/`).
