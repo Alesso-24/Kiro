@@ -1,0 +1,192 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Animaciones · Kiro</title><style>
+:root{--bg:#0b0b0d;--panel:#131317;--line:#24242b;--tx:#e8e3d8;--mut:#8f8a80;--ac:#4de3ff}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,Segoe UI,sans-serif}
+a{color:var(--ac)}
+nav.top{position:sticky;top:0;z-index:5;background:#0b0b0dee;backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:10px 22px;display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+nav.top b{font-size:18px}nav.top a{text-decoration:none;font-size:14px;color:var(--mut)}nav.top a:hover{color:var(--ac)}
+main{max-width:900px;margin:0 auto;padding:26px 22px 80px}
+h1,h2,h3{line-height:1.25}h1{font-size:30px}h2{margin-top:2em;border-bottom:1px solid var(--line);padding-bottom:6px}
+img{max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:14px 0;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}th{background:#17171b}
+code{background:#17171b;padding:1px 6px;border-radius:5px;font-size:.92em}
+pre{background:#101014;border:1px solid var(--line);border-radius:10px;padding:14px;overflow:auto}pre code{background:none;padding:0}
+blockquote{margin:14px 0;padding:8px 16px;border-left:3px solid var(--ac);background:#101014;color:#cfc9bd;border-radius:0 8px 8px 0}
+em{color:#b9b3a6}
+.pager{display:flex;justify-content:space-between;margin-top:50px;border-top:1px solid var(--line);padding-top:16px}
+</style><nav class="top"><b>Kiro</b><a href="../index.html">Inicio</a><a href="../estudio/kiro_v4.html">Estudio de animaciones</a><a href="../estudio/intro_kiro_10.html">Intros</a><a href="01-concepto.html">Concepto</a><a href="02-hardware.html">Hardware y BOM</a><a href="03-esquematico.html">Esquemático</a><a href="04-pcb.html">PCB</a><a href="05-fabricacion.html">Fabricación</a><a href="06-ensamble.html">Ensamble</a><a href="07-firmware.html">Firmware</a><a href="08-animaciones.html">Animaciones</a><a href="09-inconsistencias.html">Inconsistencias</a><a href="10-pendientes.html">Pendientes y bitácora</a><a href="https://github.com/Alesso-24/Kiro">GitHub</a></nav><main><h1>8. Animaciones</h1>
+<p>Las animaciones se <strong>diseñan y aprueban primero en el navegador</strong> (<a href="../estudio/kiro_v4.html"><code>estudio/kiro_v4.html</code></a>, Estudio v4) y después se portan 1:1 al firmware (<code>EyesCore.h</code>). El mismo código del firmware corre en el PC (arnés) para generar las imágenes de esta página.</p>
+<h2>Pruébalas en vivo</h2>
+<p><strong><a href="https://alesso-24.github.io/Kiro/estudio/kiro_v4.html">Estudio de animaciones (GitHub Pages)</a></strong> — interactivo: elige una expresión, cambia colores/ojos/pupilas, haz clic para una criatura nueva o pulsa «Tour completo». Capturas:</p>
+<table>
+<thead>
+<tr>
+<th>Curioso</th>
+<th>Amor</th>
+<th>Enojado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="" src="../img/web_estudio_curioso.png" /></td>
+<td><img alt="" src="../img/web_estudio_amor.png" /></td>
+<td><img alt="" src="../img/web_estudio_enojado.png" /></td>
+</tr>
+</tbody>
+</table>
+<p><strong><a href="https://alesso-24.github.io/Kiro/estudio/intro_kiro_10.html">Intros del logo KIRO</a></strong> (12 propuestas; clic para verlas grandes, teclas 1–9 y 0):</p>
+<p><img alt="Intros" src="../img/web_intros_10.png" /></p>
+<p><strong><a href="https://alesso-24.github.io/Kiro/estudio/intro_completa.html">Intro + nacimiento completo</a></strong> — render exacto del firmware.</p>
+<h2>Las 23 expresiones</h2>
+<p><img alt="Expresiones" src="../img/expresiones.png" /></p>
+<p><em>Render del firmware real a los 3.2 s de cada expresión (algunas capturas caen a mitad de un parpadeo o de una transición). Colores de ejemplo: cada criatura tiene los suyos.</em></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Expresión</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>despierto</td>
+<td>Reposo: óvalos suaves, respiración, parpadeo</td>
+</tr>
+<tr>
+<td>1</td>
+<td>curioso</td>
+<td>Cabeza ladeada, un ojo más grande, mira a un lado</td>
+</tr>
+<tr>
+<td>2</td>
+<td>feliz</td>
+<td>Mejillas y euforia</td>
+</tr>
+<tr>
+<td>3</td>
+<td>triste</td>
+<td>Ojos caídos con lágrima</td>
+</tr>
+<tr>
+<td>4</td>
+<td>enojado</td>
+<td>Recorte en V hacia el centro, picos hacia afuera, tono rojo</td>
+</tr>
+<tr>
+<td>5</td>
+<td>amor</td>
+<td>Ojos de corazón y corazones rojos por los lados</td>
+</tr>
+<tr>
+<td>6</td>
+<td>sorprendido</td>
+<td>Ojos que se inflan de golpe</td>
+</tr>
+<tr>
+<td>7</td>
+<td>orgulloso</td>
+<td>Mirada superior, inflado</td>
+</tr>
+<tr>
+<td>8</td>
+<td>ansioso</td>
+<td>Rebote con pupilas chicas</td>
+</tr>
+<tr>
+<td>9</td>
+<td>hype</td>
+<td>Salta y late al compás</td>
+</tr>
+<tr>
+<td>10</td>
+<td>mareado</td>
+<td>Los ojos chapotean contra los bordes</td>
+</tr>
+<tr>
+<td>11</td>
+<td>frío</td>
+<td>Azul pálido, tiritando</td>
+</tr>
+<tr>
+<td>12</td>
+<td>bostezo</td>
+<td>Curva caída ‿ con arrugas, estirada y suspiro</td>
+</tr>
+<tr>
+<td>13</td>
+<td>guiño</td>
+<td>Un ojo en corazón/pincel</td>
+</tr>
+<tr>
+<td>14</td>
+<td>nacimiento</td>
+<td>Ver abajo</td>
+</tr>
+<tr>
+<td>15</td>
+<td>pantalla de color</td>
+<td>Fondo de un color plano + ojos de otro (11 combinaciones)</td>
+</tr>
+<tr>
+<td>16</td>
+<td>cara llena</td>
+<td>Ojos enormes tipo domo</td>
+</tr>
+<tr>
+<td>17</td>
+<td>eléctrico</td>
+<td>Ojos grandes con sacudida</td>
+</tr>
+<tr>
+<td>18</td>
+<td>cargando</td>
+<td>Recipientes que se llenan</td>
+</tr>
+<tr>
+<td>19</td>
+<td>ver batería</td>
+<td>Medidor rojo → naranja → amarillo → lima → esmeralda</td>
+</tr>
+<tr>
+<td>20</td>
+<td>batería baja</td>
+<td>Párpados pesados, color apagado</td>
+</tr>
+<tr>
+<td>21</td>
+<td>dormido</td>
+<td>Arcos de pincel que respiran</td>
+</tr>
+<tr>
+<td>22</td>
+<td>dormido tenue</td>
+<td>Arcos apagados</td>
+</tr>
+</tbody>
+</table>
+<h2>Intro KIRO (6.9 s) + nacimiento</h2>
+<p>Cuando la criatura <strong>nace o renace</strong> (primer encendido o verde 5 s), primero se ve la intro del nombre y después el nacimiento. Con una criatura ya guardada, al encender <strong>no</strong> se ve (solo abre los ojos contenta).</p>
+<p><img alt="Fotogramas de la intro" src="../img/intro_kiro_fotogramas.png" /></p>
+<ol>
+<li><strong>0–2 s</strong> — hilos blancos entran girando y escriben KIRO hecho de puntos.</li>
+<li><strong>1.9–2.6 s</strong> — KIRO en puntos se sostiene.</li>
+<li><strong>2.6–5.7 s</strong> — las letras mutan a saltos de color, grosor e inclinación (acelera y frena), y terminan blancas con un golpe de gelatina.</li>
+<li><strong>5.7–6.9 s</strong> — las letras se deshacen en partículas que se atraen al punto blanco central.</li>
+<li><strong>Transición</strong> — los hilos del nacimiento salen de los bordes de la pantalla y se meten en espiral (3.4 s, gruesos y calmados al principio).</li>
+</ol>
+<p><img alt="Transición intro → nacimiento" src="../img/transicion_intro_nacimiento.png" /></p>
+<p><strong>Nacimiento (~38 s):</strong> 16 hilos blancos → partícula-nube que se alimenta → explosión → dos manchas viscosas → ojos de nube → ruleta de siluetas y colores → cierre por deformación (el contorno se vuelve el trazo de pincel; el color cambia con el ojo cerrado) → abre los ojos.</p>
+<p>Animación completa (render exacto del firmware, 30 fps, ~46 s): <a href="../img/intro_completa_kiro.gif"><code>img/intro_completa_kiro.gif</code></a> y la página <a href="../estudio/intro_completa.html"><code>estudio/intro_completa.html</code></a>.</p>
+<p>Propuestas de intro exploradas (12): <a href="../estudio/intro_kiro_10.html"><code>estudio/intro_kiro_10.html</code></a>. La elegida es la <strong>12, "Hilos que mutan"</strong>.</p>
+<h2>Estilo</h2>
+<p>Siluetas de boceto (huevo de base plana + picos), 2 colores planos (ojo + pupila oscura del mismo tono), sin brillos ni degradados, pupilas con resorte propio, ojos asimétricos, ojo cerrado como trazo de pincel, <strong>sin desvanecidos</strong>.</p>
+<h2>Estudio web y herramientas</h2>
+<ul>
+<li><code>estudio/kiro_v4.html</code> — todas las expresiones y el nacimiento (abrir en Chrome).</li>
+<li><code>estudio/calificar_50.html</code> — hoja para calificar 50 criaturas base (guarda un JSON de votos).</li>
+<li><code>alternativa_genoma_clips/</code> — sistema anterior (genoma + 141 clips aditivos), documentado y <strong>no usado</strong>.</li>
+</ul>
+<h2>Reacciones previstas con la PCB</h2>
+<p>Con el LIS3DHTR se conectarán: sacudida suave → curioso, sacudida fuerte → mareo + enojo, quietud → sueño, tap×3 → amor, vibración rítmica → hype, temperatura → frío/calor. La lógica de movimiento probada con señales sintéticas está en <code>alternativa_genoma_clips/firmware_sistema_viejo/Motion.h</code> (se adaptará al motor actual).</p><div class="pager"><span>← <a href="07-firmware.html">Firmware</a></span><span><a href="09-inconsistencias.html">Inconsistencias</a> →</span></div></main></html>

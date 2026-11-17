@@ -2,6 +2,20 @@
 
 Las animaciones se **diseñan y aprueban primero en el navegador** ([`estudio/kiro_v4.html`](../estudio/kiro_v4.html), Estudio v4) y después se portan 1:1 al firmware (`EyesCore.h`). El mismo código del firmware corre en el PC (arnés) para generar las imágenes de esta página.
 
+## Pruébalas en vivo
+
+**[Estudio de animaciones (GitHub Pages)](https://alesso-24.github.io/Kiro/estudio/kiro_v4.html)** — interactivo: elige una expresión, cambia colores/ojos/pupilas, haz clic para una criatura nueva o pulsa «Tour completo». Capturas:
+
+| Curioso | Amor | Enojado |
+|---|---|---|
+| ![](img/web_estudio_curioso.png) | ![](img/web_estudio_amor.png) | ![](img/web_estudio_enojado.png) |
+
+**[Intros del logo KIRO](https://alesso-24.github.io/Kiro/estudio/intro_kiro_10.html)** (12 propuestas; clic para verlas grandes, teclas 1–9 y 0):
+
+![Intros](img/web_intros_10.png)
+
+**[Intro + nacimiento completo](https://alesso-24.github.io/Kiro/estudio/intro_completa.html)** — render exacto del firmware.
+
 ## Las 23 expresiones
 
 ![Expresiones](img/expresiones.png)

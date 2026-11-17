@@ -16,6 +16,19 @@ Kiro está inspirado en [@lilguynet](https://www.instagram.com/lilguynet/). Es u
 | PCB | 2 capas, circular ~55 mm, JLCPCB, hecha en Altium Designer 26 |
 | Firmware | Arduino (core Earle Philhower), DMA SPI, 50–60 fps, 23 expresiones + intro + nacimiento |
 
+## Demo en vivo (GitHub Pages)
+
+**https://alesso-24.github.io/Kiro/**
+
+| | |
+|---|---|
+| [Estudio de animaciones](https://alesso-24.github.io/Kiro/estudio/kiro_v4.html) | Las 23 expresiones, el nacimiento y un tour completo, interactivo |
+| [Intros del logo KIRO](https://alesso-24.github.io/Kiro/estudio/intro_kiro_10.html) | 12 propuestas animadas; la elegida es la 12 |
+| [Intro + nacimiento completo](https://alesso-24.github.io/Kiro/estudio/intro_completa.html) | Render exacto del firmware, ~46 s |
+| [Documentación web](https://alesso-24.github.io/Kiro/capitulos/01-concepto.html) | Los capítulos de abajo, con navegación |
+
+[![Estudio de animaciones](docs/img/web_estudio_amor.png)](https://alesso-24.github.io/Kiro/estudio/kiro_v4.html)
+
 ## Documentación
 
 Todo el proyecto está documentado por capítulos, con imágenes:

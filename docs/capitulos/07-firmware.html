@@ -1,0 +1,173 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Firmware · Kiro</title><style>
+:root{--bg:#0b0b0d;--panel:#131317;--line:#24242b;--tx:#e8e3d8;--mut:#8f8a80;--ac:#4de3ff}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,Segoe UI,sans-serif}
+a{color:var(--ac)}
+nav.top{position:sticky;top:0;z-index:5;background:#0b0b0dee;backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:10px 22px;display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+nav.top b{font-size:18px}nav.top a{text-decoration:none;font-size:14px;color:var(--mut)}nav.top a:hover{color:var(--ac)}
+main{max-width:900px;margin:0 auto;padding:26px 22px 80px}
+h1,h2,h3{line-height:1.25}h1{font-size:30px}h2{margin-top:2em;border-bottom:1px solid var(--line);padding-bottom:6px}
+img{max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:14px 0;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}th{background:#17171b}
+code{background:#17171b;padding:1px 6px;border-radius:5px;font-size:.92em}
+pre{background:#101014;border:1px solid var(--line);border-radius:10px;padding:14px;overflow:auto}pre code{background:none;padding:0}
+blockquote{margin:14px 0;padding:8px 16px;border-left:3px solid var(--ac);background:#101014;color:#cfc9bd;border-radius:0 8px 8px 0}
+em{color:#b9b3a6}
+.pager{display:flex;justify-content:space-between;margin-top:50px;border-top:1px solid var(--line);padding-top:16px}
+</style><nav class="top"><b>Kiro</b><a href="../index.html">Inicio</a><a href="../estudio/kiro_v4.html">Estudio de animaciones</a><a href="../estudio/intro_kiro_10.html">Intros</a><a href="01-concepto.html">Concepto</a><a href="02-hardware.html">Hardware y BOM</a><a href="03-esquematico.html">Esquemático</a><a href="04-pcb.html">PCB</a><a href="05-fabricacion.html">Fabricación</a><a href="06-ensamble.html">Ensamble</a><a href="07-firmware.html">Firmware</a><a href="08-animaciones.html">Animaciones</a><a href="09-inconsistencias.html">Inconsistencias</a><a href="10-pendientes.html">Pendientes y bitácora</a><a href="https://github.com/Alesso-24/Kiro">GitHub</a></nav><main><h1>7. Firmware</h1>
+<p>Carpeta: <a href="https://github.com/Alesso-24/Kiro/tree/main/firmware/Kiro_Eyes/"><code>firmware/Kiro_Eyes/</code></a> — <code>Kiro_Eyes.ino</code> (pantalla, botones, serial, EEPROM) y <code>EyesCore.h</code> (todo el motor de ojos, <strong>sin dependencias de hardware</strong>; lo comparte la placa y el arnés de PC).</p>
+<h2>Arquitectura</h2>
+<ul>
+<li><strong>Render</strong>: framebuffer RGB565 doble (en RAM), antialiasing por píxel, ojos como polígonos de "boceto" con picos, pupilas con resorte propio, párpados, mejillas, corazones, medidor de batería.</li>
+<li><strong>Pantalla</strong>: SPI0 a 41.7 MHz con DMA a 16 bits; solo se envían las filas que cambiaron entre cuadros (menos datos, más fps).</li>
+<li><strong>Identidad</strong>: <code>creatureFromSeed()</code>; la semilla vive en la EEPROM emulada (<code>0xA110C0DF</code> + seed). Verde 5 s = renacer.</li>
+<li><strong>CPU</strong>: 250 MHz (overclock sobre los 150 MHz de fábrica del RP2350).</li>
+<li><strong>Rendimiento medido en la placa</strong>: 50–60 fps, render 3–10 ms; durante la intro/nacimiento, mínimo puntual de 43 fps.</li>
+</ul>
+<h3>Lección crítica del DMA</h3>
+<p>Tras la DMA el SPI queda en 16 bits y el core Philhower <strong>no restaura</strong> el formato; sin <code>spi_set_format(spi0, 8, …)</code> en <code>pushWait()</code> los comandos del siguiente cuadro se corrompen y la pantalla se congela o queda negra. También hay que pasar <code>clk_peri</code> a <code>clk_sys</code> (el core lo deja a 48 MHz, techo de ~24 MHz de SPI).</p>
+<h2>Pinout: protoboard (actual) vs PCB (producción)</h2>
+<p>El firmware actual está cableado para la <strong>protoboard</strong>. Con la PCB hay que cambiar:</p>
+<table>
+<thead>
+<tr>
+<th>Función</th>
+<th>Protoboard (firmware hoy)</th>
+<th><strong>PCB (producción)</strong></th>
+<th>Cambio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SCK</td>
+<td>D8 / GPIO2</td>
+<td>D8 / GPIO2</td>
+<td>=</td>
+</tr>
+<tr>
+<td>MOSI</td>
+<td>D10 / GPIO3</td>
+<td>D10 / GPIO3</td>
+<td>=</td>
+</tr>
+<tr>
+<td>CS</td>
+<td>D1 / GPIO27</td>
+<td>D1 / GPIO27</td>
+<td>=</td>
+</tr>
+<tr>
+<td><strong>DC</strong></td>
+<td>D0 / GPIO26</td>
+<td><strong>D2 / GPIO28</strong></td>
+<td><strong>cambia</strong></td>
+</tr>
+<tr>
+<td><strong>RST</strong></td>
+<td>D2 / GPIO28</td>
+<td><strong>no existe</strong> (RST del display a 3V3)</td>
+<td><strong>cambia</strong> (<code>RST = -1</code>)</td>
+</tr>
+<tr>
+<td><strong>Energía display</strong></td>
+<td>— (siempre ON)</td>
+<td><strong>D3 / GPIO5</strong> (LOW = ON)</td>
+<td><strong>nuevo</strong></td>
+</tr>
+<tr>
+<td><strong>Batería (ADC)</strong></td>
+<td>— (simulada)</td>
+<td><strong>D0 / GPIO26 (ADC0)</strong></td>
+<td><strong>nuevo</strong></td>
+</tr>
+<tr>
+<td>Botón azul</td>
+<td>D6 / GPIO0</td>
+<td>D6 / GPIO0 (<code>BTN1</code>)</td>
+<td>=</td>
+</tr>
+<tr>
+<td><strong>Botón verde</strong></td>
+<td><strong>D7 / GPIO1</strong></td>
+<td><strong>D9 / GPIO4</strong> (<code>BTN2</code>)</td>
+<td><strong>cambia</strong></td>
+</tr>
+<tr>
+<td><strong>INT2 del LIS3DH</strong></td>
+<td>—</td>
+<td><strong>D7 / GPIO1</strong></td>
+<td><strong>nuevo (choca con el botón verde actual)</strong></td>
+</tr>
+<tr>
+<td>I2C</td>
+<td>—</td>
+<td><strong>I2C1</strong>: SDA D4/GPIO6, SCL D5/GPIO7 (<code>Wire1</code>)</td>
+<td>nuevo</td>
+</tr>
+</tbody>
+</table>
+<p>Código de referencia para la PCB (usar los alias <code>D*</code> del core en vez de números crudos):</p>
+<pre><code class="language-cpp">#define DISP_PWR   D3   // GPIO5  — gate de Q1: LOW = display ON
+#define SPI_SCK    D8   // GPIO2  [SPI0]
+#define SPI_MOSI   D10  // GPIO3  [SPI0]
+#define DISP_CS    D1   // GPIO27
+#define DISP_DC    D2   // GPIO28
+#define I2C_SDA    D4   // GPIO6  [I2C1 / Wire1]
+#define I2C_SCL    D5   // GPIO7
+#define LIS_INT2   D7   // GPIO1
+#define BTN1       D6   // GPIO0
+#define BTN2       D9   // GPIO4
+#define VBAT_ADC   D0   // GPIO26 / ADC0
+
+// batería: divisor 1:2
+analogReadResolution(12);
+float vbat = (analogRead(VBAT_ADC) * 3.3f / 4095.0f) * 2.0f;   // &lt;3.0 V apagar · &lt;3.5 V aviso
+</code></pre>
+<p>Con <code>RST = -1</code> en la librería de la pantalla, comprobar que se haga un reset por software y que el display arranque tras conmutar Q1 (ver <a href="09-inconsistencias.html">inconsistencia 4</a>).</p>
+<h2>Controles actuales</h2>
+<table>
+<thead>
+<tr>
+<th>Acción</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Azul corto</td>
+<td>Siguiente emoción (~3.4 s): curioso, feliz, amor, sorprendido, orgulloso, hype, cara llena, pantalla de color, enojado, triste, ansioso, frío, mareado, bostezo, batería baja, guiño, eléctrico</td>
+</tr>
+<tr>
+<td>Azul largo (0.8 s)</td>
+<td>Ver batería</td>
+</tr>
+<tr>
+<td>Verde (mantener)</td>
+<td>Amor (corazones)</td>
+</tr>
+<tr>
+<td>Verde 5 s</td>
+<td>Renacer: criatura nueva + intro + nacimiento, se guarda</td>
+</tr>
+<tr>
+<td>35 s sin tocar</td>
+<td>Bosteza</td>
+</tr>
+<tr>
+<td>100 s sin tocar</td>
+<td>Se duerme (arcos que respiran)</td>
+</tr>
+</tbody>
+</table>
+<h2>Serial de pruebas (115200)</h2>
+<p><code>1..9</code> expresión · espacio siguiente · <code>t</code> otro color (sin guardar) · <code>n</code> criatura nueva sin guardar · <code>R</code> renacer y guardar · <code>?</code> imprime <code>[ID]</code> · <code>w</code> guiño · <code>v</code> batería · <code>j</code> ruido · <code>k</code>/<code>K</code> sacudida · <code>x</code> desprecio · <code>b</code> batería simulada · <code>f</code> velocidad SPI (25/31/42/62 MHz) · <code>d</code> línea de rendimiento. <strong>Evitar <code>u</code> (USB) e <code>i</code> (frío)</strong>: dejan banderas activas hasta reiniciar.</p>
+<h2>Compilar y subir</h2>
+<pre><code>cd firmware
+arduino-cli compile --fqbn rp2040:rp2040:seeed_xiao_rp2350:freq=250,opt=Optimize2 Kiro_Eyes
+arduino-cli upload  -p COM6 --fqbn rp2040:rp2040:seeed_xiao_rp2350:freq=250,opt=Optimize2 Kiro_Eyes
+</code></pre>
+<p>Cerrar cualquier monitor serie antes de subir. La compilación tarda más de 2 minutos la primera vez. Uso: ~116 KB de flash (5 %), ~253 KB de RAM (48 %).</p>
+<h2>Probar sin placa</h2>
+<p><code>herramientas/arnes/</code> compila el mismo <code>EyesCore.h</code> en el PC (<code>harness.cpp</code>, <code>ident.cpp</code>, <code>soak.cpp</code>) y vuelca cuadros RGB565 para revisar animaciones. <code>herramientas/serial/</code> tiene las pruebas de estrés y de identidad contra la placa.</p>
+<h2>Requisitos pendientes de implementar con la PCB</h2>
+<p>Ver <a href="10-pendientes.html">10. Pendientes</a>: REQ-1 (auto-sueño + despertar por INT2), REQ-2 (RTC y ciclos día/noche), REQ-3 (temperatura), REQ-4 (vibraciones).</p><div class="pager"><span>← <a href="06-ensamble.html">Ensamble</a></span><span><a href="08-animaciones.html">Animaciones</a> →</span></div></main></html>

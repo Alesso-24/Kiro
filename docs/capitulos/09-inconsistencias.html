@@ -1,0 +1,302 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Inconsistencias · Kiro</title><style>
+:root{--bg:#0b0b0d;--panel:#131317;--line:#24242b;--tx:#e8e3d8;--mut:#8f8a80;--ac:#4de3ff}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,Segoe UI,sans-serif}
+a{color:var(--ac)}
+nav.top{position:sticky;top:0;z-index:5;background:#0b0b0dee;backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:10px 22px;display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+nav.top b{font-size:18px}nav.top a{text-decoration:none;font-size:14px;color:var(--mut)}nav.top a:hover{color:var(--ac)}
+main{max-width:900px;margin:0 auto;padding:26px 22px 80px}
+h1,h2,h3{line-height:1.25}h1{font-size:30px}h2{margin-top:2em;border-bottom:1px solid var(--line);padding-bottom:6px}
+img{max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:14px 0;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}th{background:#17171b}
+code{background:#17171b;padding:1px 6px;border-radius:5px;font-size:.92em}
+pre{background:#101014;border:1px solid var(--line);border-radius:10px;padding:14px;overflow:auto}pre code{background:none;padding:0}
+blockquote{margin:14px 0;padding:8px 16px;border-left:3px solid var(--ac);background:#101014;color:#cfc9bd;border-radius:0 8px 8px 0}
+em{color:#b9b3a6}
+.pager{display:flex;justify-content:space-between;margin-top:50px;border-top:1px solid var(--line);padding-top:16px}
+</style><nav class="top"><b>Kiro</b><a href="../index.html">Inicio</a><a href="../estudio/kiro_v4.html">Estudio de animaciones</a><a href="../estudio/intro_kiro_10.html">Intros</a><a href="01-concepto.html">Concepto</a><a href="02-hardware.html">Hardware y BOM</a><a href="03-esquematico.html">Esquemático</a><a href="04-pcb.html">PCB</a><a href="05-fabricacion.html">Fabricación</a><a href="06-ensamble.html">Ensamble</a><a href="07-firmware.html">Firmware</a><a href="08-animaciones.html">Animaciones</a><a href="09-inconsistencias.html">Inconsistencias</a><a href="10-pendientes.html">Pendientes y bitácora</a><a href="https://github.com/Alesso-24/Kiro">GitHub</a></nav><main><h1>9. Inconsistencias detectadas</h1>
+<p>Resultado de comparar tres fuentes: <strong>(A)</strong> las notas de contexto del equipo ("Kiro — Contexto Maestro", 2026-11-17), <strong>(B)</strong> los archivos reales de Altium en <code>hardware/pcb_altium/</code> (esquemático <code>Sheet1.SchDoc</code>, <code>Pick Place</code>, DRC, Gerbers del 31-oct) y <strong>(C)</strong> el firmware y la documentación de este repositorio (+ el archivo de variante del core del XIAO RP2350).</p>
+<p><strong>Gravedad:</strong> 🔴 puede romper el hardware o el firmware · 🟠 error de datos que conviene corregir antes de ensamblar/pedir · 🟡 documentación u observación.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Gravedad</th>
+<th>Tema</th>
+<th>Resumen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>🔴</td>
+<td>D3 ≠ GPIO29</td>
+<td>En el XIAO RP2350, D3 = <strong>GPIO5</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>🔴</td>
+<td>Botón verde vs INT2</td>
+<td>El firmware usa D7/GPIO1 para el botón verde; en la PCB D7 es <code>LIS_INT2</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>🟠</td>
+<td>Pines del LIS3DH</td>
+<td>La numeración de pines de las notas no coincide con el esquemático ni con el datasheet</td>
+</tr>
+<tr>
+<td>4</td>
+<td>🟠</td>
+<td>Reset del display</td>
+<td>Las notas dicen dos cosas; el esquemático fija RST a 3V3; el firmware aún usa un RST</td>
+</tr>
+<tr>
+<td>5</td>
+<td>🟡</td>
+<td>Q1</td>
+<td>Nombre ambiguo (AO3407 vs BSS84)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>🟡</td>
+<td>Lado de J1</td>
+<td>Notas: Bottom; Pick &amp; Place y Gerbers: <strong>Top</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td>🟠</td>
+<td>Contorno de la placa</td>
+<td>Notas: circular; <code>PCB1</code> y Gerbers: círculo + pestaña rectangular (confirmado)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>🟠</td>
+<td>BOM y metadatos</td>
+<td>Comentarios de biblioteca (953 kΩ, 470 pF, XH), BOM antiguo, cantidad de JST PH</td>
+</tr>
+<tr>
+<td>9</td>
+<td>🟡</td>
+<td>Nombre en la placa</td>
+<td>La serigrafía dice "Alux v1", no Kiro</td>
+</tr>
+<tr>
+<td>10</td>
+<td>🟡</td>
+<td>Archivos "Kiro" no encontrados</td>
+<td><code>BOM_Kiro.csv</code>, <code>Gerbers_Kiro.zip</code> no están en este equipo</td>
+</tr>
+<tr>
+<td>11</td>
+<td>🟡</td>
+<td>Firmware (frecuencia, expresiones, botones)</td>
+<td>Notas describen el sistema de animación anterior</td>
+</tr>
+<tr>
+<td>12</td>
+<td>🟠</td>
+<td>Autonomía en dormant</td>
+<td>El estimado de 3–4 meses ignora el divisor de batería</td>
+</tr>
+<tr>
+<td>13</td>
+<td>🟡</td>
+<td>Temperatura del LIS3DH</td>
+<td>Es relativa; la precisión "±2 °C" necesita calibración</td>
+</tr>
+<tr>
+<td>14</td>
+<td>🟡</td>
+<td>DRC</td>
+<td>Cifras coinciden con <code>PCB1</code>; no con la placa de práctica</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>1. 🔴 D3 = GPIO5, no GPIO29</h2>
+<ul>
+<li><strong>Notas (A):</strong> <code>D3 → GPIO29 → DISP_PWR</code>, y <code>#define DISP_PWR 29</code>.</li>
+<li><strong>Core del XIAO RP2350 (<code>pins_arduino.h</code>):</strong> <code>D3 = 5</code>, <code>D4 = 6</code>, <code>D5 = 7</code>, <code>D6 = 0</code>, <code>D7 = 1</code>, <code>D8 = 2</code>, <code>D9 = 4</code>, <code>D10 = 3</code>. (En el XIAO <strong>RP2040</strong>, D3 sí era GPIO29.)</li>
+<li><strong>Impacto:</strong> el <em>hardware</em> está bien (la red <code>DISP_PWR</code> va al pad D3 del módulo), pero un firmware con <code>DISP_PWR 29</code> <strong>no encendería el display</strong> (GPIO29 no sale del módulo).</li>
+<li><strong>Acción:</strong> en el firmware usar siempre los alias <code>D3</code>, <code>D0</code>… en lugar de números de GPIO. Ya corregido en <a href="07-firmware.html">07-firmware</a> y <a href="03-esquematico.html">03-esquematico</a>.</li>
+</ul>
+<h2>2. 🔴 Botón verde (D7/GPIO1) choca con <code>LIS_INT2</code></h2>
+<ul>
+<li><strong>Firmware actual (C):</strong> botón azul D6/GPIO0, <strong>botón verde D7/GPIO1</strong>.</li>
+<li><strong>PCB (B):</strong> <code>BTN1</code> = D6/GPIO0 (igual), <strong><code>BTN2</code> = D9/GPIO4</strong>, y <strong>D7/GPIO1 = <code>LIS_INT2</code></strong>.</li>
+<li><strong>Impacto:</strong> si se sube el firmware actual a la PCB, la lectura del botón verde será en realidad la línea INT2 del acelerómetro (y el botón físico, en D9, no hará nada). Las notas ya mencionan que DC/RST/DISP_PWR/VBAT cambian, pero <strong>no los botones</strong>.</li>
+<li><strong>Acción:</strong> cambiar <code>BTN_GREEN</code> a GPIO4 (D9) y reservar GPIO1 para INT2. Incluido en la tabla de <a href="07-firmware.html">07-firmware</a>.</li>
+</ul>
+<h2>3. 🟠 Numeración de pines del LIS3DHTR en las notas</h2>
+<p>Las notas listan: <code>VDD(pin8), VDD_IO(pin5), CS(pin14), RFU(pin6) a 3V3, SDI(pin3), SPC(pin2), INT2(pin4), SDO(pin7), INT1(pin9)</code>.</p>
+<p>El esquemático (y el datasheet LGA-16 de ST) dicen:</p>
+<table>
+<thead>
+<tr>
+<th>Señal</th>
+<th>Pin real (esquemático)</th>
+<th>Pin en las notas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VDD</td>
+<td><strong>14</strong></td>
+<td>8</td>
+</tr>
+<tr>
+<td>VDD_IO</td>
+<td><strong>1</strong></td>
+<td>5</td>
+</tr>
+<tr>
+<td>CS</td>
+<td><strong>8</strong></td>
+<td>14</td>
+</tr>
+<tr>
+<td>SCL/SPC</td>
+<td><strong>4</strong></td>
+<td>2</td>
+</tr>
+<tr>
+<td>SDA/SDI</td>
+<td><strong>6</strong></td>
+<td>3</td>
+</tr>
+<tr>
+<td>SDO/SA0</td>
+<td>7</td>
+<td>7 ✓</td>
+</tr>
+<tr>
+<td>INT2</td>
+<td><strong>9</strong></td>
+<td>4</td>
+</tr>
+<tr>
+<td>INT1</td>
+<td><strong>11</strong> (sin conectar)</td>
+<td>9</td>
+</tr>
+<tr>
+<td>RES</td>
+<td><strong>10 → GND</strong></td>
+<td>"RFU pin 6 → 3V3" ✗</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>5 y 12</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Impacto:</strong> el <em>esquemático</em> está correcto (coincide con el datasheet); las <strong>notas</strong> no. Si alguien soldara/probara siguiendo las notas, mediría los pines equivocados. En especial <code>RES</code> debe ir a <strong>GND</strong>, no a 3V3.</li>
+<li><strong>Acción:</strong> usar las tablas de <a href="03-esquematico.html">03-esquematico</a> como referencia y corregir el documento <code>lil-guy-schematic-handoff.md</code>.</li>
+</ul>
+<h2>4. 🟠 Reset del display</h2>
+<ul>
+<li><strong>Notas (A):</strong> una vez dicen "RST ── 3V3 (siempre HIGH, sin reset por hardware)" y otra "en PCB: RC auto-reset".</li>
+<li><strong>Esquemático (B):</strong> J1 pin 1 (RST) está en <strong>+3V3</strong>. No hay red RC.</li>
+<li><strong>Firmware (C):</strong> hoy usa RST en GPIO28, que en la PCB es <strong><code>DISP_DC</code></strong>.</li>
+<li><strong>Acción:</strong> fijar <code>RST = -1</code> en la librería de la pantalla y verificar en pruebas que el display inicia bien (idealmente con comando SWRESET por software) <strong>cada vez que Q1 vuelve a encender el display</strong>.</li>
+</ul>
+<h2>5. 🟡 Nombre de Q1</h2>
+<p>La nota titula "AO3407 (BSS84LT1G equivalente)". El esquemático, el BOM y el LCSC (C82079) son <strong>BSS84LT1G</strong> (P-MOSFET −50 V, ~10 Ω). El AO3407 es otro dispositivo (30 V, 4.3 A). Usar <strong>BSS84LT1G</strong>. Nota: con 10 Ω de Rds(on) a 20 mA el MOSFET cae ~0.2 V; el display aún recibe ~3.1 V.</p>
+<h2>6. 🟡 Lado de J1 (header del display)</h2>
+<ul>
+<li><strong>Notas:</strong> "J1 en Bottom Layer".</li>
+<li><strong><code>Pick Place for PCB1.csv</code>:</strong> J1 → <strong>TopLayer</strong>. El render de los Gerbers muestra <code>J1</code> en la serigrafía Top.</li>
+<li><strong>Acción:</strong> confirmar en el 3D de <code>PCB1.PcbDoc</code> y reflejarlo en las notas.</li>
+</ul>
+<h2>7. 🟠 Contorno de la placa</h2>
+<ul>
+<li><strong>Notas:</strong> circular de 55 mm.</li>
+<li><strong>Gerbers (render):</strong> el contorno (<code>PCB1.GM</code>) es un círculo con una <strong>pestaña rectangular</strong> hacia J1. El DRC de <code>PCB1</code> además marca 6 colisiones de serigrafía con el borde (el contorno del XIAO y de J1).</li>
+<li><strong>Confirmado con la captura de <code>PCB1.PcbDoc</code> en Altium</strong> (la placa enviada): el contorno de verdad es un círculo con una pestaña rectangular arriba; no es un artefacto del render. Las 6 colisiones del DRC cuadran con que el contorno del XIAO queda pegado al borde.</li>
+<li><strong>Acción:</strong> actualizar la descripción de la forma en las notas ("círculo + pestaña"); verificar en el 3D que la pestaña sea intencional para el display.</li>
+</ul>
+<h2>8. 🟠 BOM y metadatos del esquemático</h2>
+<ol>
+<li><strong>Descripciones de biblioteca</strong>: los símbolos de resistencias (todas) dicen "953 kΩ" y los capacitores "470 pF 50 V" (esto sale en el <em>Pick &amp; Place</em> y en el <em>Comment</em>). Los <strong>valores</strong> que muestra la hoja son 4k7 / 100k / 100n / 10u. Los LCSC de la tabla de <a href="02-hardware.html">hardware</a> son los correctos.</li>
+<li><strong><code>BOM_ALUX.csv</code></strong> (en el zip de Gerbers, 31-oct) lista C4 = <strong>C15525 (6.3 V)</strong> —justo el que las notas prohíben— y trae "4.7k?"/"100k?" con signos de interrogación (codificación).</li>
+<li><strong>J2/J3/J4</strong>: comentario <code>S2B-XH-A(LF)(SN)</code> pero huella <code>JST_S2B-PH-K-S</code> (PH 2.0 mm); en las notas J3/J4 son "JST 2-pin 2.54 mm genérico". En el esquemático los <strong>tres</strong> son S2B-PH-K-S.</li>
+<li><strong>Cantidad pedida de C157932 (S2B-PH-K-S): 5.</strong> Si J2, J3 y J4 son PH, 5 placas necesitan <strong>15</strong>. Alcanza para 5 baterías (J2) pero no para los botones.
+- <strong>Acción:</strong> poner <code>Comment = valor</code> en los símbolos, regenerar el BOM, decidir el tipo de J3/J4 y completar el pedido de JST si hacen falta.</li>
+</ol>
+<h2>9. 🟡 La placa dice "Alux v1"</h2>
+<p>La serigrafía enviada a fabricar (Gerbers del 31-oct) lleva <strong>"Alux v1"</strong> y el logo IBERO Puebla; el proyecto ahora se llama <strong>Kiro</strong>. Es solo estético, pero la placa física no dirá "Kiro".</p>
+<h2>10. 🟡 Archivos citados que no se encontraron</h2>
+<p>Las notas mencionan <code>BOM_Kiro.csv</code>, <code>Gerbers_Kiro.zip</code> y <code>claude/*.md</code>. En este equipo solo hay <code>Gerbers_Alux.zip</code> y <code>BOM_ALUX.csv</code> (31-oct). Los documentos <code>lil-guy-*.md</code> no están en este repositorio.</p>
+<h2>11. 🟡 Firmware: las notas describen el sistema anterior</h2>
+<table>
+<thead>
+<tr>
+<th>Tema</th>
+<th>Notas (A)</th>
+<th>Firmware actual (C)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Expresiones</td>
+<td>12 (HYPE, CURIOUS, AWAKE…) con coordenadas de iris</td>
+<td><strong>23</strong>, motor nuevo (Estudio v4)</td>
+</tr>
+<tr>
+<td>Arranque</td>
+<td>HYPE → CURIOUS → AWAKE siempre</td>
+<td>Intro KIRO + nacimiento <strong>solo al nacer/renacer</strong>; con criatura guardada abre los ojos contenta</td>
+</tr>
+<tr>
+<td>Botones</td>
+<td>BTN1 = wake/on-off, BTN2 = cambiar expresión; BTN1+BTN2 2 s = FULL_FACE</td>
+<td>Azul corto = siguiente emoción, azul largo = ver batería, verde = amor, verde 5 s = renacer</td>
+</tr>
+<tr>
+<td>Sueño</td>
+<td>SLEEPING tras 30 s</td>
+<td>Bostezo a los 35 s, dormido a los 100 s</td>
+</tr>
+<tr>
+<td>Frecuencia</td>
+<td><code>freq=200</code>, "RP2350 150 MHz"</td>
+<td><code>freq=250</code> (overclock)</td>
+</tr>
+<tr>
+<td>Documentos</td>
+<td><code>Kiro\docs\</code> y <code>claude/kiro-master-context.md</code></td>
+<td><code>README.md</code> + <code>docs/</code> de este repo y <code>CLAUDE.md</code></td>
+</tr>
+<tr>
+<td>- <strong>Impacto de 250 MHz:</strong> más consumo que a 150 MHz; considerar bajar la frecuencia cuando esté en reposo o con batería baja.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>- <strong>Acción:</strong> reconciliar el mapa de triggers (<code>Shake</code>, <code>Tap</code>, <code>INT2</code>) con el motor actual al implementar REQ-1..4.</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2>12. 🟠 Autonomía en reserva (REQ-2)</h2>
+<p>Las notas estiman ~10–20 µA en DORMANT y <strong>3–4 meses</strong> con la batería al 15 % (60 mAh). Pero el divisor R3+R4 (200 kΩ total) drena <strong>≈ 21 µA a 4.2 V (≈ 15 µA a 3.0 V)</strong> de forma permanente, y el LDO del XIAO también tiene corriente en reposo.
+- Con ~40 µA totales: 60 mAh / 0.04 mA ≈ 1500 h ≈ <strong>2 meses</strong>.
+- <strong>Acción:</strong> medir el consumo real en dormant; si hace falta, cortar el divisor con un MOSFET en la v2 (o leer la batería solo de vez en cuando con un pin a alta impedancia).</p>
+<h2>13. 🟡 Temperatura con el LIS3DH (REQ-3)</h2>
+<p>El sensor de temperatura del LIS3DH entrega una lectura <strong>relativa</strong> de 8 bits (≈ 1 LSB/°C) y requiere habilitar <code>TEMP_EN</code> (y <code>BDU</code>). No tiene exactitud absoluta garantizada. La notas ya piden calibrar con la carcasa de PLA cerrada; conviene hacerlo con un termómetro de referencia y guardar el offset.</p>
+<h2>14. 🟡 Cifras del DRC</h2>
+<p>"0 errores eléctricos, 26 cosméticos" <strong>coincide con <code>PCB1</code></strong> (31-oct: 20 silk-máscara + 6 contorno). La placa de práctica <code>PCB_ALTIUM_PRUEBA</code> (10-nov) tiene 22. Los pedidos corresponden a <code>PCB1</code>.</p>
+<hr />
+<h2>Lo que sí coincide ✔</h2>
+<ul>
+<li>Mapa D0–D10 → redes <code>VBAT_DIV</code>, <code>DISP_CS</code>, <code>DISP_DC</code>, <code>DISP_PWR</code>, <code>I2C_SDA/SCL</code>, <code>BTN1</code>, <code>LIS_INT2</code>, <code>SPI_SCK</code>, <code>BTN2</code>, <code>SPI_MOSI</code> (esquemático = notas, salvo el GPIO de D3).</li>
+<li>Header J1: pin 1 = 3V3 (RST), 2 CS, 3 DC, 4 MOSI, 5 SCK, 6 GND, 7 VCC_DISP.</li>
+<li>LIS3DH: SDO a GND (dirección 0x18), INT1 sin conectar, INT2 a D7, CS a 3V3.</li>
+<li>Valores del esquemático: R1/R2 = 4.7 kΩ, R3/R4/R5 = 100 kΩ, C1/C2/C3/C5 = 100 nF, C4 = 10 µF.</li>
+<li>46/46 conexiones ruteadas; 3 taladros NPTH de 2.2 mm (M2); acabado/espesor/color según las notas.</li>
+<li>Pines del firmware de producción de las notas (excepto D3 y los botones) coinciden con los alias del core.</li>
+</ul><div class="pager"><span>← <a href="08-animaciones.html">Animaciones</a></span><span><a href="10-pendientes.html">Pendientes y bitácora</a> →</span></div></main></html>

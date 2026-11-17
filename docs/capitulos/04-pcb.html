@@ -1,0 +1,142 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PCB · Kiro</title><style>
+:root{--bg:#0b0b0d;--panel:#131317;--line:#24242b;--tx:#e8e3d8;--mut:#8f8a80;--ac:#4de3ff}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,Segoe UI,sans-serif}
+a{color:var(--ac)}
+nav.top{position:sticky;top:0;z-index:5;background:#0b0b0dee;backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:10px 22px;display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+nav.top b{font-size:18px}nav.top a{text-decoration:none;font-size:14px;color:var(--mut)}nav.top a:hover{color:var(--ac)}
+main{max-width:900px;margin:0 auto;padding:26px 22px 80px}
+h1,h2,h3{line-height:1.25}h1{font-size:30px}h2{margin-top:2em;border-bottom:1px solid var(--line);padding-bottom:6px}
+img{max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:14px 0;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}th{background:#17171b}
+code{background:#17171b;padding:1px 6px;border-radius:5px;font-size:.92em}
+pre{background:#101014;border:1px solid var(--line);border-radius:10px;padding:14px;overflow:auto}pre code{background:none;padding:0}
+blockquote{margin:14px 0;padding:8px 16px;border-left:3px solid var(--ac);background:#101014;color:#cfc9bd;border-radius:0 8px 8px 0}
+em{color:#b9b3a6}
+.pager{display:flex;justify-content:space-between;margin-top:50px;border-top:1px solid var(--line);padding-top:16px}
+</style><nav class="top"><b>Kiro</b><a href="../index.html">Inicio</a><a href="../estudio/kiro_v4.html">Estudio de animaciones</a><a href="../estudio/intro_kiro_10.html">Intros</a><a href="01-concepto.html">Concepto</a><a href="02-hardware.html">Hardware y BOM</a><a href="03-esquematico.html">Esquemático</a><a href="04-pcb.html">PCB</a><a href="05-fabricacion.html">Fabricación</a><a href="06-ensamble.html">Ensamble</a><a href="07-firmware.html">Firmware</a><a href="08-animaciones.html">Animaciones</a><a href="09-inconsistencias.html">Inconsistencias</a><a href="10-pendientes.html">Pendientes y bitácora</a><a href="https://github.com/Alesso-24/Kiro">GitHub</a></nav><main><h1>4. PCB</h1>
+<p>Archivos: <a href="https://github.com/Alesso-24/Kiro/blob/main/hardware/pcb_altium/PCB1.PcbDoc"><code>hardware/pcb_altium/PCB1.PcbDoc</code></a> (placa enviada a fabricar, 31-oct) y <code>PCB_ALTIUM_PRUEBA.PcbDoc</code> (placa de práctica/tutorial, 10-nov). Herramienta: Altium Designer Professional 26.10.1.</p>
+<h2>Especificaciones</h2>
+<table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Forma</td>
+<td>Circular, ~55 mm de diámetro (radio 27.5 mm, capa Mechanical 1) — ver nota de contorno</td>
+</tr>
+<tr>
+<td>Capas</td>
+<td>2 (Top / Bottom)</td>
+</tr>
+<tr>
+<td>Espesor</td>
+<td><strong>1.0 mm</strong> (JLCPCB usa 1.6 mm por defecto: cambiarlo a mano)</td>
+</tr>
+<tr>
+<td>Cobre</td>
+<td>1 oz (35 µm)</td>
+</tr>
+<tr>
+<td>Acabado</td>
+<td><strong>ENIG</strong> (obligatorio para el LGA-16 de 0.5 mm), oro 1 U"</td>
+</tr>
+<tr>
+<td>Máscara / serigrafía</td>
+<td>Azul / blanca</td>
+</tr>
+<tr>
+<td>Reglas</td>
+<td>Archivo <code>.RUL</code> de JLCPCB (Replace all): clearance 0.127 mm, pista mín 0.127 mm, anillo mín 0.076 mm, agujero mín 0.3 mm</td>
+</tr>
+<tr>
+<td>Taladros</td>
+<td>49: 9×0.711 mm, 6×0.8 mm, 24×1.0 mm, 7×1.02 mm (PTH) + 3×2.2 mm NPTH (tornillos M2)</td>
+</tr>
+<tr>
+<td>Conexiones ruteadas</td>
+<td><strong>46 / 46</strong> (autoruteo Situs + ajuste manual)</td>
+</tr>
+</tbody>
+</table>
+<h2>Proceso de diseño (capturas)</h2>
+<p><strong>1. Forma circular</strong> — círculo de radio 27.5 mm en Mechanical 1 → <em>Design → Board Shape → Define from selected objects</em>:</p>
+<p><img alt="Contorno circular" src="../img/pcb_contorno_circular.webp" /></p>
+<p><strong>2. Importar el esquemático</strong> — <em>Design → Import Changes</em>: aparecen las huellas con las conexiones (líneas de rata):</p>
+<p><img alt="Huellas importadas" src="../img/pcb_huellas_importadas.webp" /></p>
+<p><strong>3. Acomodar componentes</strong> — XIAO al centro, display (J1) en el borde, sensor y conectores alrededor:</p>
+<p><img alt="Componentes acomodados" src="../img/pcb_componentes_acomodados.webp" /></p>
+<p><strong>4. Ruteo</strong> — autoruteo con Situs y ajuste a mano; el log de Altium confirma "46 of 46 connections":</p>
+<p><img alt="Autoruteo" src="../img/pcb_autoruteo_46de46.webp" /></p>
+<p><strong>5. Vista 3D</strong> del resultado ruteado y con la firma en la serigrafía ("designed by Alexa and Alessandro"):</p>
+<p><img alt="3D ruteada" src="../img/pcb_3d_ruteada.webp" /></p>
+<blockquote>
+<p>Las capturas 1–5 provienen de la práctica de Altium (placa <code>PCB_ALTIUM_PRUEBA</code>, misma metodología y mismo esquemático <code>PCB_TAMAGOCHI_FINAL</code>). La disposición final de componentes de <code>PCB1.PcbDoc</code> se ve en los renders de los Gerbers (abajo).</p>
+</blockquote>
+<h2><code>PCB1.PcbDoc</code> — la placa enviada a fabricar (captura de Altium)</h2>
+<p><img alt="PCB1 en Altium" src="../img/pcb1_altium_top_enviada.png" /></p>
+<p><em>Confirmada por el equipo como la placa enviada a fabricar. Vista Top (rojo = cobre Top, azul = cobre Bottom) en la capa Mechanical 1.</em> Se ve: el nombre <strong>"Alux V1"</strong> con "Created by Alexa and Alessandro", el logo <strong>IBERO PUEBLA</strong>, <code>J2</code> con <code>BAT−/BAT+</code>, <code>J3</code> (<code>BTN1</code>), <code>J4</code> (<code>BTN2</code>), <code>Q1</code>, el <code>IMU</code> (U2) con <code>C3</code>/<code>C5</code>, los capacitores/resistencias del lado Bottom en transparencia, los <strong>tres agujeros de montaje numerados 7, 8 y 9</strong> y el contorno: un <strong>círculo con una pestaña/cuello rectangular arriba</strong> (donde van <code>J3</code> y el header del display). El rectángulo amarillo grande del <code>XIAO</code> llega hasta el borde inferior del círculo.</p>
+<h2>Render de los Gerbers enviados (<code>Gerbers_Alux.zip</code>)</h2>
+<p>Generados con <em>gerbonara</em> a partir del paquete real de fabricación del 31-oct-2026:</p>
+<p><strong>Top (cobre, máscara y serigrafía):</strong></p>
+<p><img alt="Gerber top" src="../img/gerber_top.png" /></p>
+<p><strong>Bottom:</strong></p>
+<p><img alt="Gerber bottom" src="../img/gerber_bottom.png" /></p>
+<p>Se aprecian: header del display <strong>J1</strong> arriba, <strong>XIAO</strong> al centro, <strong>J2</strong> (batería, <code>BAT+</code>/<code>BAT−</code>), <strong>J3/J4</strong> (<code>BTN1</code>/<code>BTN2</code>), <strong>Q1</strong>, el IMU (U2), el logo <strong>IBERO Puebla</strong> en la serigrafía y el texto <strong>"Alux v1"</strong> — el nombre anterior del proyecto.</p>
+<blockquote>
+<p><strong>Nota de contorno.</strong> El contorno (capa <code>.GM</code> / Mechanical 1) es un círculo con una <strong>pestaña rectangular</strong> arriba, igual que en la captura de Altium de <code>PCB1.PcbDoc</code>. Las notas decían "circular 55 mm": el cuerpo es circular, pero con esa pestaña (<a href="09-inconsistencias.html">inconsistencia 7</a>).</p>
+</blockquote>
+<h2>Colocación (Pick &amp; Place, 31-oct)</h2>
+<table>
+<thead>
+<tr>
+<th>Lado</th>
+<th>Componentes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Top</strong></td>
+<td>J1 (header display), J2, J3, J4 (JST), U2 (LIS3DHTR), XIAO, Q1, R4, C3, C5</td>
+</tr>
+<tr>
+<td><strong>Bottom</strong></td>
+<td>R1, R2, R3, R5, C1, C2, C4</td>
+</tr>
+</tbody>
+</table>
+<p>(Fuente: <code>Pick Place for PCB1.csv</code>. Las notas mencionaban J1 en Bottom; ver <a href="09-inconsistencias.html">inconsistencia 6</a>.)</p>
+<h2>DRC (Design Rule Check)</h2>
+<table>
+<thead>
+<tr>
+<th>Informe</th>
+<th>Fecha</th>
+<th>Violaciones</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PCB1</code> (la enviada)</td>
+<td>31-oct</td>
+<td><strong>26</strong></td>
+<td>20 de <em>Silk to Solder Mask</em> (serigrafía a 0.125 mm &lt; 0.127 mm de pads 0402) + 6 de <em>Board Outline Clearance</em> (líneas de serigrafía del contorno del XIAO y de J1 a menos de 0.2 mm del borde de placa; una colisiona) — todas <strong>estéticas</strong></td>
+</tr>
+<tr>
+<td><code>PCB_ALTIUM_PRUEBA</code></td>
+<td>10-nov</td>
+<td>22</td>
+<td>20 de <em>Silk to Solder Mask</em> + 2 de <em>Board Outline Clearance</em> (textos J1 y J4)</td>
+</tr>
+</tbody>
+</table>
+<p>Reglas eléctricas (Clearance, Short-Circuit, Un-Routed Net, Width, Annular Ring, Hole Size, Hole-to-Hole): <strong>0 violaciones</strong> en ambos informes.</p>
+<p><img alt="Resumen DRC" src="../img/drc_resumen.webp" /></p>
+<p>Informes completos: <code>hardware/pcb_altium/Project Outputs for PCB_TAMAGOCHI_FINAL/Design Rule Check - *.html</code>.</p>
+<h2>Salidas de fabricación</h2>
+<p>Ver <a href="05-fabricacion.html">5. Fabricación</a>.</p><div class="pager"><span>← <a href="03-esquematico.html">Esquemático</a></span><span><a href="05-fabricacion.html">Fabricación</a> →</span></div></main></html>
