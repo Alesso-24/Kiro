@@ -18,7 +18,7 @@ Copia de `C:\Users\Public\Documents\Altium\PCB_TAMAGOCHI_FINAL\` (proyecto **Alt
 > Para editar el diseño usa **el proyecto original** en `C:\Users\Public\Documents\Altium\PCB_TAMAGOCHI_FINAL\` (sincronizado con Altium 365). Esta copia sirve de respaldo, para consulta y para que la documentación enlace a los archivos reales. Si se quiere versionar el cambio, copiar de vuelta los archivos modificados.
 
 ## `fabricacion/`
-- `Gerbers_Alux.zip` — paquete de fabricación del 31-oct-2026 (el nombre "Alux" es el nombre anterior del proyecto).
+- `Gerbers_Alux.zip` — paquete de fabricación del 31-oct-2026 (el nombre «Alux» es el nombre anterior; la placa es hoy **Kiro v1**).
 - `2026-10-23 08_46 From Parts Cart JLCPCB  Parts.xlsx` — carrito de partes exportado.
 - `PCB_TAMAGOCHI_FINAL.BomDoc` — documento BOM de Altium.
 

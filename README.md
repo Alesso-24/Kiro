@@ -63,6 +63,8 @@ Pinout de producción vs protoboard, serial de pruebas y rendimiento: [capítulo
 
 ## Hardware y PCB
 
+> **Nomenclatura.** El proyecto se llama **Kiro**. La primera PCB (estado actual) es **Kiro v1**. Se mandó a fabricar con el nombre anterior, así que la serigrafía dice «Alux V1» y los archivos de fabricación se llaman `Gerbers_Alux.zip` / `BOM_ALUX.csv`. Aunque es la segunda iteración del proyecto, se conserva como **v1**.
+
 ![Kiro en Altium, vista 3D](docs/img/pcb_3d_firma_alexa_alessandro.webp)
 
 | | |
@@ -73,7 +75,7 @@ Pinout de producción vs protoboard, serial de pruebas y rendimiento: [capítulo
 | Energía | LiPo 400 mAh · cargador integrado del XIAO · Q1 (P-MOSFET) apaga el display |
 | PCB | 2 capas, ENIG, 1.0 mm, hecha en Altium Designer 26, fabricada en JLCPCB |
 
-La placa enviada a fabricar (`PCB1`, "Alux V1"):
+La placa enviada a fabricar: **Kiro v1** (`PCB1`; la serigrafía dice «Alux V1», su nombre anterior):
 
 ![PCB1 en Altium](docs/img/pcb1_altium_top_enviada.png)
 
@@ -101,6 +103,7 @@ Los archivos reales de Altium (copia del proyecto), Gerbers y BOM están en [`ha
 | 8 | [Animaciones](docs/08-animaciones.md) | Las 23 expresiones, intro KIRO, nacimiento |
 | 9 | [**Inconsistencias**](docs/09-inconsistencias.md) | Lo que no cuadra entre notas, archivos de Altium y firmware |
 | 10 | [Pendientes y bitácora](docs/10-pendientes.md) | Qué falta y qué se hizo cuándo |
+| 11 | [Carcasa](docs/11-carcasa.md) | Diseño de la carcasa (**pendiente**): datos mecánicos y requisitos |
 
 ## Estructura del repositorio
 
@@ -124,7 +127,8 @@ Kiro/
 ## Estado (2026-11-17)
 
 - Animaciones y firmware probados en la XIAO + pantalla real (protoboard).
-- PCB diseñada, ruteada (46/46 conexiones) y enviada a fabricar; componentes SMD pedidos a LCSC (según las notas del equipo).
+- **Kiro v1** (la PCB): diseñada, ruteada (46/46 conexiones) y enviada a fabricar; componentes SMD pedidos a LCSC (según las notas del equipo).
+- **Falta el diseño de la carcasa** ([capítulo 11](docs/11-carcasa.md)).
 - Siguiente: ensamblar la PCB, adaptar el firmware al pinout de producción y agregar sueño por movimiento, RTC, temperatura y vibraciones. Ver [pendientes](docs/10-pendientes.md) y las [inconsistencias detectadas](docs/09-inconsistencias.md) antes de ensamblar.
 
 ## Créditos e inspiración

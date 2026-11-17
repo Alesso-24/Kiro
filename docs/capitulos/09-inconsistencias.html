@@ -14,7 +14,7 @@ pre{background:#101014;border:1px solid var(--line);border-radius:10px;padding:1
 blockquote{margin:14px 0;padding:8px 16px;border-left:3px solid var(--ac);background:#101014;color:#cfc9bd;border-radius:0 8px 8px 0}
 em{color:#b9b3a6}
 .pager{display:flex;justify-content:space-between;margin-top:50px;border-top:1px solid var(--line);padding-top:16px}
-</style><nav class="top"><b>Kiro</b><a href="../index.html">Inicio</a><a href="../estudio/kiro_v4.html">Estudio de animaciones</a><a href="../estudio/intro_kiro_10.html">Intros</a><a href="01-concepto.html">Concepto</a><a href="02-hardware.html">Hardware y BOM</a><a href="03-esquematico.html">Esquemático</a><a href="04-pcb.html">PCB</a><a href="05-fabricacion.html">Fabricación</a><a href="06-ensamble.html">Ensamble</a><a href="07-firmware.html">Firmware</a><a href="08-animaciones.html">Animaciones</a><a href="09-inconsistencias.html">Inconsistencias</a><a href="10-pendientes.html">Pendientes y bitácora</a><a href="https://github.com/Alesso-24/Kiro">GitHub</a></nav><main><h1>9. Inconsistencias detectadas</h1>
+</style><nav class="top"><b>Kiro</b><a href="../index.html">Inicio</a><a href="../estudio/kiro_v4.html">Estudio de animaciones</a><a href="../estudio/intro_kiro_10.html">Intros</a><a href="01-concepto.html">Concepto</a><a href="02-hardware.html">Hardware y BOM</a><a href="03-esquematico.html">Esquemático</a><a href="04-pcb.html">PCB</a><a href="05-fabricacion.html">Fabricación</a><a href="06-ensamble.html">Ensamble</a><a href="07-firmware.html">Firmware</a><a href="08-animaciones.html">Animaciones</a><a href="09-inconsistencias.html">Inconsistencias</a><a href="10-pendientes.html">Pendientes y bitácora</a><a href="11-carcasa.html">Carcasa</a><a href="https://github.com/Alesso-24/Kiro">GitHub</a></nav><main><h1>9. Inconsistencias detectadas</h1>
 <p>Resultado de comparar tres fuentes: <strong>(A)</strong> las notas de contexto del equipo ("Kiro — Contexto Maestro", 2026-11-17), <strong>(B)</strong> los archivos reales de Altium en <code>hardware/pcb_altium/</code> (esquemático <code>Sheet1.SchDoc</code>, <code>Pick Place</code>, DRC, Gerbers del 31-oct) y <strong>(C)</strong> el firmware y la documentación de este repositorio (+ el archivo de variante del core del XIAO RP2350).</p>
 <p><strong>Gravedad:</strong> 🔴 puede romper el hardware o el firmware · 🟠 error de datos que conviene corregir antes de ensamblar/pedir · 🟡 documentación u observación.</p>
 <table>
@@ -79,7 +79,7 @@ em{color:#b9b3a6}
 <td>9</td>
 <td>🟡</td>
 <td>Nombre en la placa</td>
-<td>La serigrafía dice "Alux v1", no Kiro</td>
+<td>La serigrafía dice «Alux V1»; la placa es <strong>Kiro v1</strong> (se conserva como v1)</td>
 </tr>
 <tr>
 <td>10</td>
@@ -226,8 +226,8 @@ em{color:#b9b3a6}
 <li><strong>Cantidad pedida de C157932 (S2B-PH-K-S): 5.</strong> Si J2, J3 y J4 son PH, 5 placas necesitan <strong>15</strong>. Alcanza para 5 baterías (J2) pero no para los botones.
 - <strong>Acción:</strong> poner <code>Comment = valor</code> en los símbolos, regenerar el BOM, decidir el tipo de J3/J4 y completar el pedido de JST si hacen falta.</li>
 </ol>
-<h2>9. 🟡 La placa dice "Alux v1"</h2>
-<p>La serigrafía enviada a fabricar (Gerbers del 31-oct) lleva <strong>"Alux v1"</strong> y el logo IBERO Puebla; el proyecto ahora se llama <strong>Kiro</strong>. Es solo estético, pero la placa física no dirá "Kiro".</p>
+<h2>9. 🟡 La placa dice «Alux V1»</h2>
+<p>La serigrafía enviada a fabricar (Gerbers del 31-oct) lleva <strong>«Alux V1»</strong> y el logo IBERO Puebla; el proyecto ahora se llama <strong>Kiro</strong> y esta placa es <strong>Kiro v1</strong> (decisión del equipo: aunque es la 2.ª iteración, se conserva como v1). Es solo estético; los archivos se llaman <code>Gerbers_Alux.zip</code> y <code>BOM_ALUX.csv</code>. La próxima revisión de la PCB puede decir «Kiro».</p>
 <h2>10. 🟡 Archivos citados que no se encontraron</h2>
 <p>Las notas mencionan <code>BOM_Kiro.csv</code>, <code>Gerbers_Kiro.zip</code> y <code>claude/*.md</code>. En este equipo solo hay <code>Gerbers_Alux.zip</code> y <code>BOM_ALUX.csv</code> (31-oct). Los documentos <code>lil-guy-*.md</code> no están en este repositorio.</p>
 <h2>11. 🟡 Firmware: las notas describen el sistema anterior</h2>

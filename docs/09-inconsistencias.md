@@ -14,7 +14,7 @@ Resultado de comparar tres fuentes: **(A)** las notas de contexto del equipo ("K
 | 6 | 🟡 | Lado de J1 | Notas: Bottom; Pick & Place y Gerbers: **Top** |
 | 7 | 🟠 | Contorno de la placa | Notas: circular; `PCB1` y Gerbers: círculo + pestaña rectangular (confirmado) |
 | 8 | 🟠 | BOM y metadatos | Comentarios de biblioteca (953 kΩ, 470 pF, XH), BOM antiguo, cantidad de JST PH |
-| 9 | 🟡 | Nombre en la placa | La serigrafía dice "Alux v1", no Kiro |
+| 9 | 🟡 | Nombre en la placa | La serigrafía dice «Alux V1»; la placa es **Kiro v1** (se conserva como v1) |
 | 10 | 🟡 | Archivos "Kiro" no encontrados | `BOM_Kiro.csv`, `Gerbers_Kiro.zip` no están en este equipo |
 | 11 | 🟡 | Firmware (frecuencia, expresiones, botones) | Notas describen el sistema de animación anterior |
 | 12 | 🟠 | Autonomía en dormant | El estimado de 3–4 meses ignora el divisor de batería |
@@ -83,8 +83,8 @@ La nota titula "AO3407 (BSS84LT1G equivalente)". El esquemático, el BOM y el LC
 4. **Cantidad pedida de C157932 (S2B-PH-K-S): 5.** Si J2, J3 y J4 son PH, 5 placas necesitan **15**. Alcanza para 5 baterías (J2) pero no para los botones.
 - **Acción:** poner `Comment = valor` en los símbolos, regenerar el BOM, decidir el tipo de J3/J4 y completar el pedido de JST si hacen falta.
 
-## 9. 🟡 La placa dice "Alux v1"
-La serigrafía enviada a fabricar (Gerbers del 31-oct) lleva **"Alux v1"** y el logo IBERO Puebla; el proyecto ahora se llama **Kiro**. Es solo estético, pero la placa física no dirá "Kiro".
+## 9. 🟡 La placa dice «Alux V1»
+La serigrafía enviada a fabricar (Gerbers del 31-oct) lleva **«Alux V1»** y el logo IBERO Puebla; el proyecto ahora se llama **Kiro** y esta placa es **Kiro v1** (decisión del equipo: aunque es la 2.ª iteración, se conserva como v1). Es solo estético; los archivos se llaman `Gerbers_Alux.zip` y `BOM_ALUX.csv`. La próxima revisión de la PCB puede decir «Kiro».
 
 ## 10. 🟡 Archivos citados que no se encontraron
 Las notas mencionan `BOM_Kiro.csv`, `Gerbers_Kiro.zip` y `claude/*.md`. En este equipo solo hay `Gerbers_Alux.zip` y `BOM_ALUX.csv` (31-oct). Los documentos `lil-guy-*.md` no están en este repositorio.

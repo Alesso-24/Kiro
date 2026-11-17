@@ -25,8 +25,12 @@
 - [ ] Ground pour en la v2.
 - [ ] Micrófono MEMS (ICS-43434 / MP34DT01) para detección real de ritmo.
 - [ ] Cortar el divisor de batería con un MOSFET para bajar el consumo en dormant.
-- [ ] Renombrar la serigrafía de "Alux" a "Kiro".
+- [ ] En la próxima revisión de la PCB: serigrafía «Kiro» en lugar de «Alux» (la placa actual se conserva como **Kiro v1**).
 - [ ] Calificar las 50 criaturas base (`estudio/calificar_50.html`) para afinar el generador.
+
+### Carcasa
+- [ ] **Diseñar la carcasa** (PLA impreso en 3D). Ver [capítulo 11](11-carcasa.md).
+- [ ] Calibrar el sensor de temperatura **con la carcasa cerrada** (el PLA agrega un offset).
 
 ### Documentación
 - [ ] Fotos reales de la PCB ensamblada y del dispositivo funcionando.
@@ -46,4 +50,5 @@
 | 2026-11-17 | Estudio v4 definitivo: motor nuevo portado al firmware (23 expresiones), identidad guardada en EEPROM, proyecto renombrado a **Kiro** |
 | 2026-11-17 | **V38**: intro KIRO (propuesta 12) + transición de hilos desde los bordes, cargado en la XIAO (50–60 fps) |
 | 2026-11-17 | Repositorio y documentación por capítulos; auditoría de inconsistencias |
+| 2026-11-17 | Se define la nomenclatura: PCB = **Kiro v1** (ordenada como «Alux V1»); **falta la carcasa** |
 | (según notas) | Pedidos JLCPCB y LCSC realizados; display, batería y botones en mano |

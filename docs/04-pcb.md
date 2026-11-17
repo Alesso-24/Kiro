@@ -1,4 +1,6 @@
-# 4. PCB
+# 4. PCB — Kiro v1
+
+> **Nomenclatura.** El proyecto se llama **Kiro**. La primera PCB (estado actual) es **Kiro v1**. Se mandó a fabricar con el nombre anterior, así que la serigrafía dice «Alux V1» y los archivos de fabricación se llaman `Gerbers_Alux.zip` / `BOM_ALUX.csv`. Aunque es la segunda iteración del proyecto, se conserva como **v1**.
 
 Archivos: [`hardware/pcb_altium/PCB1.PcbDoc`](../hardware/pcb_altium/PCB1.PcbDoc) (placa enviada a fabricar, 31-oct) y `PCB_ALTIUM_PRUEBA.PcbDoc` (placa de práctica/tutorial, 10-nov). Herramienta: Altium Designer Professional 26.10.1.
 
@@ -44,7 +46,7 @@ Archivos: [`hardware/pcb_altium/PCB1.PcbDoc`](../hardware/pcb_altium/PCB1.PcbDoc
 
 ![PCB1 en Altium](img/pcb1_altium_top_enviada.png)
 
-*Confirmada por el equipo como la placa enviada a fabricar. Vista Top (rojo = cobre Top, azul = cobre Bottom) en la capa Mechanical 1.* Se ve: el nombre **"Alux V1"** con "Created by Alexa and Alessandro", el logo **IBERO PUEBLA**, `J2` con `BAT−/BAT+`, `J3` (`BTN1`), `J4` (`BTN2`), `Q1`, el `IMU` (U2) con `C3`/`C5`, los capacitores/resistencias del lado Bottom en transparencia, los **tres agujeros de montaje numerados 7, 8 y 9** y el contorno: un **círculo con una pestaña/cuello rectangular arriba** (donde van `J3` y el header del display). El rectángulo amarillo grande del `XIAO` llega hasta el borde inferior del círculo.
+*Confirmada por el equipo como la placa enviada a fabricar. Vista Top (rojo = cobre Top, azul = cobre Bottom) en la capa Mechanical 1.* Se ve: el nombre **«Alux V1»** (hoy **Kiro v1**) con "Created by Alexa and Alessandro", el logo **IBERO PUEBLA**, `J2` con `BAT−/BAT+`, `J3` (`BTN1`), `J4` (`BTN2`), `Q1`, el `IMU` (U2) con `C3`/`C5`, los capacitores/resistencias del lado Bottom en transparencia, los **tres agujeros de montaje numerados 7, 8 y 9** y el contorno: un **círculo con una pestaña/cuello rectangular arriba** (donde van `J3` y el header del display). El rectángulo amarillo grande del `XIAO` llega hasta el borde inferior del círculo.
 
 ## Render de los Gerbers enviados (`Gerbers_Alux.zip`)
 
@@ -58,7 +60,7 @@ Generados con *gerbonara* a partir del paquete real de fabricación del 31-oct-2
 
 ![Gerber bottom](img/gerber_bottom.png)
 
-Se aprecian: header del display **J1** arriba, **XIAO** al centro, **J2** (batería, `BAT+`/`BAT−`), **J3/J4** (`BTN1`/`BTN2`), **Q1**, el IMU (U2), el logo **IBERO Puebla** en la serigrafía y el texto **"Alux v1"** — el nombre anterior del proyecto.
+Se aprecian: header del display **J1** arriba, **XIAO** al centro, **J2** (batería, `BAT+`/`BAT−`), **J3/J4** (`BTN1`/`BTN2`), **Q1**, el IMU (U2), el logo **IBERO Puebla** en la serigrafía y el texto **«Alux v1»** — el nombre anterior del proyecto; esta placa es hoy **Kiro v1**.
 
 > **Nota de contorno.** El contorno (capa `.GM` / Mechanical 1) es un círculo con una **pestaña rectangular** arriba, igual que en la captura de Altium de `PCB1.PcbDoc`. Las notas decían "circular 55 mm": el cuerpo es circular, pero con esa pestaña ([inconsistencia 7](09-inconsistencias.md)).
 

@@ -31,7 +31,7 @@ CHAPTERS = [
     ('01-concepto', 'Concepto'), ('02-hardware', 'Hardware y BOM'), ('03-esquematico', 'Esquemático'),
     ('04-pcb', 'PCB'), ('05-fabricacion', 'Fabricación'), ('06-ensamble', 'Ensamble'),
     ('07-firmware', 'Firmware'), ('08-animaciones', 'Animaciones'), ('09-inconsistencias', 'Inconsistencias'),
-    ('10-pendientes', 'Pendientes y bitácora'),
+    ('10-pendientes', 'Pendientes y bitácora'), ('11-carcasa', 'Carcasa'),
 ]
 
 

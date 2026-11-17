@@ -89,7 +89,7 @@ Al encender: sin criatura guardada -> nace y guarda; con guardada -> NO nace, ab
 6. Futuro: guardar stats en flash, MPU6050/micrófono/temperatura/USB/batería reales (la lógica de `Motion.h` está en la alternativa), "swap eyes" entre dispositivos.
 
 ## Electronica (resumen; detalle en docs/)
-- PCB enviada = `PCB1.PcbDoc` (31-oct, Gerbers_Alux.zip, serigrafia dice "Alux v1"); `PCB_ALTIUM_PRUEBA.PcbDoc` es la placa de practica. Esquematico: `Sheet1.SchDoc` (XIAO + LIS3DHTR + BSS84 + divisor VBAT + 2 botones + header display 1x7).
+- PCB enviada = **Kiro v1** = `PCB1.PcbDoc` (31-oct, Gerbers_Alux.zip, serigrafia dice "Alux V1" por su nombre anterior; se conserva como v1 aunque es la 2a iteracion). **Falta el diseno de la carcasa** (docs/11-carcasa.md); `PCB_ALTIUM_PRUEBA.PcbDoc` es la placa de practica. Esquematico: `Sheet1.SchDoc` (XIAO + LIS3DHTR + BSS84 + divisor VBAT + 2 botones + header display 1x7).
 - **Pinout PCB (D -> GPIO del core RP2350)**: D0=26 VBAT_DIV (ADC), D1=27 CS, D2=28 DC, **D3=5** DISP_PWR (LOW=ON; NO es GPIO29), D4=6 SDA, D5=7 SCL, D6=0 BTN1, **D7=1 LIS_INT2**, D8=2 SCK, **D9=4 BTN2**, D10=3 MOSI. Display RST a 3V3 (RST=-1 en firmware).
 - **Antes de subir firmware a la PCB**: DC->D2, sin RST, DISP_PWR=D3, boton verde->D9 (hoy D7 choca con INT2), VBAT_ADC=D0. Ver docs/07 y docs/09.
 - docs/09-inconsistencias.md lista 14 hallazgos (criticos: D3 != GPIO29, boton verde vs INT2, pines del LIS3DH en las notas, contorno con pestana, BOM/JST).
