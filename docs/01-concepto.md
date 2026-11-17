@@ -3,7 +3,7 @@
 ## Qué es Kiro
 Un dispositivo tipo Tamagotchi: una pantalla redonda que muestra **dos ojos de color sobre fondo negro**. Los ojos se deforman como gelatina, miran alrededor, parpadean y expresan emociones. Cada Kiro es **único**: al nacer se sortea una semilla de 32 bits que decide colores, forma de los ojos, pupila, espejo, escala, separación y personalidad. La semilla se guarda en la memoria flash (EEPROM emulada), así que al apagar y encender es la **misma criatura**.
 
-Inspiración: [@lilguynet](https://www.instagram.com/lilguynet/) (Lil Guy / Starboy). El nombre **Kiro** es corto, memorable y "brandeable".
+El nombre **Kiro** es corto, memorable y "brandeable".
 
 ## Objetivos
 1. Una **PCB propia** (circular) que integre el microcontrolador, el display, un acelerómetro, la batería y dos botones.
@@ -29,3 +29,6 @@ Estos requisitos dependen del hardware de la placa (ver [pendientes](10-pendient
 
 ## Equipo y contexto
 Proyecto de **Producción Electrónica** en la **Universidad Iberoamericana Puebla**. Diseño de hardware: Alexa y Alessandro. Firmware y animaciones: Alessandro con asistencia de Claude Code.
+
+## Inspiración
+Kiro está inspirado en [@lilguynet](https://www.instagram.com/lilguynet/) (Lil Guy / Starboy).
