@@ -12,6 +12,7 @@ Kiro/
   CLAUDE.md                    <- contexto tecnico vivo para Claude Code (este documento)
   Abrir estudio.bat            <- abre el estudio en Chrome
   estudio/kiro_v4.html        <- FUENTE DE VERDAD del diseño (todas las animaciones, en el navegador)
+  estudio/kiro_embed.html      <- GENERADO por herramientas/make_embed.py desde kiro_v4.html (solo la criatura, postMessage); lo usa el portafolio. Si cambias kiro_v4, regenerar y copiar a Página_web/public/kiro/lab/ y a docs/estudio/
   estudio/intro_kiro_10.html   <- propuestas de la intro del logo KIRO (la 12 es la elegida y esta en la placa)
   estudio/intro_completa.html  <- render EXACTO del firmware (GIF) de intro + nacimiento completo
   respaldos/v38_intro_kiro/    <- firmware final cargado (EyesCore.h, .ino)
@@ -95,6 +96,7 @@ Al encender: sin criatura guardada -> nace y guarda; con guardada -> NO nace, ab
 - docs/09-inconsistencias.md lista 14 hallazgos (criticos: D3 != GPIO29, boton verde vs INT2, pines del LIS3DH en las notas, contorno con pestana, BOM/JST).
 
 ## Bitácora breve
+- 2026-11-17: Kiro en el portafolio (alesso-24.github.io/portfolio/project/kiro/: banner Próximamente en portada, ojos en vivo con el motor real, estudio incrustado) + `estudio/kiro_embed.html`.
 - 2026-11-17: repo + documentacion por capitulos (README, docs/01-10, hardware/) y auditoria de inconsistencias entre notas, Altium y firmware.
 - 2026-11-17: **V38 (cargada en la XIAO, aprobada por Alessandro "asi se queda")**: intro KIRO 6.9 s (colores cambiantes ~3 s, final en partículas al punto) + transición suave: los hilos del nacimiento salen de los bordes (3.4 s, más gruesos y calmados al inicio; `gi`/`cf` en `drawBirth`). 52-60 fps (caída puntual 43). Respaldo `respaldos/v38_intro_kiro/`. La placa quedó con una criatura de prueba (`n`, no guardada): al reiniciar vuelve la guardada.
 - 2026-11-14: cableado, pantalla, bug SPI/DMA, simulador, 1.ª versión aprobada.

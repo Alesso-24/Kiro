@@ -16,6 +16,8 @@
 | [Intro + nacimiento completo](https://alesso-24.github.io/Kiro/estudio/intro_completa.html) | Render exacto del firmware, ~46 s |
 | [Documentación web](https://alesso-24.github.io/Kiro/capitulos/01-concepto.html) | Todos los capítulos, con navegación |
 
+También vive en el portafolio de Alessandro: [página del proyecto](https://alesso-24.github.io/portfolio/project/kiro/) (con Kiro en vivo y el estudio incrustado) y [documentación de la materia](https://alesso-24.github.io/portfolio/docs/produccion-electronica/practicas/proyecto-kiro/). Para incrustar la criatura en otra página se usa `estudio/kiro_embed.html` (solo la criatura, controlada con `postMessage`: `{t:'expr',id}`, `{t:'auto'}`, `{t:'mouse',x,y}`), que se genera con `python herramientas/make_embed.py` a partir de `kiro_v4.html`.
+
 ## Animaciones
 
 Cada Kiro es **único**: al nacer se sortea una semilla de 32 bits (colores, forma de los ojos, pupila, espejo, escala, separación y personalidad) que se guarda en la memoria flash, así que al apagar y encender es la **misma criatura**. Las animaciones se diseñan y aprueban primero en el navegador y se portan 1:1 al firmware.
